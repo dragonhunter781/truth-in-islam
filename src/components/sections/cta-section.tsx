@@ -2,89 +2,74 @@
 
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { ArrowRight, Heart, Sparkles } from "lucide-react"
+import { ArrowRight, Mail, BookOpen } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function CTASection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-emerald-600 via-emerald-700 to-emerald-800 py-24">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 0L100 50L50 100L0 50z' fill='%23ffffff' fill-opacity='0.1'/%3E%3C/svg%3E")`,
-          backgroundSize: '50px 50px'
-        }} />
+    <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-red-950 to-slate-900 py-24">
+      {/* Background Elements - Static, no overlapping animations */}
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/20 rounded-full blur-[128px]" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-amber-500/20 rounded-full blur-[128px]" />
       </div>
 
-      {/* Floating Elements */}
-      <motion.div
-        className="absolute -left-20 -top-20 h-80 w-80 rounded-full bg-white/10 blur-3xl"
-        animate={{ scale: [1, 1.2, 1] }}
-        transition={{ duration: 8, repeat: Infinity }}
-      />
-      <motion.div
-        className="absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-amber-500/20 blur-3xl"
-        animate={{ scale: [1.2, 1, 1.2] }}
-        transition={{ duration: 8, repeat: Infinity }}
-      />
-
-      <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <motion.div
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ type: "spring", stiffness: 200 }}
-            className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 backdrop-blur-sm"
-          >
-            <Sparkles className="h-8 w-8 text-amber-300" />
-          </motion.div>
+          <span className="inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-2 text-sm font-medium text-amber-400">
+            <BookOpen className="h-4 w-4" />
+            Start Your Research
+          </span>
 
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Begin Your Journey to Understanding Islam
+          <h2 className="mt-6 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+            Ready to Examine the Evidence?
           </h2>
 
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-emerald-100 sm:text-xl">
-            Whether you're curious about Islam, considering conversion, or want to
-            deepen your knowledge, we're here to guide you with authentic
-            information from the Quran and Sunnah.
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-300">
+            Access 204 thoroughly researched articles examining Islamic teachings,
+            history, and claims. Every article includes Quranic verses, hadith references,
+            and biblical comparisons.
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Link href="/conversion">
-              <Button
-                size="lg"
-                className="w-full bg-white text-emerald-700 hover:bg-emerald-50 sm:w-auto"
-              >
-                <Heart className="mr-2 h-5 w-5" />
-                Learn How to Become Muslim
+            <Link href="/blog">
+              <Button size="lg" className="group bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white border-0 px-8">
+                Browse All Articles
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
             </Link>
-            <Link href="/islam">
-              <Button
-                size="lg"
-                variant="outline"
-                className="w-full border-white/30 text-white hover:bg-white/10 sm:w-auto"
-              >
-                Explore Islamic Teachings
-                <ArrowRight className="ml-2 h-5 w-5" />
+            <Link href="/questions">
+              <Button size="lg" variant="outline" className="border-slate-500 text-slate-200 hover:bg-slate-800 px-8">
+                <Mail className="mr-2 h-4 w-4" />
+                Ask a Question
               </Button>
             </Link>
           </div>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+          {/* Trust Indicators */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.4 }}
-            className="mt-8 text-sm text-emerald-200"
+            transition={{ delay: 0.2 }}
+            className="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-4"
           >
-            Join thousands of seekers who have found guidance through our resources
-          </motion.p>
+            {[
+              { value: "204", label: "Articles" },
+              { value: "500+", label: "Quran Verses" },
+              { value: "300+", label: "Hadith Refs" },
+              { value: "100%", label: "Free Access" },
+            ].map((stat) => (
+              <div key={stat.label}>
+                <div className="text-2xl font-bold text-amber-400">{stat.value}</div>
+                <div className="text-sm text-slate-400">{stat.label}</div>
+              </div>
+            ))}
+          </motion.div>
         </motion.div>
       </div>
     </section>
