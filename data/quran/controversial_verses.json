@@ -1,0 +1,419 @@
+{
+  "violence": [
+    {
+      "reference": "2:191",
+      "surah": "Al-Baqarah",
+      "ayah": 191,
+      "arabic": "وَاقْتُلُوهُمْ حَيْثُ ثَقِفْتُمُوهُمْ وَأَخْرِجُوهُم مِّنْ حَيْثُ أَخْرَجُوكُمْ",
+      "transliteration": "Waqtuloohum haythu thaqiftumoohum waakhrijoohum min haythu akhrajookum",
+      "english": "And kill them wherever you find them and expel them from wherever they have expelled you",
+      "topic": "Fighting and Killing"
+    },
+    {
+      "reference": "2:193",
+      "surah": "Al-Baqarah",
+      "ayah": 193,
+      "arabic": "وَقَاتِلُوهُمْ حَتَّىٰ لَا تَكُونَ فِتْنَةٌ وَيَكُونَ الدِّينُ لِلَّهِ",
+      "transliteration": "Waqatiloohum hatta la takoona fitnatun wayakoona alddeenu lillahi",
+      "english": "And fight them until there is no fitnah and the religion is for Allah",
+      "topic": "Fighting Until Islam Dominates"
+    },
+    {
+      "reference": "2:216",
+      "surah": "Al-Baqarah",
+      "ayah": 216,
+      "arabic": "كُتِبَ عَلَيْكُمُ الْقِتَالُ وَهُوَ كُرْهٌ لَّكُمْ",
+      "transliteration": "Kutiba AAalaykumu alqitalu wahuwa kurhun lakum",
+      "english": "Fighting has been enjoined upon you while it is hateful to you",
+      "topic": "Obligatory Fighting"
+    },
+    {
+      "reference": "3:151",
+      "surah": "Al-Imran",
+      "ayah": 151,
+      "arabic": "سَنُلْقِي فِي قُلُوبِ الَّذِينَ كَفَرُوا الرُّعْبَ بِمَا أَشْرَكُوا بِاللَّهِ",
+      "transliteration": "Sanulqee fee quloobi allatheena kafaroo alrruAAba bima ashrakoo biAllahi",
+      "english": "We will cast terror into the hearts of those who disbelieve",
+      "topic": "Terror Against Disbelievers"
+    },
+    {
+      "reference": "4:74",
+      "surah": "An-Nisa",
+      "ayah": 74,
+      "arabic": "فَلْيُقَاتِلْ فِي سَبِيلِ اللَّهِ الَّذِينَ يَشْرُونَ الْحَيَاةَ الدُّنْيَا بِالْآخِرَةِ",
+      "transliteration": "Falyuqatil fee sabeeli Allahi allatheena yashroona alhayata alddunya bialakhirati",
+      "english": "So let those fight in the cause of Allah who sell the life of this world for the Hereafter",
+      "topic": "Fighting for Paradise"
+    },
+    {
+      "reference": "4:89",
+      "surah": "An-Nisa",
+      "ayah": 89,
+      "arabic": "فَإِن تَوَلَّوْا فَخُذُوهُمْ وَاقْتُلُوهُمْ حَيْثُ وَجَدتُّمُوهُمْ",
+      "transliteration": "Fain tawallaw fakhuthoohum waoqtuloohum haythu wajadtumoohum",
+      "english": "If they turn away, then seize them and kill them wherever you find them",
+      "topic": "Kill Apostates"
+    },
+    {
+      "reference": "5:33",
+      "surah": "Al-Ma'idah",
+      "ayah": 33,
+      "arabic": "إِنَّمَا جَزَاءُ الَّذِينَ يُحَارِبُونَ اللَّهَ وَرَسُولَهُ وَيَسْعَوْنَ فِي الْأَرْضِ فَسَادًا أَن يُقَتَّلُوا أَوْ يُصَلَّبُوا أَوْ تُقَطَّعَ أَيْدِيهِمْ وَأَرْجُلُهُم مِّنْ خِلَافٍ",
+      "transliteration": "Innama jazao allatheena yuhariboona Allaha warasoolahu wayasAAawna fee alardi fasadan an yuqattaloo aw yusallaboo aw tuqattaAAa aydeehim waarjuluhum min khilafin",
+      "english": "The punishment of those who wage war against Allah and His Messenger is that they be killed or crucified or their hands and feet be cut off from opposite sides",
+      "topic": "Crucifixion and Mutilation"
+    },
+    {
+      "reference": "8:12",
+      "surah": "Al-Anfal",
+      "ayah": 12,
+      "arabic": "فَاضْرِبُوا فَوْقَ الْأَعْنَاقِ وَاضْرِبُوا مِنْهُمْ كُلَّ بَنَانٍ",
+      "transliteration": "Faidriboo fawqa alaAAnaqi waidriboo minhum kulla bananin",
+      "english": "Strike upon the necks and strike from them every fingertip",
+      "topic": "Beheading Commands"
+    },
+    {
+      "reference": "8:39",
+      "surah": "Al-Anfal",
+      "ayah": 39,
+      "arabic": "وَقَاتِلُوهُمْ حَتَّىٰ لَا تَكُونَ فِتْنَةٌ وَيَكُونَ الدِّينُ كُلُّهُ لِلَّهِ",
+      "transliteration": "Waqatiloohum hatta la takoona fitnatun wayakoona alddeenu kulluhu lillahi",
+      "english": "And fight them until there is no fitnah and the religion, all of it, is for Allah",
+      "topic": "Fight Until All Religion is Islam"
+    },
+    {
+      "reference": "8:60",
+      "surah": "Al-Anfal",
+      "ayah": 60,
+      "arabic": "وَأَعِدُّوا لَهُم مَّا اسْتَطَعْتُم مِّن قُوَّةٍ وَمِن رِّبَاطِ الْخَيْلِ تُرْهِبُونَ بِهِ عَدُوَّ اللَّهِ وَعَدُوَّكُمْ",
+      "transliteration": "WaaAAiddoo lahum ma istataAAtum min quwwatin wamin ribati alkhayli turhiboona bihi AAaduwwa Allahi waAAaduwwakum",
+      "english": "Prepare against them whatever you are able of power and steeds of war by which you may terrify the enemy of Allah and your enemy",
+      "topic": "Terrorizing Enemies"
+    },
+    {
+      "reference": "9:5",
+      "surah": "At-Tawbah",
+      "ayah": 5,
+      "arabic": "فَإِذَا انسَلَخَ الْأَشْهُرُ الْحُرُمُ فَاقْتُلُوا الْمُشْرِكِينَ حَيْثُ وَجَدتُّمُوهُمْ وَخُذُوهُمْ وَاحْصُرُوهُمْ وَاقْعُدُوا لَهُمْ كُلَّ مَرْصَدٍ",
+      "transliteration": "Faitha insalakha alashhuru alhurumu faoqtuloo almushrikeena haythu wajadtumoohum wakhuthoohum waohsuroohum waoquAAudoo lahum kulla marsadin",
+      "english": "When the sacred months have passed, then kill the polytheists wherever you find them and capture them and besiege them and sit in wait for them at every place of ambush",
+      "topic": "The Sword Verse"
+    },
+    {
+      "reference": "9:14",
+      "surah": "At-Tawbah",
+      "ayah": 14,
+      "arabic": "قَاتِلُوهُمْ يُعَذِّبْهُمُ اللَّهُ بِأَيْدِيكُمْ",
+      "transliteration": "Qatiloohum yuAAaththibhumu Allahu biaydeekum",
+      "english": "Fight them; Allah will punish them by your hands",
+      "topic": "Allah Punishes Through Muslim Hands"
+    },
+    {
+      "reference": "9:29",
+      "surah": "At-Tawbah",
+      "ayah": 29,
+      "arabic": "قَاتِلُوا الَّذِينَ لَا يُؤْمِنُونَ بِاللَّهِ وَلَا بِالْيَوْمِ الْآخِرِ وَلَا يُحَرِّمُونَ مَا حَرَّمَ اللَّهُ وَرَسُولُهُ وَلَا يَدِينُونَ دِينَ الْحَقِّ مِنَ الَّذِينَ أُوتُوا الْكِتَابَ حَتَّىٰ يُعْطُوا الْجِزْيَةَ عَن يَدٍ وَهُمْ صَاغِرُونَ",
+      "transliteration": "Qatiloo allatheena la yuminoona biAllahi wala bialyawmi alakhiri wala yuharrimoona ma harrama Allahu warasooluhu wala yadeenoona deena alhaqqi mina allatheena ootoo alkitaba hatta yuAAtoo aljizyata AAan yadin wahum saghiroona",
+      "english": "Fight those who do not believe in Allah or in the Last Day and who do not consider unlawful what Allah and His Messenger have made unlawful and who do not adopt the religion of truth from those who were given the Scripture - until they pay the jizyah with willing submission, and feel themselves subdued",
+      "topic": "Fight People of the Book"
+    },
+    {
+      "reference": "9:111",
+      "surah": "At-Tawbah",
+      "ayah": 111,
+      "arabic": "إِنَّ اللَّهَ اشْتَرَىٰ مِنَ الْمُؤْمِنِينَ أَنفُسَهُمْ وَأَمْوَالَهُم بِأَنَّ لَهُمُ الْجَنَّةَ يُقَاتِلُونَ فِي سَبِيلِ اللَّهِ فَيَقْتُلُونَ وَيُقْتَلُونَ",
+      "transliteration": "Inna Allaha ishtara mina almumineena anfusahum waamwalahum bianna lahumu aljannata yuqatiloona fee sabeeli Allahi fayaqtuloona wayuqtaloona",
+      "english": "Indeed, Allah has purchased from the believers their lives and their properties in exchange for Paradise. They fight in the cause of Allah, so they kill and are killed",
+      "topic": "Paradise Through Killing"
+    },
+    {
+      "reference": "9:123",
+      "surah": "At-Tawbah",
+      "ayah": 123,
+      "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا قَاتِلُوا الَّذِينَ يَلُونَكُم مِّنَ الْكُفَّارِ وَلْيَجِدُوا فِيكُمْ غِلْظَةً",
+      "transliteration": "Ya ayyuha allatheena amanoo qatiloo allatheena yaloonakum mina alkuffari walyajidoo feekum ghilthatan",
+      "english": "O you who believe, fight those of the disbelievers who are near to you and let them find harshness in you",
+      "topic": "Fight Nearby Disbelievers"
+    },
+    {
+      "reference": "47:4",
+      "surah": "Muhammad",
+      "ayah": 4,
+      "arabic": "فَإِذَا لَقِيتُمُ الَّذِينَ كَفَرُوا فَضَرْبَ الرِّقَابِ",
+      "transliteration": "Faitha laqeetumu allatheena kafaroo fadarba alrriqabi",
+      "english": "So when you meet those who disbelieve, strike necks",
+      "topic": "Strike the Necks of Disbelievers"
+    },
+    {
+      "reference": "48:29",
+      "surah": "Al-Fath",
+      "ayah": 29,
+      "arabic": "مُّحَمَّدٌ رَّسُولُ اللَّهِ وَالَّذِينَ مَعَهُ أَشِدَّاءُ عَلَى الْكُفَّارِ رُحَمَاءُ بَيْنَهُمْ",
+      "transliteration": "Muhammadun rasoolu Allahi waallatheena maAAahu ashiddao AAala alkuffari ruhamao baynahum",
+      "english": "Muhammad is the Messenger of Allah; and those with him are severe against disbelievers, merciful among themselves",
+      "topic": "Severe Against Disbelievers"
+    }
+  ],
+  "women": [
+    {
+      "reference": "2:223",
+      "surah": "Al-Baqarah",
+      "ayah": 223,
+      "arabic": "نِسَاؤُكُمْ حَرْثٌ لَّكُمْ فَأْتُوا حَرْثَكُمْ أَنَّىٰ شِئْتُمْ",
+      "transliteration": "Nisaokum harthun lakum fatoo harthakum anna shitum",
+      "english": "Your wives are a place of sowing of seed for you, so come to your place of cultivation however you wish",
+      "topic": "Women as Fields"
+    },
+    {
+      "reference": "2:228",
+      "surah": "Al-Baqarah",
+      "ayah": 228,
+      "arabic": "وَلِلرِّجَالِ عَلَيْهِنَّ دَرَجَةٌ",
+      "transliteration": "Walirrijali AAalayhinna darajatun",
+      "english": "And men have a degree over them",
+      "topic": "Men Above Women"
+    },
+    {
+      "reference": "2:282",
+      "surah": "Al-Baqarah",
+      "ayah": 282,
+      "arabic": "فَإِن لَّمْ يَكُونَا رَجُلَيْنِ فَرَجُلٌ وَامْرَأَتَانِ",
+      "transliteration": "Fain lam yakoona rajulayni farajulun waimraatani",
+      "english": "If there are not two men, then a man and two women",
+      "topic": "Women Half Witness"
+    },
+    {
+      "reference": "4:3",
+      "surah": "An-Nisa",
+      "ayah": 3,
+      "arabic": "فَانكِحُوا مَا طَابَ لَكُم مِّنَ النِّسَاءِ مَثْنَىٰ وَثُلَاثَ وَرُبَاعَ",
+      "transliteration": "Fainkihoo ma taba lakum mina alnnisai mathna wathalatha warubaAAa",
+      "english": "Then marry those that please you of women, two or three or four",
+      "topic": "Polygamy"
+    },
+    {
+      "reference": "4:11",
+      "surah": "An-Nisa",
+      "ayah": 11,
+      "arabic": "لِلذَّكَرِ مِثْلُ حَظِّ الْأُنثَيَيْنِ",
+      "transliteration": "Lilththakari mithlu haththi alonthayayni",
+      "english": "The male shall have the equivalent of the portion of two females",
+      "topic": "Women Half Inheritance"
+    },
+    {
+      "reference": "4:24",
+      "surah": "An-Nisa",
+      "ayah": 24,
+      "arabic": "وَالْمُحْصَنَاتُ مِنَ النِّسَاءِ إِلَّا مَا مَلَكَتْ أَيْمَانُكُمْ",
+      "transliteration": "Waalmuhsanatu mina alnnisai illa ma malakat aymanukum",
+      "english": "And married women except those your right hands possess",
+      "topic": "Captive Women Lawful"
+    },
+    {
+      "reference": "4:34",
+      "surah": "An-Nisa",
+      "ayah": 34,
+      "arabic": "الرِّجَالُ قَوَّامُونَ عَلَى النِّسَاءِ بِمَا فَضَّلَ اللَّهُ بَعْضَهُمْ عَلَىٰ بَعْضٍ ... وَاضْرِبُوهُنَّ",
+      "transliteration": "Alrrijalu qawwamoona AAala alnnisai bima faddala Allahu baAAdahum AAala baAAdin ... waidriboohunna",
+      "english": "Men are in charge of women by what Allah has given one over the other... and strike them",
+      "topic": "Beat Your Wife"
+    },
+    {
+      "reference": "33:50",
+      "surah": "Al-Ahzab",
+      "ayah": 50,
+      "arabic": "يَا أَيُّهَا النَّبِيُّ إِنَّا أَحْلَلْنَا لَكَ أَزْوَاجَكَ اللَّاتِي آتَيْتَ أُجُورَهُنَّ وَمَا مَلَكَتْ يَمِينُكَ",
+      "transliteration": "Ya ayyuha alnnabiyyu inna ahlalna laka azwajaka allatee atayta ojoorahunna wama malakat yameenuka",
+      "english": "O Prophet, indeed We have made lawful to you your wives to whom you have given their due compensation and those your right hand possesses",
+      "topic": "Muhammad's Special Privileges"
+    },
+    {
+      "reference": "33:53",
+      "surah": "Al-Ahzab",
+      "ayah": 53,
+      "arabic": "وَإِذَا سَأَلْتُمُوهُنَّ مَتَاعًا فَاسْأَلُوهُنَّ مِن وَرَاءِ حِجَابٍ",
+      "transliteration": "Waitha saaltumoohuunna mataAAan faisaloohunna min warai hijabin",
+      "english": "And when you ask his wives for something, ask them from behind a partition",
+      "topic": "Hijab Command"
+    },
+    {
+      "reference": "65:4",
+      "surah": "At-Talaq",
+      "ayah": 4,
+      "arabic": "وَاللَّائِي يَئِسْنَ مِنَ الْمَحِيضِ مِن نِّسَائِكُمْ إِنِ ارْتَبْتُمْ فَعِدَّتُهُنَّ ثَلَاثَةُ أَشْهُرٍ وَاللَّائِي لَمْ يَحِضْنَ",
+      "transliteration": "Waallaee yaisna mina almaheedi min nisaikum ini irtabtum faAAiddatuhunna thalathatu ashhurin waallaee lam yahidna",
+      "english": "And those who no longer expect menstruation among your women - if you doubt, then their period is three months, and also for those who have not yet menstruated",
+      "topic": "Child Marriage Waiting Period"
+    }
+  ],
+  "apostasy": [
+    {
+      "reference": "2:217",
+      "surah": "Al-Baqarah",
+      "ayah": 217,
+      "arabic": "وَمَن يَرْتَدِدْ مِنكُمْ عَن دِينِهِ فَيَمُتْ وَهُوَ كَافِرٌ فَأُولَٰئِكَ حَبِطَتْ أَعْمَالُهُمْ فِي الدُّنْيَا وَالْآخِرَةِ",
+      "transliteration": "Waman yartadid minkum AAan deenihi fayamut wahuwa kafirun faolaika habitat aAAmaluhum fee alddunya waalakhirati",
+      "english": "And whoever of you reverts from his religion and dies while he is a disbeliever - for those, their deeds have become worthless in this world and the Hereafter",
+      "topic": "Apostasy and Punishment"
+    },
+    {
+      "reference": "3:86-90",
+      "surah": "Al-Imran",
+      "ayah": "86-90",
+      "arabic": "كَيْفَ يَهْدِي اللَّهُ قَوْمًا كَفَرُوا بَعْدَ إِيمَانِهِمْ",
+      "transliteration": "Kayfa yahdee Allahu qawman kafaroo baAAda eemanihim",
+      "english": "How shall Allah guide a people who disbelieved after their belief",
+      "topic": "No Guidance for Apostates"
+    },
+    {
+      "reference": "4:89",
+      "surah": "An-Nisa",
+      "ayah": 89,
+      "arabic": "فَإِن تَوَلَّوْا فَخُذُوهُمْ وَاقْتُلُوهُمْ حَيْثُ وَجَدتُّمُوهُمْ",
+      "transliteration": "Fain tawallaw fakhuthoohum waoqtuloohum haythu wajadtumoohum",
+      "english": "If they turn away, then seize them and kill them wherever you find them",
+      "topic": "Kill Those Who Turn Away"
+    },
+    {
+      "reference": "16:106",
+      "surah": "An-Nahl",
+      "ayah": 106,
+      "arabic": "مَن كَفَرَ بِاللَّهِ مِن بَعْدِ إِيمَانِهِ ... فَعَلَيْهِمْ غَضَبٌ مِّنَ اللَّهِ وَلَهُمْ عَذَابٌ عَظِيمٌ",
+      "transliteration": "Man kafara biAllahi min baAAdi eemanihi ... faAAalayhim ghadabun mina Allahi walahum AAathabun AAatheemun",
+      "english": "Whoever disbelieves in Allah after belief... upon them is wrath from Allah, and for them is a great punishment",
+      "topic": "Wrath on Apostates"
+    }
+  ],
+  "slavery": [
+    {
+      "reference": "4:24",
+      "surah": "An-Nisa",
+      "ayah": 24,
+      "arabic": "وَالْمُحْصَنَاتُ مِنَ النِّسَاءِ إِلَّا مَا مَلَكَتْ أَيْمَانُكُمْ",
+      "transliteration": "Waalmuhsanatu mina alnnisai illa ma malakat aymanukum",
+      "english": "And married women except those your right hands possess",
+      "topic": "Sex with Captives"
+    },
+    {
+      "reference": "23:5-6",
+      "surah": "Al-Mu'minun",
+      "ayah": "5-6",
+      "arabic": "وَالَّذِينَ هُمْ لِفُرُوجِهِمْ حَافِظُونَ إِلَّا عَلَىٰ أَزْوَاجِهِمْ أَوْ مَا مَلَكَتْ أَيْمَانُهُمْ",
+      "transliteration": "Waallatheena hum lifuroojihim hafithoona illa AAala azwajihim aw ma malakat aymanuhum",
+      "english": "And those who guard their private parts except from their wives or those their right hands possess",
+      "topic": "Slaves for Sexual Use"
+    },
+    {
+      "reference": "33:50",
+      "surah": "Al-Ahzab",
+      "ayah": 50,
+      "arabic": "وَمَا مَلَكَتْ يَمِينُكَ مِمَّا أَفَاءَ اللَّهُ عَلَيْكَ",
+      "transliteration": "Wama malakat yameenuka mimma afaa Allahu AAalayka",
+      "english": "Those your right hand possesses from what Allah has returned to you",
+      "topic": "War Captives as Slaves"
+    },
+    {
+      "reference": "70:29-30",
+      "surah": "Al-Ma'arij",
+      "ayah": "29-30",
+      "arabic": "وَالَّذِينَ هُمْ لِفُرُوجِهِمْ حَافِظُونَ إِلَّا عَلَىٰ أَزْوَاجِهِمْ أَوْ مَا مَلَكَتْ أَيْمَانُهُمْ",
+      "transliteration": "Waallatheena hum lifuroojihim hafithoona illa AAala azwajihim aw ma malakat aymanuhum",
+      "english": "And those who guard their private parts except from their wives or those their right hands possess",
+      "topic": "Slaves Excluded from Chastity"
+    }
+  ],
+  "unbelievers": [
+    {
+      "reference": "3:28",
+      "surah": "Al-Imran",
+      "ayah": 28,
+      "arabic": "لَّا يَتَّخِذِ الْمُؤْمِنُونَ الْكَافِرِينَ أَوْلِيَاءَ مِن دُونِ الْمُؤْمِنِينَ",
+      "transliteration": "La yattakhithi almuminoona alkafireena awliyaa min dooni almumineena",
+      "english": "Let not believers take disbelievers as allies rather than believers",
+      "topic": "No Friendship with Kafirs"
+    },
+    {
+      "reference": "3:85",
+      "surah": "Al-Imran",
+      "ayah": 85,
+      "arabic": "وَمَن يَبْتَغِ غَيْرَ الْإِسْلَامِ دِينًا فَلَن يُقْبَلَ مِنْهُ وَهُوَ فِي الْآخِرَةِ مِنَ الْخَاسِرِينَ",
+      "transliteration": "Waman yabtaghi ghayra alislami deenan falan yuqbala minhu wahuwa fee alakhirati mina alkhasireena",
+      "english": "Whoever desires other than Islam as religion - never will it be accepted from him, and he, in the Hereafter, will be among the losers",
+      "topic": "Only Islam Accepted"
+    },
+    {
+      "reference": "5:51",
+      "surah": "Al-Ma'idah",
+      "ayah": 51,
+      "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تَتَّخِذُوا الْيَهُودَ وَالنَّصَارَىٰ أَوْلِيَاءَ",
+      "transliteration": "Ya ayyuha allatheena amanoo la tattakhithoo alyahooda waalnnasara awliyaa",
+      "english": "O you who believe, do not take the Jews and the Christians as allies",
+      "topic": "No Jewish/Christian Friends"
+    },
+    {
+      "reference": "8:55",
+      "surah": "Al-Anfal",
+      "ayah": 55,
+      "arabic": "إِنَّ شَرَّ الدَّوَابِّ عِندَ اللَّهِ الَّذِينَ كَفَرُوا فَهُمْ لَا يُؤْمِنُونَ",
+      "transliteration": "Inna sharra alddawabbi AAinda Allahi allatheena kafaroo fahum la yuminoona",
+      "english": "Indeed, the worst of living creatures in the sight of Allah are those who have disbelieved",
+      "topic": "Kafirs are Worst Creatures"
+    },
+    {
+      "reference": "98:6",
+      "surah": "Al-Bayyinah",
+      "ayah": 6,
+      "arabic": "إِنَّ الَّذِينَ كَفَرُوا مِنْ أَهْلِ الْكِتَابِ وَالْمُشْرِكِينَ فِي نَارِ جَهَنَّمَ خَالِدِينَ فِيهَا أُولَٰئِكَ هُمْ شَرُّ الْبَرِيَّةِ",
+      "transliteration": "Inna allatheena kafaroo min ahli alkitabi waalmushrikeena fee nari jahannama khalideena feeha olaika hum sharru albariyyati",
+      "english": "Those who disbelieved among the People of the Scripture and the polytheists will be in the fire of Hell, abiding eternally therein. Those are the worst of creatures",
+      "topic": "Jews/Christians Worst of Creatures"
+    }
+  ],
+  "scientific_errors": [
+    {
+      "reference": "18:86",
+      "surah": "Al-Kahf",
+      "ayah": 86,
+      "arabic": "حَتَّىٰ إِذَا بَلَغَ مَغْرِبَ الشَّمْسِ وَجَدَهَا تَغْرُبُ فِي عَيْنٍ حَمِئَةٍ",
+      "transliteration": "Hatta itha balagha maghriba alshshamsi wajadaha taghrubu fee AAaynin hamiatin",
+      "english": "Until, when he reached the setting of the sun, he found it setting in a spring of dark mud",
+      "topic": "Sun Sets in Muddy Spring"
+    },
+    {
+      "reference": "67:5",
+      "surah": "Al-Mulk",
+      "ayah": 5,
+      "arabic": "وَلَقَدْ زَيَّنَّا السَّمَاءَ الدُّنْيَا بِمَصَابِيحَ وَجَعَلْنَاهَا رُجُومًا لِّلشَّيَاطِينِ",
+      "transliteration": "Walaqad zayyanna alssamaa alddunya bimasabeeha wajaAAalnaha rujooman lilshshayateeni",
+      "english": "And We have certainly beautified the nearest heaven with stars and have made them as missiles to stone the devils",
+      "topic": "Stars as Devil Missiles"
+    },
+    {
+      "reference": "86:5-7",
+      "surah": "At-Tariq",
+      "ayah": "5-7",
+      "arabic": "فَلْيَنظُرِ الْإِنسَانُ مِمَّ خُلِقَ خُلِقَ مِن مَّاءٍ دَافِقٍ يَخْرُجُ مِن بَيْنِ الصُّلْبِ وَالتَّرَائِبِ",
+      "transliteration": "Falyanthuri alinsanu mimma khuliqa khuliqa min main dafiqin yakhruju min bayni alssulbi waalttaraibi",
+      "english": "Let man observe from what he was created. He was created from a fluid, ejected, emerging from between the backbone and the ribs",
+      "topic": "Sperm from Backbone"
+    },
+    {
+      "reference": "21:32",
+      "surah": "Al-Anbiya",
+      "ayah": 32,
+      "arabic": "وَجَعَلْنَا السَّمَاءَ سَقْفًا مَّحْفُوظًا",
+      "transliteration": "WajaAAalna alssamaa saqfan mahfoothan",
+      "english": "And We made the sky a protected ceiling",
+      "topic": "Sky as Solid Roof"
+    },
+    {
+      "reference": "36:38-40",
+      "surah": "Ya-Sin",
+      "ayah": "38-40",
+      "arabic": "وَالشَّمْسُ تَجْرِي لِمُسْتَقَرٍّ لَّهَا ... وَالْقَمَرَ قَدَّرْنَاهُ مَنَازِلَ حَتَّىٰ عَادَ كَالْعُرْجُونِ الْقَدِيمِ لَا الشَّمْسُ يَنبَغِي لَهَا أَن تُدْرِكَ الْقَمَرَ وَلَا اللَّيْلُ سَابِقُ النَّهَارِ وَكُلٌّ فِي فَلَكٍ يَسْبَحُونَ",
+      "transliteration": "Waalshshamsu tajree limustaqarrin laha... Waalqamara qaddarnahu manazila hatta AAada kaalAAurjooni alqadeemi La alshshamsu yanbaghee laha an tudrika alqamara wala allaylu sabiqu alnnahari wakullun fee falakin yasbahoona",
+      "english": "And the sun runs on to a fixed resting place... And the moon - We have determined for it phases, until it returns like the old date stalk. It is not allowable for the sun to reach the moon, nor does the night overtake the day, but each swims in an orbit",
+      "topic": "Sun Has Resting Place"
+    }
+  ]
+}

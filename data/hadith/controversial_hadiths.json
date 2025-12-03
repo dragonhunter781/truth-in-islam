@@ -1,0 +1,313 @@
+{
+  "aisha_marriage": [
+    {
+      "collection": "Sahih al-Bukhari",
+      "reference": "5:58:234",
+      "hadith_number": "3894",
+      "narrator": "Aisha",
+      "arabic": "تَزَوَّجَنِي النَّبِيُّ صلى الله عليه وسلم وَأَنَا بِنْتُ سِتِّ سِنِينَ، وَبَنَى بِي وَأَنَا بِنْتُ تِسْعِ سِنِينَ",
+      "english": "The Prophet married me when I was six years old, and consummated the marriage when I was nine years old.",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Child Marriage"
+    },
+    {
+      "collection": "Sahih al-Bukhari",
+      "reference": "7:62:64",
+      "hadith_number": "5133",
+      "narrator": "Aisha",
+      "arabic": "أَنَّ النَّبِيَّ صلى الله عليه وسلم تَزَوَّجَهَا وَهْىَ بِنْتُ سِتِّ سِنِينَ، وَأُدْخِلَتْ عَلَيْهِ وَهْىَ بِنْتُ تِسْعٍ، وَمَكَثَتْ عِنْدَهُ تِسْعًا",
+      "english": "The Prophet married her when she was six years old and he consummated his marriage when she was nine years old, and then she remained with him for nine years.",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Child Marriage"
+    },
+    {
+      "collection": "Sahih Muslim",
+      "reference": "8:3310",
+      "hadith_number": "1422a",
+      "narrator": "Aisha",
+      "english": "Aisha reported that Allah's Apostle married her when she was seven years old, and she was taken to his house as a bride when she was nine, and her dolls were with her; and when he died she was eighteen years old.",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Child Marriage - Playing with Dolls"
+    },
+    {
+      "collection": "Sunan Abu Dawud",
+      "reference": "2:2116",
+      "hadith_number": "2121",
+      "narrator": "Aisha",
+      "english": "The Messenger of Allah married me when I was seven or six. When we came to Medina, some women came and my mother handed me over to them. They then prepared me and decorated me. I was then brought to the Messenger of Allah and he took up cohabitation with me when I was nine.",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Child Marriage - Preparation"
+    }
+  ],
+  "apostasy_death": [
+    {
+      "collection": "Sahih al-Bukhari",
+      "reference": "9:84:57",
+      "hadith_number": "6922",
+      "narrator": "Ibn Abbas",
+      "arabic": "مَنْ بَدَّلَ دِينَهُ فَاقْتُلُوهُ",
+      "english": "Whoever changes his religion, kill him.",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Death for Apostasy"
+    },
+    {
+      "collection": "Sahih al-Bukhari",
+      "reference": "9:83:17",
+      "hadith_number": "6878",
+      "narrator": "Abdullah",
+      "english": "The blood of a Muslim who confesses that none has the right to be worshipped but Allah and that I am His Apostle, cannot be shed except in three cases: In Qisas for murder, a married person who commits adultery and the one who reverts from Islam (apostate) and leaves the Muslims.",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Three Reasons to Kill"
+    },
+    {
+      "collection": "Sunan an-Nasa'i",
+      "reference": "37:4059",
+      "hadith_number": "4059",
+      "narrator": "Ibn Abbas",
+      "english": "The Messenger of Allah said: 'Whoever changes his religion, kill him.'",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Kill Apostates"
+    }
+  ],
+  "women_deficient": [
+    {
+      "collection": "Sahih al-Bukhari",
+      "reference": "1:6:301",
+      "hadith_number": "304",
+      "narrator": "Abu Said Al-Khudri",
+      "english": "The Prophet said, 'Isn't the witness of a woman equal to half of that of a man?' The women said, 'Yes.' He said, 'This is because of the deficiency of a woman's mind.'",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Women Mentally Deficient"
+    },
+    {
+      "collection": "Sahih al-Bukhari",
+      "reference": "2:24:541",
+      "hadith_number": "1462",
+      "narrator": "Abu Said Al-Khudri",
+      "english": "The Prophet said: 'I have not seen anyone more deficient in intelligence and religion than you women.'",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Women Deficient in Religion"
+    }
+  ],
+  "women_hell": [
+    {
+      "collection": "Sahih al-Bukhari",
+      "reference": "1:6:301",
+      "hadith_number": "304",
+      "narrator": "Abu Said Al-Khudri",
+      "english": "The Prophet said: 'I was shown the Hell-fire and that the majority of its dwellers were women who were ungrateful.'",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Majority in Hell are Women"
+    },
+    {
+      "collection": "Sahih Muslim",
+      "reference": "36:6596",
+      "hadith_number": "2737a",
+      "narrator": "Imran b. Husain",
+      "english": "The Prophet said: 'Amongst the inmates of Paradise the women would form a minority.'",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Women Minority in Paradise"
+    }
+  ],
+  "wife_beating": [
+    {
+      "collection": "Sahih Muslim",
+      "reference": "4:2127",
+      "hadith_number": "2127",
+      "narrator": "Jabir ibn Abdullah",
+      "english": "Fear Allah concerning women! Verily you have taken them on the security of Allah, and intercourse with them has been made lawful unto you by words of Allah. You too have right over them, and that they should not allow anyone to sit on your bed whom you do not like. But if they do that, you can chastise them but not severely.",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Permission to Beat Wives"
+    },
+    {
+      "collection": "Sunan Abu Dawud",
+      "reference": "11:2141",
+      "hadith_number": "2141",
+      "narrator": "Abdullah ibn Zam'a",
+      "english": "The Prophet said: None of you should flog his wife as he flogs a slave and then have intercourse with her in the last part of the day.",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Don't Beat Like a Slave"
+    }
+  ],
+  "banu_qurayza": [
+    {
+      "collection": "Sahih al-Bukhari",
+      "reference": "5:59:362",
+      "hadith_number": "4121",
+      "narrator": "Abu Said Al-Khudri",
+      "english": "When the tribe of Banu Qurayza was ready to accept Sa'd's judgment, Allah's Messenger sent for Sa'd. Sa'd said, 'I give the judgment that their warriors should be killed and their children and women should be taken as prisoners.' The Prophet then remarked, 'O Sa'd! You have judged amongst them with the judgment of the King Allah.'",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Mass Execution Approved"
+    },
+    {
+      "collection": "Sunan Abu Dawud",
+      "reference": "38:4390",
+      "hadith_number": "4404",
+      "narrator": "Atiyyah al-Qurazi",
+      "english": "I was among the captives of Banu Qurayza. They examined us and those whose pubes had grown were killed and those whose pubes had not grown were not killed. I was among those whose pubes had not grown.",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Puberty Test for Execution"
+    }
+  ],
+  "drinking_camel_urine": [
+    {
+      "collection": "Sahih al-Bukhari",
+      "reference": "1:4:234",
+      "hadith_number": "233",
+      "narrator": "Anas",
+      "english": "Some people from the tribe of Ukl came to the Prophet and embraced Islam. The climate of Medina did not suit them, so the Prophet ordered them to go to the herd of camels and to drink their milk and urine.",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Camel Urine as Medicine"
+    },
+    {
+      "collection": "Sahih al-Bukhari",
+      "reference": "7:71:590",
+      "hadith_number": "5686",
+      "narrator": "Anas",
+      "english": "The Prophet told them to go to the herd of camels and drink their urine and milk. So they went as directed and after they became healthy...",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Camel Urine Cure"
+    }
+  ],
+  "fly_in_drink": [
+    {
+      "collection": "Sahih al-Bukhari",
+      "reference": "4:54:537",
+      "hadith_number": "3320",
+      "narrator": "Abu Huraira",
+      "english": "The Prophet said: 'If a fly falls in the vessel of any of you, let him dip all of it into the vessel and then throw it away, for in one of its wings there is a disease and in the other there is healing.'",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Fly Wing Medicine"
+    }
+  ],
+  "sun_prostrates": [
+    {
+      "collection": "Sahih al-Bukhari",
+      "reference": "4:54:421",
+      "hadith_number": "3199",
+      "narrator": "Abu Dharr",
+      "english": "The Prophet asked me at sunset, 'Do you know where the sun goes?' I replied, 'Allah and His Apostle know better.' He said, 'It goes and prostrates beneath the Throne, and then it asks permission to rise and it is permitted.'",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Sun Prostrates Under Throne"
+    }
+  ],
+  "black_dogs": [
+    {
+      "collection": "Sahih Muslim",
+      "reference": "4:1032",
+      "hadith_number": "510a",
+      "narrator": "Abu Dharr",
+      "english": "The Messenger of Allah said: When any one of you stands for prayer, there is something before him which conceals him. If he does not find it, his prayer is interrupted by a donkey, a woman, or a black dog. Abu Dharr said: I asked, 'What is the difference between a black dog and a red dog?' He said: 'The black dog is a devil.'",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Black Dogs are Devils"
+    }
+  ],
+  "temporary_marriage": [
+    {
+      "collection": "Sahih al-Bukhari",
+      "reference": "7:62:51",
+      "hadith_number": "5116",
+      "narrator": "Abu Jamra",
+      "english": "I heard Ibn Abbas when he was asked about Mut'a (temporary marriage). He permitted it.",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Temporary Marriage Permitted"
+    },
+    {
+      "collection": "Sahih Muslim",
+      "reference": "8:3248",
+      "hadith_number": "1404a",
+      "narrator": "Jabir b. Abdullah",
+      "english": "We contracted temporary marriage giving a handful of dates or flour as dower during the lifetime of Allah's Messenger and during the time of Abu Bakr.",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Mut'a Practice"
+    }
+  ],
+  "breastfeeding_adults": [
+    {
+      "collection": "Sahih Muslim",
+      "reference": "8:3425",
+      "hadith_number": "1453a",
+      "narrator": "Aisha",
+      "english": "Sahla bint Suhail came to Allah's Apostle and said: Messenger of Allah, I see on the face of Abu Hudhayfa signs of disgust on seeing Salim (who was his wife's adopted son). He is a person with a fully grown beard. Thereupon Allah's Apostle said: Suckle him and you would become unlawful for him.",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Adult Breastfeeding"
+    },
+    {
+      "collection": "Sunan Abu Dawud",
+      "reference": "12:2061",
+      "hadith_number": "2061",
+      "narrator": "Aisha",
+      "english": "Salim, the freed slave of Abu Hudhayfah, lived with him and his family in their house. She (Sahla) came to the Prophet and said: Salim has attained puberty as men attain, and he understands what they understand. He enters our house freely. The Prophet said to her: Suckle him and you will become unlawful for him.",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Suckling Adult Men"
+    }
+  ],
+  "jihad_rewards": [
+    {
+      "collection": "Sahih al-Bukhari",
+      "reference": "4:52:46",
+      "hadith_number": "2785",
+      "narrator": "Abu Huraira",
+      "english": "The Prophet said: 'Allah guarantees that He will admit the Mujahid in His Cause into Paradise if he is killed, otherwise He will return him to his home safely with rewards and war booty.'",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Jihad Guarantees Paradise"
+    },
+    {
+      "collection": "Sahih al-Bukhari",
+      "reference": "4:52:72",
+      "hadith_number": "2797",
+      "narrator": "Anas bin Malik",
+      "english": "The Prophet said, 'Nobody who enters Paradise likes to go back to the world even if he got everything on the earth, except a Mujahid who wishes to return to the world so that he may be martyred ten times because of the dignity he receives.'",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Martyrdom Glory"
+    }
+  ],
+  "slavery_hadith": [
+    {
+      "collection": "Sahih al-Bukhari",
+      "reference": "3:46:717",
+      "hadith_number": "2227",
+      "narrator": "Jabir bin Abdullah",
+      "english": "A man decided that a slave of his would be freed after his death. The Prophet said, 'Who will buy this slave from me?' Nu'aim bin Abdullah bought him for eight hundred dirhams. I heard the Prophet saying, 'Sell him.'",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Muhammad Sold Slaves"
+    },
+    {
+      "collection": "Sahih Muslim",
+      "reference": "8:3432",
+      "hadith_number": "1438a",
+      "narrator": "Abu Said al-Khudri",
+      "english": "We got female captives in the war booty and we used to do coitus interruptus with them. We asked Allah's Messenger about it and he said, 'Do you really do that? There is no soul that is destined to exist but will come into existence.'",
+      "grading": "Sahih",
+      "tradition": "Sunni",
+      "topic": "Sex with Captive Women"
+    }
+  ]
+}

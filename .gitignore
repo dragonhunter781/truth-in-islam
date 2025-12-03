@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+
+# Next.js
+.next/
+out/
+
+# Production
+build/
+dist/
+
+# Misc
+.DS_Store
+*.pem
+*.log
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env*.local
+.env
+
+# Vercel
+.vercel
+
+# Typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# Temp article generation files (exclude from git)
+.tmp/
+ARTICLES*.txt
+ARTICLES*.md
+ARTICLE_*.md
+COMPLETE_*.md
+FINAL_*.md
+FINAL_*.txt
+README_ARTICLES*.md
+*_CONTENT.md
+*_SUMMARY.md
+*_REPORT*.txt
+*.py
+articles-*-content.ts
+article_content_*.ts
+articles_*.ts
+integrate_*.py
