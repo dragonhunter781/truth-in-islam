@@ -89,7 +89,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "f4lj7VB8hA-pjT9d9U_e2AWmkaVIJSk3D-3NfTBnkvs",
   },
   alternates: {
     canonical: siteConfig.url,
