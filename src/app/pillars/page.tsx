@@ -99,25 +99,25 @@ const pillarDetails = [
 ]
 
 const colorClasses: Record<string, string> = {
-  rose: "bg-rose-100 text-rose-600 dark:bg-rose-900/30 dark:text-rose-400",
-  blue: "bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400",
-  emerald: "bg-emerald-100 text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400",
-  amber: "bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400",
-  purple: "bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400",
+  rose: "bg-red-500/10 text-red-500 border border-red-500/30",
+  blue: "bg-blue-500/10 text-blue-500 border border-blue-500/30",
+  emerald: "bg-amber-500/10 text-amber-500 border border-amber-500/30",
+  amber: "bg-amber-500/10 text-amber-400 border border-amber-500/30",
+  purple: "bg-red-500/10 text-red-500 border border-red-500/30",
 }
 
 export default function PillarsPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-emerald-900 to-slate-900 py-24 text-white">
+      <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-24 text-white">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 25% 25%, rgba(16, 185, 129, 0.3) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(245, 158, 11, 0.3) 0%, transparent 50%)`,
+            backgroundImage: `radial-gradient(circle at 25% 25%, rgba(220, 38, 38, 0.3) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(245, 158, 11, 0.3) 0%, transparent 50%)`,
           }} />
         </div>
         <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-          <span className="inline-block rounded-full bg-white/20 px-4 py-1.5 text-sm font-medium backdrop-blur-sm">
+          <span className="inline-block rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-1.5 text-sm font-medium text-amber-400 backdrop-blur-sm">
             Foundation of Faith
           </span>
           <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
@@ -134,9 +134,9 @@ export default function PillarsPage() {
               <a
                 key={pillar.slug}
                 href={`#${pillar.slug}`}
-                className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-medium backdrop-blur-sm transition-colors hover:bg-white/20"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-800/50 px-4 py-2 text-sm font-medium text-slate-300 backdrop-blur-sm transition-colors hover:border-amber-500/30 hover:bg-slate-800"
               >
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white/20 text-xs font-bold">
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-r from-red-600 to-amber-600 text-xs font-bold text-white">
                   {index + 1}
                 </span>
                 {pillar.name}
@@ -147,22 +147,22 @@ export default function PillarsPage() {
       </section>
 
       {/* Introduction */}
-      <section className="py-16">
+      <section className="bg-slate-900 py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl bg-emerald-50 p-8 dark:bg-emerald-900/20">
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
+          <div className="rounded-xl border border-slate-700 bg-slate-800/50 p-8">
+            <h2 className="text-2xl font-bold text-white">
               What Are the Five Pillars of Islam?
             </h2>
-            <p className="mt-4 text-lg text-slate-600 dark:text-slate-300">
+            <p className="mt-4 text-lg text-slate-300">
               The Five Pillars of Islam (<span className="font-arabic">أركان الإسلام</span>) are the five
               basic acts of worship that are obligatory for all Muslims. They were outlined by Prophet
               Muhammad (peace be upon him) in a famous Hadith where he said:
             </p>
-            <blockquote className="mt-6 border-l-4 border-emerald-500 pl-4 italic text-slate-600 dark:text-slate-300">
+            <blockquote className="mt-6 border-l-4 border-amber-500 pl-4 italic text-slate-300">
               "Islam is built upon five [pillars]: testifying that there is no god but Allah and that
               Muhammad is the messenger of Allah, establishing prayer, paying Zakat, performing Hajj
               to the House, and fasting in Ramadan."
-              <footer className="mt-2 text-sm font-medium text-emerald-600 dark:text-emerald-400">
+              <footer className="mt-2 text-sm font-medium text-amber-400">
                 — Sahih al-Bukhari & Sahih Muslim
               </footer>
             </blockquote>
@@ -175,7 +175,7 @@ export default function PillarsPage() {
         <section
           key={pillar.slug}
           id={pillar.slug}
-          className={index % 2 === 0 ? "bg-white dark:bg-slate-950" : "bg-slate-50 dark:bg-slate-900"}
+          className={index % 2 === 0 ? "bg-slate-900" : "bg-slate-800"}
         >
           <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
             <div className="grid items-start gap-12 lg:grid-cols-2">
@@ -185,45 +185,45 @@ export default function PillarsPage() {
                     <pillar.icon className="h-8 w-8" />
                   </div>
                   <div>
-                    <span className="text-sm font-medium text-slate-500 dark:text-slate-400">
+                    <span className="text-sm font-medium text-slate-400">
                       Pillar {index + 1}
                     </span>
-                    <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
+                    <h2 className="text-3xl font-bold text-white">
                       {pillar.name}
                     </h2>
                   </div>
                 </div>
 
-                <p className="mt-2 text-2xl font-arabic text-emerald-600 dark:text-emerald-400">
+                <p className="mt-2 text-2xl font-arabic text-amber-400">
                   {pillar.arabicName}
                 </p>
-                <p className="mt-1 text-lg font-medium text-slate-600 dark:text-slate-300">
+                <p className="mt-1 text-lg font-medium text-slate-300">
                   {pillar.meaning}
                 </p>
 
-                <p className="mt-6 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+                <p className="mt-6 text-lg text-slate-300 leading-relaxed">
                   {pillar.description}
                 </p>
 
                 <div className="mt-8 space-y-4">
                   <div className="flex gap-3">
-                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-emerald-600" />
+                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-amber-500" />
                     <div>
-                      <h4 className="font-semibold text-slate-900 dark:text-white">Why It's Important</h4>
-                      <p className="text-slate-600 dark:text-slate-300">{pillar.importance}</p>
+                      <h4 className="font-semibold text-white">Why It's Important</h4>
+                      <p className="text-slate-400">{pillar.importance}</p>
                     </div>
                   </div>
                   <div className="flex gap-3">
-                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-emerald-600" />
+                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-amber-500" />
                     <div>
-                      <h4 className="font-semibold text-slate-900 dark:text-white">How It's Practiced</h4>
-                      <p className="text-slate-600 dark:text-slate-300">{pillar.practice}</p>
+                      <h4 className="font-semibold text-white">How It's Practiced</h4>
+                      <p className="text-slate-400">{pillar.practice}</p>
                     </div>
                   </div>
                 </div>
 
                 <Link href={`/pillars/${pillar.slug}`}>
-                  <Button className="mt-8">
+                  <Button className="mt-8 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-700 hover:to-amber-700">
                     Learn More About {pillar.name}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -231,26 +231,14 @@ export default function PillarsPage() {
               </div>
 
               <div className={`${index % 2 === 1 ? "lg:order-1" : ""} relative`}>
-                <div className={`aspect-square rounded-3xl bg-gradient-to-br ${
-                  pillar.color === "rose" ? "from-rose-100 to-rose-200 dark:from-rose-900/30 dark:to-rose-800/30" :
-                  pillar.color === "blue" ? "from-blue-100 to-blue-200 dark:from-blue-900/30 dark:to-blue-800/30" :
-                  pillar.color === "emerald" ? "from-emerald-100 to-emerald-200 dark:from-emerald-900/30 dark:to-emerald-800/30" :
-                  pillar.color === "amber" ? "from-amber-100 to-amber-200 dark:from-amber-900/30 dark:to-amber-800/30" :
-                  "from-purple-100 to-purple-200 dark:from-purple-900/30 dark:to-purple-800/30"
-                } p-12 flex items-center justify-center`}>
-                  <pillar.icon className={`h-48 w-48 ${
-                    pillar.color === "rose" ? "text-rose-300 dark:text-rose-700" :
-                    pillar.color === "blue" ? "text-blue-300 dark:text-blue-700" :
-                    pillar.color === "emerald" ? "text-emerald-300 dark:text-emerald-700" :
-                    pillar.color === "amber" ? "text-amber-300 dark:text-amber-700" :
-                    "text-purple-300 dark:text-purple-700"
-                  }`} />
+                <div className={`aspect-square rounded-3xl border border-slate-700 bg-slate-800/50 p-12 flex items-center justify-center`}>
+                  <pillar.icon className="h-48 w-48 text-slate-700" />
                 </div>
-                <div className="absolute -bottom-4 -right-4 rounded-2xl bg-white p-4 shadow-xl dark:bg-slate-800">
-                  <div className="text-3xl font-bold text-slate-900 dark:text-white">
-                    {index + 1}<span className="text-lg text-slate-400">/5</span>
+                <div className="absolute -bottom-4 -right-4 rounded-xl border border-slate-700 bg-slate-800 p-4 shadow-xl">
+                  <div className="text-3xl font-bold text-white">
+                    {index + 1}<span className="text-lg text-slate-500">/5</span>
                   </div>
-                  <p className="text-sm text-slate-500">Pillar</p>
+                  <p className="text-sm text-slate-400">Pillar</p>
                 </div>
               </div>
             </div>
@@ -259,22 +247,22 @@ export default function PillarsPage() {
       ))}
 
       {/* CTA */}
-      <section className="bg-emerald-600 py-16">
+      <section className="bg-gradient-to-r from-red-600 to-amber-600 py-16">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-white">
             Ready to Learn More?
           </h2>
-          <p className="mt-4 text-lg text-emerald-100">
+          <p className="mt-4 text-lg text-white/90">
             Explore our comprehensive guides on each pillar, or begin your journey to understanding Islam.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link href="/islam">
-              <Button size="lg" className="bg-white text-emerald-700 hover:bg-emerald-50">
+              <Button size="lg" className="bg-white text-red-600 hover:bg-slate-100">
                 What is Islam?
               </Button>
             </Link>
             <Link href="/conversion">
-              <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                 How to Become Muslim
               </Button>
             </Link>

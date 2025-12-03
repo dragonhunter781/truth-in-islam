@@ -9,9 +9,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export default function SalahPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
+    <div className="min-h-screen bg-slate-900">
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 sm:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-b from-slate-800 to-slate-900 py-20 sm:py-32">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5" />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -22,18 +22,18 @@ export default function SalahPage() {
           >
             <Link
               href="/pillars"
-              className="inline-flex items-center gap-2 text-sm text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 mb-6"
+              className="inline-flex items-center gap-2 text-sm text-amber-400 hover:text-amber-500 mb-6"
             >
               <ArrowLeft className="h-4 w-4" />
               Back to Five Pillars
             </Link>
-            <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
               Salah
             </h1>
-            <p className="mt-2 text-2xl font-arabic text-emerald-600 dark:text-emerald-400">
+            <p className="mt-2 text-2xl font-arabic text-amber-400">
               الصلاة
             </p>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-300">
               The five daily prayers - examining the mandatory rituals, their pre-Islamic origins, and consequences for non-compliance.
             </p>
           </motion.div>
@@ -50,8 +50,8 @@ export default function SalahPage() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
-              <Clock className="h-6 w-6 text-emerald-600" />
+            <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+              <Clock className="h-6 w-6 text-amber-500" />
               The Five Daily Prayers
             </h2>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -64,10 +64,10 @@ export default function SalahPage() {
               ].map((prayer, index) => (
                 <Card key={index}>
                   <CardContent className="p-4 text-center">
-                    <h3 className="font-bold text-slate-900 dark:text-white">{prayer.name}</h3>
-                    <p className="text-sm font-arabic text-emerald-600 dark:text-emerald-400">{prayer.arabic}</p>
-                    <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">{prayer.time}</p>
-                    <p className="text-xs text-slate-500 dark:text-slate-500 mt-1">{prayer.rakats}</p>
+                    <h3 className="font-bold text-white">{prayer.name}</h3>
+                    <p className="text-sm font-arabic text-amber-400">{prayer.arabic}</p>
+                    <p className="text-sm text-slate-400 mt-1">{prayer.time}</p>
+                    <p className="text-xs text-slate-400 mt-1">{prayer.rakats}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -81,73 +81,73 @@ export default function SalahPage() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
-              <BookOpen className="h-6 w-6 text-emerald-600" />
+            <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+              <BookOpen className="h-6 w-6 text-amber-500" />
               Quranic References
             </h2>
             <div className="space-y-4">
-              <Card>
+              <Card className="rounded-xl border border-slate-700 bg-slate-800/50">
                 <CardContent className="p-6">
-                  <p className="text-xl font-arabic text-slate-900 dark:text-white mb-3" dir="rtl">
+                  <p className="text-xl font-arabic text-amber-400 mb-3" dir="rtl">
                     إِنَّ ٱلصَّلَوٰةَ كَانَتْ عَلَى ٱلْمُؤْمِنِينَ كِتَـٰبًۭا مَّوْقُوتًۭا
                   </p>
-                  <p className="text-sm italic text-slate-600 dark:text-slate-400 mb-2">
+                  <p className="text-sm italic text-slate-400 mb-2">
                     Inna aṣ-ṣalāta kānat ʿalā l-muʾminīna kitāban mawqūtan
                   </p>
-                  <p className="text-base text-slate-700 dark:text-slate-300 mb-3">
+                  <p className="text-base text-slate-300 mb-3">
                     "Indeed, prayer has been decreed upon the believers a decree of specified times."
                   </p>
                   <a
                     href="https://quran.com/4/103"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-sm text-emerald-600 dark:text-emerald-400 hover:underline"
+                    className="inline-flex items-center gap-1 text-sm text-amber-400 hover:underline"
                   >
                     Quran 4:103 <ExternalLink className="h-3 w-3" />
                   </a>
                 </CardContent>
               </Card>
-              <Card className="border-amber-200 dark:border-amber-800">
+              <Card className="rounded-xl border border-amber-500/30 bg-slate-800/50">
                 <CardContent className="p-6">
-                  <p className="text-xl font-arabic text-slate-900 dark:text-white mb-3" dir="rtl">
+                  <p className="text-xl font-arabic text-amber-400 mb-3" dir="rtl">
                     فَوَيْلٌۭ لِّلْمُصَلِّينَ ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ
                   </p>
-                  <p className="text-sm italic text-slate-600 dark:text-slate-400 mb-2">
+                  <p className="text-sm italic text-slate-400 mb-2">
                     Fa-waylun lil-muṣallīna alladhīna hum ʿan ṣalātihim sāhūn
                   </p>
-                  <p className="text-base text-slate-700 dark:text-slate-300 mb-3">
+                  <p className="text-base text-slate-300 mb-3">
                     "So woe to those who pray but are heedless of their prayer."
                   </p>
                   <a
                     href="https://quran.com/107/4-5"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-sm text-emerald-600 dark:text-emerald-400 hover:underline"
+                    className="inline-flex items-center gap-1 text-sm text-amber-400 hover:underline"
                   >
                     Quran 107:4-5 <ExternalLink className="h-3 w-3" />
                   </a>
-                  <p className="text-sm text-amber-600 dark:text-amber-400 mt-3 flex items-start gap-2">
+                  <p className="text-sm text-amber-400 mt-3 flex items-start gap-2">
                     <AlertTriangle className="h-4 w-4 mt-0.5 flex-shrink-0" />
                     Warning against neglecting prayers, showing the severity with which Islam views prayer abandonment.
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="rounded-xl border border-slate-700 bg-slate-800/50">
                 <CardContent className="p-6">
-                  <p className="text-xl font-arabic text-slate-900 dark:text-white mb-3" dir="rtl">
+                  <p className="text-xl font-arabic text-amber-400 mb-3" dir="rtl">
                     حَـٰفِظُوا۟ عَلَى ٱلصَّلَوَٰتِ وَٱلصَّلَوٰةِ ٱلْوُسْطَىٰ
                   </p>
-                  <p className="text-sm italic text-slate-600 dark:text-slate-400 mb-2">
+                  <p className="text-sm italic text-slate-400 mb-2">
                     Ḥāfiẓū ʿalā aṣ-ṣalawāti waṣ-ṣalāti l-wusṭā
                   </p>
-                  <p className="text-base text-slate-700 dark:text-slate-300 mb-3">
+                  <p className="text-base text-slate-300 mb-3">
                     "Maintain with care the [obligatory] prayers and [in particular] the middle prayer..."
                   </p>
                   <a
                     href="https://quran.com/2/238"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-sm text-emerald-600 dark:text-emerald-400 hover:underline"
+                    className="inline-flex items-center gap-1 text-sm text-amber-400 hover:underline"
                   >
                     Quran 2:238 <ExternalLink className="h-3 w-3" />
                   </a>
@@ -163,58 +163,58 @@ export default function SalahPage() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+            <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
               <Quote className="h-6 w-6 text-amber-600" />
               Hadith References
             </h2>
             <div className="space-y-4">
-              <Card className="border-amber-200 dark:border-amber-800">
+              <Card className="rounded-xl border border-amber-500/30 bg-slate-800/50">
                 <CardContent className="p-6">
-                  <p className="text-base text-slate-700 dark:text-slate-300 mb-3 italic">
+                  <p className="text-base text-slate-300 mb-3 italic">
                     "Between a man and shirk and kufr there stands his giving up prayer."
                   </p>
                   <a
                     href="https://sunnah.com/muslim:82"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-sm text-emerald-600 dark:text-emerald-400 hover:underline"
+                    className="inline-flex items-center gap-1 text-sm text-amber-400 hover:underline"
                   >
                     Sahih Muslim 82 <ExternalLink className="h-3 w-3" />
                   </a>
-                  <p className="text-sm text-amber-600 dark:text-amber-400 mt-3 flex items-start gap-2">
+                  <p className="text-sm text-amber-400 mt-3 flex items-start gap-2">
                     <AlertTriangle className="h-4 w-4 mt-0.5 flex-shrink-0" />
                     This hadith equates abandoning prayer with disbelief (kufr), which carries severe consequences including death in some interpretations.
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="rounded-xl border border-slate-700 bg-slate-800/50">
                 <CardContent className="p-6">
-                  <p className="text-base text-slate-700 dark:text-slate-300 mb-3 italic">
+                  <p className="text-base text-slate-300 mb-3 italic">
                     "The first thing about which the people will be called to account on the Day of Resurrection will be the prayer. Our Lord will say to the angels although He knows better: 'Look into the prayer of My servant and see whether he has offered it perfectly or imperfectly.' If it is perfect, it will be recorded as perfect. If it is defective, He will say: 'See if My servant has voluntary prayers.' If he has voluntary prayers, He will say: 'Compensate the obligatory prayer with voluntary prayer.' Then the rest of his actions will be judged in a similar way."
                   </p>
                   <a
                     href="https://sunnah.com/abudawud:864"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-sm text-emerald-600 dark:text-emerald-400 hover:underline"
+                    className="inline-flex items-center gap-1 text-sm text-amber-400 hover:underline"
                   >
                     Sunan Abi Dawud 864 <ExternalLink className="h-3 w-3" />
                   </a>
-                  <p className="text-sm text-slate-600 dark:text-slate-400 mt-3">
+                  <p className="text-sm text-slate-400 mt-3">
                     This shows prayer is the first thing judged on the Day of Resurrection, emphasizing its supreme importance.
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="rounded-xl border border-slate-700 bg-slate-800/50">
                 <CardContent className="p-6">
-                  <p className="text-base text-slate-700 dark:text-slate-300 mb-3 italic">
+                  <p className="text-base text-slate-300 mb-3 italic">
                     "The covenant that stands between us and them is the prayer; so whoever abandons it has committed disbelief."
                   </p>
                   <a
                     href="https://sunnah.com/tirmidhi:2621"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-sm text-emerald-600 dark:text-emerald-400 hover:underline"
+                    className="inline-flex items-center gap-1 text-sm text-amber-400 hover:underline"
                   >
                     Jami' at-Tirmidhi 2621 <ExternalLink className="h-3 w-3" />
                   </a>
@@ -230,20 +230,20 @@ export default function SalahPage() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+            <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
               <AlertTriangle className="h-6 w-6 text-amber-500" />
               Pre-Islamic Origins & Historical Context
             </h2>
             <div className="space-y-4">
-              <Card className="border-amber-200 dark:border-amber-800">
-                <CardHeader>
-                  <CardTitle className="text-lg text-amber-700 dark:text-amber-400">Ancient Prayer Practices</CardTitle>
+              <Card className="rounded-xl border border-amber-500/30 bg-slate-800/50">
+                <CardHeader className="bg-slate-800/50 border-b border-slate-700">
+                  <CardTitle className="text-lg text-amber-400">Ancient Prayer Practices</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-slate-700 dark:text-slate-300 mb-4">
+                  <p className="text-slate-300 mb-4">
                     Many elements of Islamic prayer existed in pre-Islamic religions:
                   </p>
-                  <ul className="space-y-2 text-slate-600 dark:text-slate-400">
+                  <ul className="space-y-2 text-slate-400">
                     <li>• <strong>Zoroastrian influence:</strong> Zoroastrians prayed five times daily facing the sun, with ritual washing before prayer</li>
                     <li>• <strong>Jewish practices:</strong> Daniel prayed three times daily facing Jerusalem (Daniel 6:10)</li>
                     <li>• <strong>Kaaba worship:</strong> Pre-Islamic Arabs already circled the Kaaba and prayed toward it</li>
@@ -251,15 +251,15 @@ export default function SalahPage() {
                   </ul>
                 </CardContent>
               </Card>
-              <Card>
-                <CardHeader>
+              <Card className="rounded-xl border border-slate-700 bg-slate-800/50">
+                <CardHeader className="bg-slate-800/50 border-b border-slate-700">
                   <CardTitle className="text-lg">Rigid Requirements</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-slate-700 dark:text-slate-300 mb-4">
+                  <p className="text-slate-300 mb-4">
                     Salah must be performed with exact adherence to numerous rules:
                   </p>
-                  <ul className="space-y-2 text-slate-600 dark:text-slate-400">
+                  <ul className="space-y-2 text-slate-400">
                     <li>• <strong>Arabic only:</strong> Prayers must be in Arabic, even if you don't understand it</li>
                     <li>• <strong>Precise timing:</strong> Missing the prescribed window invalidates the prayer</li>
                     <li>• <strong>Ritual purity:</strong> Must perform wudu (ablution) with exact washing order</li>
@@ -269,15 +269,15 @@ export default function SalahPage() {
                   </ul>
                 </CardContent>
               </Card>
-              <Card className="border-amber-200 dark:border-amber-800">
-                <CardHeader>
-                  <CardTitle className="text-lg text-amber-700 dark:text-amber-400">Consequences for Missing Prayers</CardTitle>
+              <Card className="rounded-xl border border-amber-500/30 bg-slate-800/50">
+                <CardHeader className="bg-slate-800/50 border-b border-slate-700">
+                  <CardTitle className="text-lg text-amber-400">Consequences for Missing Prayers</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-slate-700 dark:text-slate-300 mb-4">
+                  <p className="text-slate-300 mb-4">
                     According to classical Islamic jurisprudence:
                   </p>
-                  <ul className="space-y-2 text-slate-600 dark:text-slate-400">
+                  <ul className="space-y-2 text-slate-400">
                     <li>• The Hanbali school considers abandoning prayer to be apostasy (punishable by death)</li>
                     <li>• Some scholars say persistently missing prayers warrants capital punishment</li>
                     <li>• The Quran threatens hellfire for those who are "heedless" of prayers</li>
@@ -295,52 +295,52 @@ export default function SalahPage() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
-              <HelpCircle className="h-6 w-6 text-blue-600" />
+            <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+              <HelpCircle className="h-6 w-6 text-red-500" />
               Common Questions
             </h2>
             <Accordion type="single" collapsible className="w-full space-y-2">
-              <AccordionItem value="item-1" className="border rounded-lg px-6 border-slate-200 dark:border-slate-800">
-                <AccordionTrigger className="text-left font-semibold text-slate-900 dark:text-white hover:no-underline">
+              <AccordionItem value="item-1" className="border rounded-lg px-6 border-slate-700 bg-slate-800/50">
+                <AccordionTrigger className="text-left font-semibold text-white hover:no-underline">
                   Why must prayers be in Arabic only?
                 </AccordionTrigger>
-                <AccordionContent className="text-slate-600 dark:text-slate-400">
+                <AccordionContent className="text-slate-400">
                   Islamic scholars claim Arabic is the "language of revelation" and that God only accepts prayers in this language. This creates a linguistic barrier where non-Arabs must memorize prayers phonetically without understanding them. Critics argue that if God is truly universal, why would He only accept one language? This contrasts with Christianity, where believers can pray in any language since God understands the heart.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-2" className="border rounded-lg px-6 border-slate-200 dark:border-slate-800">
-                <AccordionTrigger className="text-left font-semibold text-slate-900 dark:text-white hover:no-underline">
+              <AccordionItem value="item-2" className="border rounded-lg px-6 border-slate-700 bg-slate-800/50">
+                <AccordionTrigger className="text-left font-semibold text-white hover:no-underline">
                   What happens if I miss a prayer?
                 </AccordionTrigger>
-                <AccordionContent className="text-slate-600 dark:text-slate-400">
+                <AccordionContent className="text-slate-400">
                   Missing prayers is considered a major sin. You must "make up" (qada) the missed prayer as soon as possible. Deliberately abandoning prayer is viewed extremely seriously - some scholars equate it with apostasy. The hadith states "between a man and kufr [disbelief] is the abandonment of prayer." In strict Islamic states, persistent prayer abandonment can theoretically warrant execution.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-3" className="border rounded-lg px-6 border-slate-200 dark:border-slate-800">
-                <AccordionTrigger className="text-left font-semibold text-slate-900 dark:text-white hover:no-underline">
+              <AccordionItem value="item-3" className="border rounded-lg px-6 border-slate-700 bg-slate-800/50">
+                <AccordionTrigger className="text-left font-semibold text-white hover:no-underline">
                   How does Islamic prayer differ from Christian prayer?
                 </AccordionTrigger>
-                <AccordionContent className="text-slate-600 dark:text-slate-400">
+                <AccordionContent className="text-slate-400">
                   Islamic prayer is ritualistic and formulaic - specific movements, words, and times are mandated. It emphasizes submission and obedience. Christian prayer, by contrast, is relational and conversational - believers speak to God as a Father, in any language, at any time, with any words. Jesus taught "when you pray, do not heap up empty phrases" (Matthew 6:7) and emphasized sincere communication over ritual performance.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-4" className="border rounded-lg px-6 border-slate-200 dark:border-slate-800">
-                <AccordionTrigger className="text-left font-semibold text-slate-900 dark:text-white hover:no-underline">
+              <AccordionItem value="item-4" className="border rounded-lg px-6 border-slate-700 bg-slate-800/50">
+                <AccordionTrigger className="text-left font-semibold text-white hover:no-underline">
                   Why face Mecca? Didn't the Quran say East and West belong to Allah?
                 </AccordionTrigger>
-                <AccordionContent className="text-slate-600 dark:text-slate-400">
+                <AccordionContent className="text-slate-400">
                   This is an interesting contradiction. Quran 2:115 says "To Allah belongs the east and the west, so wherever you turn yourselves, there is the Face of Allah." Yet Quran 2:144 commands facing the Kaaba in Mecca. This change occurred after Muhammad's split with the Jews of Medina - originally Muslims prayed toward Jerusalem. The shift to Mecca was political, anchoring Islam to Arabian geography rather than Jewish tradition.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-5" className="border rounded-lg px-6 border-slate-200 dark:border-slate-800">
-                <AccordionTrigger className="text-left font-semibold text-slate-900 dark:text-white hover:no-underline">
+              <AccordionItem value="item-5" className="border rounded-lg px-6 border-slate-700 bg-slate-800/50">
+                <AccordionTrigger className="text-left font-semibold text-white hover:no-underline">
                   How do you pray from space or the North Pole?
                 </AccordionTrigger>
-                <AccordionContent className="text-slate-600 dark:text-slate-400">
+                <AccordionContent className="text-slate-400">
                   This creates genuine problems that Islamic scholars struggle with. From the International Space Station, which direction is "toward Mecca"? At the North or South Pole, all directions are south or north. During extreme latitudes' summers, there may be no distinct prayer times. These issues reveal that Islamic prayer requirements were designed for 7th-century Arabia, not a universal, timeless religion. Various fatwas offer contradictory solutions, showing there is no clear divine answer.
                 </AccordionContent>
               </AccordionItem>
@@ -354,17 +354,17 @@ export default function SalahPage() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
-              <Cross className="h-6 w-6 text-blue-600" />
+            <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+              <Cross className="h-6 w-6 text-red-500" />
               Comparison with Christian Prayer
             </h2>
             <div className="grid gap-6 md:grid-cols-2">
-              <Card className="border-emerald-200 dark:border-emerald-800">
-                <CardHeader className="bg-emerald-50 dark:bg-emerald-900/20">
+              <Card className="border-amber-500/30">
+                <CardHeader className="bg-slate-800/50 border border-slate-700">
                   <CardTitle className="text-lg">Islamic Salah</CardTitle>
                 </CardHeader>
                 <CardContent className="p-6">
-                  <ul className="space-y-3 text-slate-700 dark:text-slate-300">
+                  <ul className="space-y-3 text-slate-300">
                     <li>• 5 mandatory times per day</li>
                     <li>• Must be in Arabic</li>
                     <li>• Specific movements and positions required</li>
@@ -376,12 +376,12 @@ export default function SalahPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-blue-200 dark:border-blue-800">
-                <CardHeader className="bg-blue-50 dark:bg-blue-900/20">
+              <Card className="border-red-500/30">
+                <CardHeader className="bg-slate-800/50 border border-slate-700">
                   <CardTitle className="text-lg">Christian Prayer</CardTitle>
                 </CardHeader>
                 <CardContent className="p-6">
-                  <ul className="space-y-3 text-slate-700 dark:text-slate-300">
+                  <ul className="space-y-3 text-slate-300">
                     <li>• "Pray without ceasing" - anytime, anywhere</li>
                     <li>• Any language from the heart</li>
                     <li>• No required physical positions</li>
@@ -395,8 +395,8 @@ export default function SalahPage() {
             </div>
             <Card className="mt-6">
               <CardContent className="p-6">
-                <h3 className="font-semibold text-slate-900 dark:text-white mb-3">What Jesus Taught About Prayer</h3>
-                <div className="space-y-3 text-slate-700 dark:text-slate-300">
+                <h3 className="font-semibold text-white mb-3">What Jesus Taught About Prayer</h3>
+                <div className="space-y-3 text-slate-300">
                   <p className="italic">
                     "And when you pray, do not heap up empty phrases as the Gentiles do, for they think that they will be heard for their many words. Do not be like them, for your Father knows what you need before you ask him." - Matthew 6:7-8
                   </p>
@@ -407,8 +407,8 @@ export default function SalahPage() {
                     "Pray then like this: 'Our Father in heaven, hallowed be your name...'" - Matthew 6:9
                   </p>
                 </div>
-                <p className="mt-4 text-sm text-slate-600 dark:text-slate-400">
-                  Jesus emphasized sincere, heart-felt communication with God as Father, not ritualistic performance. Read more about <Link href="/prophets" className="text-emerald-600 dark:text-emerald-400 hover:underline">Muhammad vs Jesus</Link> and explore the <Link href="/quran" className="text-emerald-600 dark:text-emerald-400 hover:underline">Quran's teachings</Link>.
+                <p className="mt-4 text-sm text-slate-400">
+                  Jesus emphasized sincere, heart-felt communication with God as Father, not ritualistic performance. Read more about <Link href="/prophets" className="text-amber-400 hover:underline">Muhammad vs Jesus</Link> and explore the <Link href="/quran" className="text-amber-400 hover:underline">Quran's teachings</Link>.
                 </p>
               </CardContent>
             </Card>
@@ -421,13 +421,13 @@ export default function SalahPage() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
-              <Scale className="h-6 w-6 text-blue-600" />
+            <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+              <Scale className="h-6 w-6 text-red-500" />
               Critical Questions to Consider
             </h2>
-            <Card className="bg-slate-50 dark:bg-slate-800/50">
+            <Card className="bg-slate-800/50 border border-slate-700">
               <CardContent className="p-6">
-                <ul className="space-y-4 text-slate-700 dark:text-slate-300">
+                <ul className="space-y-4 text-slate-300">
                   <li className="flex items-start gap-3">
                     <span className="text-emerald-600 font-bold">1.</span>
                     <span>Why would an all-knowing God only accept prayers in one language (Arabic)? Does this suggest cultural favoritism rather than universal truth?</span>
@@ -454,7 +454,7 @@ export default function SalahPage() {
           </motion.div>
 
           {/* Navigation */}
-          <div className="flex justify-between items-center pt-8 border-t border-slate-200 dark:border-slate-800">
+          <div className="flex justify-between items-center pt-8 border-t border-slate-700">
             <Link href="/pillars/shahada">
               <Button variant="outline" className="gap-2">
                 <ArrowLeft className="h-4 w-4" />
@@ -462,7 +462,7 @@ export default function SalahPage() {
               </Button>
             </Link>
             <Link href="/pillars/zakat">
-              <Button className="gap-2 bg-emerald-600 hover:bg-emerald-700">
+              <Button className="gap-2 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-700 hover:to-amber-700">
                 Next: Zakat
                 <ArrowRight className="h-4 w-4" />
               </Button>

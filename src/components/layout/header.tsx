@@ -15,15 +15,15 @@ export function Header() {
   const { theme, setTheme } = useTheme()
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-slate-200/50 bg-white/80 backdrop-blur-xl dark:border-slate-800/50 dark:bg-slate-950/80">
+    <header className="sticky top-0 z-50 w-full border-b border-slate-700 bg-slate-900/95 backdrop-blur-xl">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-700 shadow-lg shadow-emerald-500/25">
+          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-red-600 to-amber-600 shadow-lg shadow-red-500/25">
             <span className="text-xl font-bold text-white">T</span>
           </div>
           <div className="hidden sm:block">
-            <span className="text-lg font-bold text-slate-900 dark:text-white">
+            <span className="text-lg font-bold text-white">
               The Truth in Islam
             </span>
           </div>
@@ -41,7 +41,7 @@ export function Header() {
               <Link
                 href={item.href}
                 className={cn(
-                  "flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 hover:text-emerald-600 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-emerald-400",
+                  "flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-medium text-slate-300 transition-colors hover:bg-slate-800 hover:text-amber-400",
                   item.children && "pr-2"
                 )}
               >
@@ -59,19 +59,19 @@ export function Header() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 10 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute left-0 top-full z-50 mt-1 w-64 rounded-xl border border-slate-200 bg-white p-2 shadow-xl dark:border-slate-700 dark:bg-slate-900"
+                    className="absolute left-0 top-full z-50 mt-1 w-64 rounded-xl border border-slate-700 bg-slate-900 p-2 shadow-xl"
                   >
                     {item.children.map((child) => (
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="block rounded-lg px-4 py-3 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800"
+                        className="block rounded-lg px-4 py-3 transition-colors hover:bg-slate-800"
                       >
-                        <span className="block text-sm font-medium text-slate-900 dark:text-white">
+                        <span className="block text-sm font-medium text-white">
                           {child.title}
                         </span>
                         {child.description && (
-                          <span className="block text-xs text-slate-500 dark:text-slate-400">
+                          <span className="block text-xs text-slate-400">
                             {child.description}
                           </span>
                         )}
@@ -104,7 +104,7 @@ export function Header() {
           </Button>
 
           <Link href="/about" className="hidden sm:block">
-            <Button variant="outline" size="sm">
+            <Button variant="outline" size="sm" className="border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white hover:border-slate-500">
               About Us
             </Button>
           </Link>
@@ -128,14 +128,14 @@ export function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="border-t border-slate-200 bg-white lg:hidden dark:border-slate-800 dark:bg-slate-950"
+            className="border-t border-slate-700 bg-slate-900 lg:hidden"
           >
             <div className="space-y-1 px-4 py-4">
               {mainNav.map((item) => (
                 <div key={item.href}>
                   <Link
                     href={item.href}
-                    className="block rounded-lg px-4 py-3 text-base font-medium text-slate-900 hover:bg-slate-100 dark:text-white dark:hover:bg-slate-800"
+                    className="block rounded-lg px-4 py-3 text-base font-medium text-white hover:bg-slate-800"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.title}
@@ -146,7 +146,7 @@ export function Header() {
                         <Link
                           key={child.href}
                           href={child.href}
-                          className="block rounded-lg px-4 py-2 text-sm text-slate-600 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800"
+                          className="block rounded-lg px-4 py-2 text-sm text-slate-400 hover:bg-slate-800 hover:text-amber-400"
                           onClick={() => setMobileMenuOpen(false)}
                         >
                           {child.title}
@@ -158,13 +158,13 @@ export function Header() {
               ))}
               <div className="pt-4 space-y-2">
                 <Link href="/search" onClick={() => setMobileMenuOpen(false)}>
-                  <Button variant="outline" className="w-full">
+                  <Button variant="outline" className="w-full border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white">
                     <Search className="mr-2 h-4 w-4" />
                     Search
                   </Button>
                 </Link>
                 <Link href="/about" onClick={() => setMobileMenuOpen(false)}>
-                  <Button variant="secondary" className="w-full">
+                  <Button className="w-full bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white border-0">
                     About Us
                   </Button>
                 </Link>

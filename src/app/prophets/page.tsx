@@ -52,7 +52,7 @@ const featuredProphets = [
 
 export default function ProphetsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
+    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 sm:py-32">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5" />
@@ -63,10 +63,10 @@ export default function ProphetsPage() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
               Prophets in Islam
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-400">
               Islam claims to honor all biblical prophets while fundamentally changing their messages. Explore how Islamic tradition reimagines these figures.
             </p>
           </motion.div>
@@ -81,15 +81,15 @@ export default function ProphetsPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <Card className="border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-900/20">
+            <Card className="border-amber-500/30 bg-amber-500/10">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <AlertTriangle className="h-6 w-6 text-amber-600 flex-shrink-0 mt-1" />
+                  <AlertTriangle className="h-6 w-6 text-amber-400 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-amber-800 dark:text-amber-300 mb-2">
+                    <h3 className="font-semibold text-amber-400 mb-2">
                       The Claim of Corruption
                     </h3>
-                    <p className="text-amber-700 dark:text-amber-200 text-sm">
+                    <p className="text-slate-300 text-sm">
                       Islam claims that biblical prophets were Muslims who taught Islam, and that Jews and Christians later corrupted their scriptures. However, there is no historical evidence for these "original" Islamic teachings, and the Dead Sea Scrolls and other manuscripts show the Bible has been faithfully preserved.
                     </p>
                   </div>
@@ -109,10 +109,10 @@ export default function ProphetsPage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
+            <h2 className="text-3xl font-bold text-white">
               Featured Prophets
             </h2>
-            <p className="mt-4 text-slate-600 dark:text-slate-400">
+            <p className="mt-4 text-slate-400">
               Click to explore their stories and compare Islamic claims with historical sources
             </p>
           </motion.div>
@@ -127,24 +127,24 @@ export default function ProphetsPage() {
                 transition={{ delay: index * 0.1 }}
               >
                 <Link href={`/prophets/${prophet.slug}`}>
-                  <Card className="h-full hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer">
+                  <Card className="h-full hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer rounded-xl border border-slate-700 bg-slate-800/50">
                     <CardHeader>
                       <div className="flex items-center justify-between">
                         <div>
-                          <CardTitle className="text-xl">{prophet.name}</CardTitle>
-                          <CardDescription className="font-arabic text-lg">
+                          <CardTitle className="text-xl text-white">{prophet.name}</CardTitle>
+                          <CardDescription className="font-arabic text-lg text-slate-400">
                             {prophet.arabicName}
                           </CardDescription>
                         </div>
-                        <ArrowRight className="h-5 w-5 text-emerald-600" />
+                        <ArrowRight className="h-5 w-5 text-amber-500" />
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-slate-600 dark:text-slate-400 mb-4">
+                      <p className="text-slate-400 mb-4">
                         {prophet.description}
                       </p>
-                      <div className="p-3 bg-slate-50 dark:bg-slate-800 rounded-lg">
-                        <p className="text-sm text-slate-700 dark:text-slate-300">
+                      <div className="p-3 bg-slate-900/50 rounded-lg border border-slate-700">
+                        <p className="text-sm text-slate-300">
                           <strong>Key fact:</strong> {prophet.keyFact}
                         </p>
                       </div>
@@ -158,7 +158,7 @@ export default function ProphetsPage() {
       </section>
 
       {/* All Prophets Grid */}
-      <section className="py-16 bg-slate-50 dark:bg-slate-900/50">
+      <section className="py-16 bg-slate-900/50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -166,11 +166,11 @@ export default function ProphetsPage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white flex items-center justify-center gap-3">
-              <Users className="h-8 w-8 text-emerald-600" />
+            <h2 className="text-3xl font-bold text-white flex items-center justify-center gap-3">
+              <Users className="h-8 w-8 text-amber-500" />
               All Prophets in the Quran
             </h2>
-            <p className="mt-4 text-slate-600 dark:text-slate-400">
+            <p className="mt-4 text-slate-400">
               Islam recognizes 25 prophets by name, though claims there were 124,000 total
             </p>
           </motion.div>
@@ -185,15 +185,15 @@ export default function ProphetsPage() {
                 transition={{ delay: index * 0.05 }}
               >
                 <Link href={`/prophets/${prophet.slug}`}>
-                  <Card className="hover:shadow-md transition-all hover:-translate-y-1 cursor-pointer text-center">
+                  <Card className="hover:shadow-md transition-all hover:-translate-y-1 cursor-pointer text-center rounded-xl border border-slate-700 bg-slate-800/50">
                     <CardContent className="p-4">
-                      <p className="font-arabic text-xl text-emerald-600 dark:text-emerald-400 mb-1">
+                      <p className="font-arabic text-xl text-amber-400 mb-1">
                         {prophet.arabicName}
                       </p>
-                      <p className="font-semibold text-slate-900 dark:text-white">
+                      <p className="font-semibold text-white">
                         {prophet.name}
                       </p>
-                      <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                      <p className="text-xs text-slate-500 mt-1">
                         Mentioned {prophet.mentioned}x
                       </p>
                     </CardContent>
@@ -213,25 +213,25 @@ export default function ProphetsPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <Card className="overflow-hidden">
-              <CardHeader className="bg-gradient-to-r from-slate-700 to-slate-800 text-white">
-                <CardTitle className="text-xl">The Islamic Claim About Prophets</CardTitle>
+            <Card className="overflow-hidden rounded-xl border border-slate-700 bg-slate-800/50">
+              <CardHeader className="bg-gradient-to-r from-red-600 to-amber-600">
+                <CardTitle className="text-xl text-white">The Islamic Claim About Prophets</CardTitle>
               </CardHeader>
               <CardContent className="p-6">
                 <div className="space-y-6">
                   <div>
-                    <h3 className="font-semibold text-slate-900 dark:text-white mb-2">
+                    <h3 className="font-semibold text-white mb-2">
                       All Prophets Were Muslims
                     </h3>
-                    <p className="text-slate-700 dark:text-slate-300">
+                    <p className="text-slate-300">
                       Islam claims that every prophet from Adam to Muhammad taught the same religion: Islam. Abraham, Moses, David, and Jesus were all supposedly Muslims who taught submission to Allah and pointed to Muhammad's coming.
                     </p>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900 dark:text-white mb-2">
+                    <h3 className="font-semibold text-white mb-2">
                       The Problems With This Claim
                     </h3>
-                    <ul className="space-y-2 text-slate-600 dark:text-slate-400">
+                    <ul className="space-y-2 text-slate-400">
                       <li className="flex items-start gap-2">
                         <span className="text-red-500 font-bold">•</span>
                         <span>No historical evidence exists for "original" Islamic teachings by biblical prophets</span>
@@ -262,25 +262,25 @@ export default function ProphetsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-slate-50 dark:bg-slate-900/50">
+      <section className="py-16 bg-slate-900/50">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">
+            <h2 className="text-2xl font-bold text-white mb-6">
               Continue Your Research
             </h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/prophets/muhammad">
-                <Button className="gap-2 bg-emerald-600 hover:bg-emerald-700">
+                <Button className="gap-2 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500">
                   Study Muhammad
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </Link>
               <Link href="/prophets/isa">
-                <Button variant="outline" className="gap-2">
+                <Button variant="outline" className="gap-2 border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white hover:border-slate-500">
                   Jesus in Islam
                 </Button>
               </Link>

@@ -86,7 +86,7 @@ const qaItems = [
 
 export default function IbrahimPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
+    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 sm:py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -96,15 +96,15 @@ export default function IbrahimPage() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <Link href="/prophets" className="inline-flex items-center gap-2 text-sm text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 mb-6">
+            <Link href="/prophets" className="inline-flex items-center gap-2 text-sm text-amber-400 hover:text-amber-300 mb-6">
               <ArrowLeft className="h-4 w-4" />
               Back to Prophets
             </Link>
-            <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
               Ibrahim (Abraham)
             </h1>
-            <p className="mt-2 text-2xl font-arabic text-emerald-600 dark:text-emerald-400">إبراهيم</p>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
+            <p className="mt-2 text-2xl font-arabic text-amber-400">إبراهيم</p>
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-400">
               Islam claims Abraham was a Muslim who built the Kaaba - examining this claim against historical evidence and the Bible.
             </p>
           </motion.div>
@@ -132,18 +132,18 @@ export default function IbrahimPage() {
                 <div className="space-y-8">
                   {/* The Islamic Claim */}
                   <Card className="overflow-hidden">
-                    <CardHeader className="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white">
+                    <CardHeader className="bg-gradient-to-r from-red-600 to-amber-600 text-white">
                       <CardTitle className="flex items-center gap-2">
                         <MapPin className="h-5 w-5" />
                         The Islamic Claim
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="p-6">
-                      <p className="text-slate-700 dark:text-slate-300 mb-4">
+                      <p className="text-slate-300 mb-4">
                         Islam teaches that Abraham (Ibrahim) and his son Ishmael (Ismail) built the Kaaba in Mecca and established Islamic rituals there:
                       </p>
-                      <blockquote className="text-slate-600 dark:text-slate-400 italic border-l-4 border-emerald-500 pl-4 mb-4">
-                        "And [mention] when Abraham was raising the foundations of the House and [with him] Ishmael, [saying], 'Our Lord, accept [this] from us.'" — <a href="https://quran.com/2/127" target="_blank" rel="noopener noreferrer" className="text-emerald-600 dark:text-emerald-400 hover:underline inline-flex items-center gap-1">Quran 2:127 <ExternalLink className="h-3 w-3" /></a>
+                      <blockquote className="text-slate-400 italic border-l-4 border-emerald-500 pl-4 mb-4">
+                        "And [mention] when Abraham was raising the foundations of the House and [with him] Ishmael, [saying], 'Our Lord, accept [this] from us.'" — <a href="https://quran.com/2/127" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:underline inline-flex items-center gap-1">Quran 2:127 <ExternalLink className="h-3 w-3" /></a>
                       </blockquote>
                     </CardContent>
                   </Card>
@@ -180,9 +180,9 @@ export default function IbrahimPage() {
                             content: "The claim that Abraham built the Kaaba comes 2,600+ years after Abraham and 600 years after Christ, with no supporting evidence from any earlier source."
                           }
                         ].map((item, index) => (
-                          <div key={index} className="p-4 bg-amber-50 dark:bg-amber-900/10 rounded-lg border border-amber-200 dark:border-amber-800">
-                            <h4 className="font-semibold text-slate-900 dark:text-white mb-2">{item.title}</h4>
-                            <p className="text-slate-600 dark:text-slate-400 text-sm">{item.content}</p>
+                          <div key={index} className="p-4 bg-amber-500/10 bg-amber-500/10 rounded-lg border border-amber-500/30 border-amber-500/30">
+                            <h4 className="font-semibold text-white mb-2">{item.title}</h4>
+                            <p className="text-slate-400 text-sm">{item.content}</p>
                           </div>
                         ))}
                       </div>
@@ -198,10 +198,10 @@ export default function IbrahimPage() {
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="p-6">
-                      <p className="text-slate-700 dark:text-slate-300 mb-4">
+                      <p className="text-slate-300 mb-4">
                         The biblical Abraham is called "the friend of God" (James 2:23) and is the father of faith. Key aspects:
                       </p>
-                      <ul className="space-y-3 text-slate-600 dark:text-slate-400">
+                      <ul className="space-y-3 text-slate-400">
                         <li className="flex items-start gap-2">
                           <span className="text-emerald-500 font-bold">•</span>
                           <span><strong>Justified by faith:</strong> <a href="https://www.biblegateway.com/passage/?search=Genesis+15:6&version=NIV" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline">"Abraham believed God, and it was credited to him as righteousness" (Genesis 15:6)</a></span>
@@ -241,25 +241,25 @@ export default function IbrahimPage() {
                     <CardContent>
                       <div className="space-y-6">
                         {quranReferences.map((ref, index) => (
-                          <div key={index} className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700">
+                          <div key={index} className="p-4 bg-slate-800/50 rounded-lg border border-slate-700">
                             <div className="flex items-start justify-between mb-3">
                               <div>
-                                <h4 className="font-semibold text-slate-900 dark:text-white mb-1">{ref.topic}</h4>
-                                <p className="text-sm text-emerald-600 dark:text-emerald-400">Quran {ref.verse}</p>
+                                <h4 className="font-semibold text-white mb-1">{ref.topic}</h4>
+                                <p className="text-sm text-amber-400">Quran {ref.verse}</p>
                               </div>
                               <a
                                 href={ref.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-1 text-sm text-emerald-600 hover:text-emerald-700 dark:text-emerald-400"
+                                className="flex items-center gap-1 text-sm text-amber-400 hover:text-amber-300"
                               >
                                 Read <ExternalLink className="h-4 w-4" />
                               </a>
                             </div>
                             <div className="space-y-2">
-                              <p className="text-xl font-arabic text-slate-800 dark:text-slate-200 text-right">{ref.arabic}</p>
-                              <p className="text-sm italic text-slate-600 dark:text-slate-400">{ref.transliteration}</p>
-                              <p className="text-slate-700 dark:text-slate-300">{ref.translation}</p>
+                              <p className="text-xl font-arabic text-slate-200 text-right">{ref.arabic}</p>
+                              <p className="text-sm italic text-slate-400">{ref.transliteration}</p>
+                              <p className="text-slate-300">{ref.translation}</p>
                             </div>
                           </div>
                         ))}
@@ -281,22 +281,22 @@ export default function IbrahimPage() {
                     <CardContent>
                       <div className="space-y-6">
                         {bibleReferences.map((ref, index) => (
-                          <div key={index} className="p-4 bg-blue-50 dark:bg-blue-900/10 rounded-lg border border-blue-200 dark:border-blue-800">
+                          <div key={index} className="p-4 bg-slate-800/50 bg-slate-800/50 rounded-lg border border-slate-700 border-slate-700">
                             <div className="flex items-start justify-between mb-3">
                               <div>
-                                <h4 className="font-semibold text-slate-900 dark:text-white mb-1">{ref.topic}</h4>
-                                <p className="text-sm text-blue-600 dark:text-blue-400">{ref.verse}</p>
+                                <h4 className="font-semibold text-white mb-1">{ref.topic}</h4>
+                                <p className="text-sm text-amber-400 text-amber-400">{ref.verse}</p>
                               </div>
                               <a
                                 href={ref.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-1 text-sm text-blue-600 hover:text-blue-700 dark:text-blue-400"
+                                className="flex items-center gap-1 text-sm text-amber-400 hover:text-blue-700 text-amber-400"
                               >
                                 Read <ExternalLink className="h-4 w-4" />
                               </a>
                             </div>
-                            <blockquote className="text-slate-700 dark:text-slate-300 italic border-l-4 border-blue-500 pl-4">
+                            <blockquote className="text-slate-300 italic border-l-4 border-blue-500 pl-4">
                               "{ref.text}"
                             </blockquote>
                           </div>
@@ -322,12 +322,12 @@ export default function IbrahimPage() {
                   <CardContent>
                     <div className="space-y-6">
                       {qaItems.map((qa, index) => (
-                        <div key={index} className="p-4 bg-purple-50 dark:bg-purple-900/10 rounded-lg border border-purple-200 dark:border-purple-800">
-                          <h4 className="font-semibold text-slate-900 dark:text-white mb-3 flex items-start gap-2">
-                            <span className="text-purple-600 dark:text-purple-400 flex-shrink-0">Q:</span>
+                        <div key={index} className="p-4 bg-slate-800/50 bg-slate-800/50 rounded-lg border border-slate-700 border-slate-700">
+                          <h4 className="font-semibold text-white mb-3 flex items-start gap-2">
+                            <span className="text-amber-400 text-amber-400 flex-shrink-0">Q:</span>
                             <span>{qa.question}</span>
                           </h4>
-                          <p className="text-slate-700 dark:text-slate-300 pl-6">{qa.answer}</p>
+                          <p className="text-slate-300 pl-6">{qa.answer}</p>
                         </div>
                       ))}
                     </div>
@@ -338,12 +338,12 @@ export default function IbrahimPage() {
           </motion.div>
 
           {/* Navigation */}
-          <div className="flex justify-between items-center pt-8 border-t border-slate-200 dark:border-slate-800">
+          <div className="flex justify-between items-center pt-8 border-t border-slate-200 ">
             <Link href="/prophets/isa">
-              <Button variant="outline" className="gap-2"><ArrowLeft className="h-4 w-4" />Jesus in Islam</Button>
+              <Button variant="outline" className="gap-2 border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white hover:border-slate-500"><ArrowLeft className="h-4 w-4" />Jesus in Islam</Button>
             </Link>
             <Link href="/prophets/musa">
-              <Button className="gap-2 bg-emerald-600 hover:bg-emerald-700">Moses in Islam<ArrowRight className="h-4 w-4" /></Button>
+              <Button className="gap-2 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500">Moses in Islam<ArrowRight className="h-4 w-4" /></Button>
             </Link>
           </div>
         </div>

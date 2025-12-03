@@ -125,19 +125,19 @@ const qaItems = [
 
 export default function MusaPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
+    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
       <section className="relative overflow-hidden py-20 sm:py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
-            <Link href="/prophets" className="inline-flex items-center gap-2 text-sm text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 mb-6">
+            <Link href="/prophets" className="inline-flex items-center gap-2 text-sm text-amber-400 hover:text-amber-300 mb-6">
               <ArrowLeft className="h-4 w-4" />
               Back to Prophets
             </Link>
-            <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
               Musa (Moses)
             </h1>
-            <p className="mt-2 text-2xl font-arabic text-emerald-600 dark:text-emerald-400">موسى</p>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
+            <p className="mt-2 text-2xl font-arabic text-amber-400">موسى</p>
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-400">
               The most mentioned prophet in the Quran - yet Islam fundamentally changes his message and mission.
             </p>
           </motion.div>
@@ -152,10 +152,10 @@ export default function MusaPage() {
                 <CardTitle>Moses: Most Mentioned Yet Misunderstood</CardTitle>
               </CardHeader>
               <CardContent className="p-6">
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="text-slate-300 mb-4">
                   Moses (Musa) is mentioned 136 times in the Quran - more than any other prophet, including Muhammad. He is honored as the prophet who spoke directly with Allah and received the Torah.
                 </p>
-                <p className="text-slate-700 dark:text-slate-300">
+                <p className="text-slate-300">
                   However, Islam claims the Torah has been corrupted and that Moses was actually teaching Islam, not Judaism. This creates fundamental contradictions with the biblical account.
                 </p>
               </CardContent>
@@ -183,19 +183,19 @@ export default function MusaPage() {
                   <CardContent className="p-6">
                     <div className="space-y-4">
                       {comparisonItems.map((item, index) => (
-                        <div key={index} className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700">
-                          <h3 className="font-semibold text-slate-900 dark:text-white mb-2">{item.title}</h3>
+                        <div key={index} className="p-4 bg-slate-800/50 rounded-lg border border-slate-700">
+                          <h3 className="font-semibold text-white mb-2">{item.title}</h3>
                           <div className="grid gap-2 md:grid-cols-2 mb-2">
-                            <div className="p-2 bg-amber-50 dark:bg-amber-900/20 rounded text-sm">
-                              <span className="font-medium text-amber-800 dark:text-amber-300">Islamic View:</span>
-                              <p className="text-slate-700 dark:text-slate-300 mt-1">{item.islamic}</p>
+                            <div className="p-2 bg-amber-500/10 dark:bg-amber-900/20 rounded text-sm">
+                              <span className="font-medium text-amber-300 dark:text-amber-300">Islamic View:</span>
+                              <p className="text-slate-300 mt-1">{item.islamic}</p>
                             </div>
-                            <div className="p-2 bg-emerald-50 dark:bg-emerald-900/20 rounded text-sm">
-                              <span className="font-medium text-emerald-800 dark:text-emerald-300">Biblical View:</span>
-                              <p className="text-slate-700 dark:text-slate-300 mt-1">{item.biblical}</p>
+                            <div className="p-2 bg-slate-800/50 rounded text-sm">
+                              <span className="font-medium text-amber-400">Biblical View:</span>
+                              <p className="text-slate-300 mt-1">{item.biblical}</p>
                             </div>
                           </div>
-                          <p className="text-amber-600 dark:text-amber-400 text-sm mt-2 p-2 bg-amber-50 dark:bg-amber-900/10 rounded">
+                          <p className="text-amber-400 text-amber-400 text-sm mt-2 p-2 bg-amber-500/10 bg-amber-500/10 rounded">
                             <strong>The Issue:</strong> {item.issue}
                           </p>
                         </div>
@@ -221,20 +221,20 @@ export default function MusaPage() {
                     <CardContent>
                       <div className="space-y-6">
                         {quranReferences.map((ref, index) => (
-                          <div key={index} className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700">
+                          <div key={index} className="p-4 bg-slate-800/50 rounded-lg border border-slate-700">
                             <div className="flex items-start justify-between mb-3">
                               <div>
-                                <h4 className="font-semibold text-slate-900 dark:text-white mb-1">{ref.topic}</h4>
-                                <p className="text-sm text-emerald-600 dark:text-emerald-400">Quran {ref.verse}</p>
+                                <h4 className="font-semibold text-white mb-1">{ref.topic}</h4>
+                                <p className="text-sm text-amber-400">Quran {ref.verse}</p>
                               </div>
-                              <a href={ref.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-sm text-emerald-600 hover:text-emerald-700 dark:text-emerald-400">
+                              <a href={ref.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-sm text-amber-400 hover:text-amber-300">
                                 Read <ExternalLink className="h-4 w-4" />
                               </a>
                             </div>
                             <div className="space-y-2">
-                              <p className="text-xl font-arabic text-slate-800 dark:text-slate-200 text-right">{ref.arabic}</p>
-                              <p className="text-sm italic text-slate-600 dark:text-slate-400">{ref.transliteration}</p>
-                              <p className="text-slate-700 dark:text-slate-300">{ref.translation}</p>
+                              <p className="text-xl font-arabic text-slate-200 text-right">{ref.arabic}</p>
+                              <p className="text-sm italic text-slate-400">{ref.transliteration}</p>
+                              <p className="text-slate-300">{ref.translation}</p>
                             </div>
                           </div>
                         ))}
@@ -255,17 +255,17 @@ export default function MusaPage() {
                     <CardContent>
                       <div className="space-y-6">
                         {bibleReferences.map((ref, index) => (
-                          <div key={index} className="p-4 bg-blue-50 dark:bg-blue-900/10 rounded-lg border border-blue-200 dark:border-blue-800">
+                          <div key={index} className="p-4 bg-slate-800/50 bg-slate-800/50 rounded-lg border border-slate-700 border-slate-700">
                             <div className="flex items-start justify-between mb-3">
                               <div>
-                                <h4 className="font-semibold text-slate-900 dark:text-white mb-1">{ref.topic}</h4>
-                                <p className="text-sm text-blue-600 dark:text-blue-400">{ref.verse}</p>
+                                <h4 className="font-semibold text-white mb-1">{ref.topic}</h4>
+                                <p className="text-sm text-amber-400 text-amber-400">{ref.verse}</p>
                               </div>
-                              <a href={ref.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-sm text-blue-600 hover:text-blue-700 dark:text-blue-400">
+                              <a href={ref.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-sm text-amber-400 hover:text-blue-700 text-amber-400">
                                 Read <ExternalLink className="h-4 w-4" />
                               </a>
                             </div>
-                            <blockquote className="text-slate-700 dark:text-slate-300 italic border-l-4 border-blue-500 pl-4">
+                            <blockquote className="text-slate-300 italic border-l-4 border-blue-500 pl-4">
                               "{ref.text}"
                             </blockquote>
                           </div>
@@ -291,12 +291,12 @@ export default function MusaPage() {
                   <CardContent>
                     <div className="space-y-6">
                       {qaItems.map((qa, index) => (
-                        <div key={index} className="p-4 bg-purple-50 dark:bg-purple-900/10 rounded-lg border border-purple-200 dark:border-purple-800">
-                          <h4 className="font-semibold text-slate-900 dark:text-white mb-3 flex items-start gap-2">
-                            <span className="text-purple-600 dark:text-purple-400 flex-shrink-0">Q:</span>
+                        <div key={index} className="p-4 bg-slate-800/50 bg-slate-800/50 rounded-lg border border-slate-700 border-slate-700">
+                          <h4 className="font-semibold text-white mb-3 flex items-start gap-2">
+                            <span className="text-amber-400 text-amber-400 flex-shrink-0">Q:</span>
                             <span>{qa.question}</span>
                           </h4>
-                          <p className="text-slate-700 dark:text-slate-300 pl-6">{qa.answer}</p>
+                          <p className="text-slate-300 pl-6">{qa.answer}</p>
                         </div>
                       ))}
                     </div>
@@ -306,12 +306,12 @@ export default function MusaPage() {
             </Tabs>
           </motion.div>
 
-          <div className="flex justify-between items-center pt-8 border-t border-slate-200 dark:border-slate-800">
+          <div className="flex justify-between items-center pt-8 border-t border-slate-200 ">
             <Link href="/prophets/ibrahim">
-              <Button variant="outline" className="gap-2"><ArrowLeft className="h-4 w-4" />Abraham in Islam</Button>
+              <Button variant="outline" className="gap-2 border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white hover:border-slate-500"><ArrowLeft className="h-4 w-4" />Abraham in Islam</Button>
             </Link>
             <Link href="/prophets/ilyas">
-              <Button className="gap-2 bg-emerald-600 hover:bg-emerald-700">Elijah in Islam<ArrowRight className="h-4 w-4" /></Button>
+              <Button className="gap-2 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500">Elijah in Islam<ArrowRight className="h-4 w-4" /></Button>
             </Link>
           </div>
         </div>

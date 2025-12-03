@@ -92,22 +92,22 @@ function HadithCard({ hadith, relatedLinks }: {
   const sunnahLink = getSunnahLink(hadith.collection, hadith.reference)
 
   return (
-    <Card className="h-full overflow-hidden">
-      <CardHeader className="bg-gradient-to-r from-red-50 to-amber-50 dark:from-red-900/20 dark:to-amber-900/20 border-b border-red-200 dark:border-red-800">
+    <Card className="h-full overflow-hidden bg-slate-800/50 border-slate-700">
+      <CardHeader className="bg-gradient-to-r from-red-500/20 to-amber-500/20 border-b border-red-500/30">
         <div className="flex items-start justify-between flex-wrap gap-2">
           <div className="flex-1">
-            <CardTitle className="text-base text-red-800 dark:text-red-300 mb-1">
+            <CardTitle className="text-base text-red-400 mb-1">
               {hadith.collection} {hadith.reference}
             </CardTitle>
-            <CardDescription className="text-xs text-slate-600 dark:text-slate-400">
+            <CardDescription className="text-xs text-slate-400">
               Hadith #{hadith.hadith_number} | Narrator: {hadith.narrator}
             </CardDescription>
           </div>
           <div className="flex flex-col gap-1 items-end">
-            <span className="text-xs px-2 py-1 rounded-full bg-emerald-200 dark:bg-emerald-900 text-emerald-800 dark:text-emerald-200">
+            <span className="text-xs px-2 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400">
               {hadith.grading}
             </span>
-            <span className="text-xs px-2 py-1 rounded-full bg-red-200 dark:bg-red-900 text-red-800 dark:text-red-200">
+            <span className="text-xs px-2 py-1 rounded-full bg-red-500/10 border border-red-500/30 text-red-400">
               {hadith.topic}
             </span>
           </div>
@@ -116,28 +116,28 @@ function HadithCard({ hadith, relatedLinks }: {
       <CardContent className="p-4 space-y-4">
         {/* Arabic Text */}
         {hadith.arabic && (
-          <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg">
-            <p className="text-right text-xl leading-loose font-arabic text-slate-900 dark:text-white" dir="rtl">
+          <div className="bg-slate-900/50 p-4 rounded-lg border border-slate-700">
+            <p className="text-right text-xl leading-loose font-arabic text-white" dir="rtl">
               {hadith.arabic}
             </p>
           </div>
         )}
 
         {/* English Translation */}
-        <blockquote className="text-slate-700 dark:text-slate-300 italic border-l-4 border-emerald-500 pl-4">
+        <blockquote className="text-slate-300 italic border-l-4 border-amber-500 pl-4">
           "{hadith.english}"
         </blockquote>
 
         {/* Source Link */}
         <div className="flex items-center justify-between flex-wrap gap-2">
-          <div className="text-xs text-slate-500 dark:text-slate-400">
+          <div className="text-xs text-slate-400">
             Tradition: {hadith.tradition} | Grading: {hadith.grading}
           </div>
           <a
             href={sunnahLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-sm text-emerald-600 dark:text-emerald-400 hover:underline"
+            className="inline-flex items-center gap-1 text-sm text-amber-500 hover:text-amber-400 hover:underline"
           >
             View Source
             <ExternalLink className="h-3 w-3" />
@@ -146,8 +146,8 @@ function HadithCard({ hadith, relatedLinks }: {
 
         {/* Related Links */}
         {relatedLinks && (
-          <div className="pt-3 border-t border-slate-200 dark:border-slate-700 space-y-2">
-            <p className="text-xs font-medium text-slate-600 dark:text-slate-400">Related Content:</p>
+          <div className="pt-3 border-t border-slate-700 space-y-2">
+            <p className="text-xs font-medium text-slate-400">Related Content:</p>
             <div className="flex flex-wrap gap-2">
               {relatedLinks.quran?.map((verse, idx) => (
                 <Link key={idx} href={`/quran#${verse}`}>
@@ -408,9 +408,9 @@ export default function HadithPage() {
   type HadithData = typeof controversialHadiths
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
+    <div className="min-h-screen bg-slate-900">
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 sm:py-32">
+      <section className="relative overflow-hidden py-20 sm:py-32 bg-slate-900">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5" />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -419,10 +419,10 @@ export default function HadithPage() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
               The Hadith Examined
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-400">
               The sayings and actions of Muhammad that shape Islamic law and practice. These authenticated traditions reveal aspects of Islam that are rarely discussed. All hadiths shown are graded Sahih (authentic) by mainstream Islamic scholarship.
             </p>
           </motion.div>
@@ -430,29 +430,29 @@ export default function HadithPage() {
       </section>
 
       {/* What is Hadith */}
-      <section className="py-16 bg-slate-50 dark:bg-slate-900/50">
+      <section className="py-16 bg-slate-800">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <Card className="overflow-hidden">
-              <CardHeader className="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white">
+            <Card className="overflow-hidden bg-slate-800/50 border-slate-700">
+              <CardHeader className="bg-gradient-to-r from-red-600 to-amber-600 text-white border-b border-amber-500/30">
                 <CardTitle className="flex items-center gap-2 text-xl">
                   <Scroll className="h-6 w-6" />
                   What is Hadith?
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-6">
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="text-slate-300 mb-4">
                   Hadith are reports of the words, actions, and approvals of Muhammad. They form the second most important source of Islamic law after the Quran. Muslims are commanded to follow Muhammad's example (sunnah) in all aspects of life.
                 </p>
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
-                  The Quran says: <Link href="/quran#33:21" className="text-emerald-600 dark:text-emerald-400 hover:underline">"Indeed in the Messenger of Allah you have a good example to follow" (33:21)</Link>, making Muhammad's recorded behavior binding on Muslims.
+                <p className="text-slate-300 mb-4">
+                  The Quran says: <Link href="/quran#33:21" className="text-amber-500 hover:text-amber-400 underline">"Indeed in the Messenger of Allah you have a good example to follow" (33:21)</Link>, making Muhammad's recorded behavior binding on Muslims.
                 </p>
-                <div className="p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-800">
-                  <p className="text-amber-800 dark:text-amber-200 flex items-start gap-2">
+                <div className="p-4 bg-amber-500/10 rounded-lg border border-amber-500/30">
+                  <p className="text-amber-400 flex items-start gap-2">
                     <AlertTriangle className="h-5 w-5 mt-0.5 flex-shrink-0" />
                     <span>
                       <strong>Important:</strong> The hadith collections were compiled 200+ years after Muhammad's death, raising questions about their reliability. However, they are considered authentic (sahih) by mainstream Islamic scholarship and form the basis of Sharia law.
@@ -466,7 +466,7 @@ export default function HadithPage() {
       </section>
 
       {/* Hadith Collections */}
-      <section className="py-16">
+      <section className="py-16 bg-slate-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -474,11 +474,11 @@ export default function HadithPage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white flex items-center justify-center gap-3">
-              <BookOpen className="h-8 w-8 text-emerald-600" />
+            <h2 className="text-3xl font-bold text-white flex items-center justify-center gap-3">
+              <BookOpen className="h-8 w-8 text-amber-500" />
               Major Hadith Collections
             </h2>
-            <p className="mt-4 text-slate-600 dark:text-slate-400">
+            <p className="mt-4 text-slate-400">
               Sunni and Shia collections of Muhammad's teachings
             </p>
           </motion.div>
@@ -492,27 +492,27 @@ export default function HadithPage() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="h-full">
+                <Card className="h-full bg-slate-800/50 border-slate-700">
                   <CardHeader>
-                    <CardTitle className="text-lg">{collection.name}</CardTitle>
-                    <CardDescription>{collection.compiler}</CardDescription>
+                    <CardTitle className="text-lg text-white">{collection.name}</CardTitle>
+                    <CardDescription className="text-slate-400">{collection.compiler}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-2 text-sm">
-                      <p className="text-slate-600 dark:text-slate-400">
+                      <p className="text-slate-300">
                         <strong>Hadiths:</strong> {collection.hadiths}
                       </p>
-                      <p className="text-emerald-600 dark:text-emerald-400">
+                      <p className="text-amber-400">
                         {collection.status}
                       </p>
-                      <p className="text-slate-500 dark:text-slate-400">
+                      <p className="text-slate-400">
                         {collection.description}
                       </p>
                       <a
                         href={collection.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-sm text-emerald-600 dark:text-emerald-400 hover:underline mt-2"
+                        className="inline-flex items-center gap-1 text-sm text-amber-500 hover:text-amber-400 hover:underline mt-2"
                       >
                         Browse Collection
                         <ExternalLink className="h-3 w-3" />
@@ -527,7 +527,7 @@ export default function HadithPage() {
       </section>
 
       {/* Aisha's Age - Child Marriage */}
-      <section className="py-16 bg-slate-50 dark:bg-slate-900/50">
+      <section className="py-16 bg-slate-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -535,11 +535,11 @@ export default function HadithPage() {
             viewport={{ once: true }}
             className="mb-8"
           >
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">
+            <h2 className="text-3xl font-bold text-white mb-2">
               Muhammad's Marriage to Aisha
             </h2>
-            <p className="text-slate-600 dark:text-slate-400 max-w-3xl">
-              Multiple sahih hadiths confirm Muhammad married Aisha at age 6 and consummated the marriage when she was 9 years old. This is not disputed in Islamic scholarship. Related: <Link href="/blog/muhammad-aisha-marriage-age" className="text-emerald-600 dark:text-emerald-400 hover:underline">Full article on Aisha's age</Link> | <Link href="/prophets/muhammad" className="text-emerald-600 dark:text-emerald-400 hover:underline">About Muhammad</Link>
+            <p className="text-slate-400 max-w-3xl">
+              Multiple sahih hadiths confirm Muhammad married Aisha at age 6 and consummated the marriage when she was 9 years old. This is not disputed in Islamic scholarship. Related: <Link href="/blog/muhammad-aisha-marriage-age" className="text-amber-500 hover:text-amber-400 underline">Full article on Aisha's age</Link> | <Link href="/prophets/muhammad" className="text-amber-500 hover:text-amber-400 underline">About Muhammad</Link>
             </p>
           </motion.div>
 
@@ -569,7 +569,7 @@ export default function HadithPage() {
       </section>
 
       {/* Apostasy Death Penalty */}
-      <section className="py-16">
+      <section className="py-16 bg-slate-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -577,11 +577,11 @@ export default function HadithPage() {
             viewport={{ once: true }}
             className="mb-8"
           >
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">
+            <h2 className="text-3xl font-bold text-white mb-2">
               Death Penalty for Apostasy
             </h2>
-            <p className="text-slate-600 dark:text-slate-400 max-w-3xl">
-              "Whoever changes his religion, kill him." This command appears in multiple authentic hadiths and is enforced in 13+ Muslim-majority countries today. Related: <Link href="/blog/death-leaving-islam-hadith" className="text-emerald-600 dark:text-emerald-400 hover:underline">Death for leaving Islam</Link> | <Link href="/blog/apostasy-laws-countries" className="text-emerald-600 dark:text-emerald-400 hover:underline">Countries with apostasy laws</Link>
+            <p className="text-slate-400 max-w-3xl">
+              "Whoever changes his religion, kill him." This command appears in multiple authentic hadiths and is enforced in 13+ Muslim-majority countries today. Related: <Link href="/blog/death-leaving-islam-hadith" className="text-amber-500 hover:text-amber-400 underline">Death for leaving Islam</Link> | <Link href="/blog/apostasy-laws-countries" className="text-amber-500 hover:text-amber-400 underline">Countries with apostasy laws</Link>
             </p>
           </motion.div>
 
@@ -610,7 +610,7 @@ export default function HadithPage() {
       </section>
 
       {/* Women's Status */}
-      <section className="py-16 bg-slate-50 dark:bg-slate-900/50">
+      <section className="py-16 bg-slate-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -618,17 +618,17 @@ export default function HadithPage() {
             viewport={{ once: true }}
             className="mb-8"
           >
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">
+            <h2 className="text-3xl font-bold text-white mb-2">
               Women in Hadith: Deficiency and Hell
             </h2>
-            <p className="text-slate-600 dark:text-slate-400 max-w-3xl">
-              Muhammad declared women deficient in intelligence and religion, with the majority of Hell's inhabitants being women. Related: <Link href="/quran#4:34" className="text-emerald-600 dark:text-emerald-400 hover:underline">Quran 4:34 (wife beating)</Link> | <Link href="/blog/women-deficient-mind-religion" className="text-emerald-600 dark:text-emerald-400 hover:underline">Women's deficiency explained</Link>
+            <p className="text-slate-400 max-w-3xl">
+              Muhammad declared women deficient in intelligence and religion, with the majority of Hell's inhabitants being women. Related: <Link href="/quran#4:34" className="text-amber-500 hover:text-amber-400 underline">Quran 4:34 (wife beating)</Link> | <Link href="/blog/women-deficient-mind-religion" className="text-amber-500 hover:text-amber-400 underline">Women's deficiency explained</Link>
             </p>
           </motion.div>
 
           <div className="grid gap-6 md:grid-cols-2">
             <div className="space-y-6">
-              <h3 className="text-xl font-semibold text-slate-900 dark:text-white">Mentally Deficient</h3>
+              <h3 className="text-xl font-semibold text-white">Mentally Deficient</h3>
               {(controversialHadiths as HadithData).women_deficient.map((hadith, index) => (
                 <motion.div
                   key={index}
@@ -650,7 +650,7 @@ export default function HadithPage() {
             </div>
 
             <div className="space-y-6">
-              <h3 className="text-xl font-semibold text-slate-900 dark:text-white">Majority in Hell</h3>
+              <h3 className="text-xl font-semibold text-white">Majority in Hell</h3>
               {(controversialHadiths as HadithData).women_hell.map((hadith, index) => (
                 <motion.div
                   key={index}
@@ -674,7 +674,7 @@ export default function HadithPage() {
       </section>
 
       {/* Wife Beating */}
-      <section className="py-16">
+      <section className="py-16 bg-slate-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -998,30 +998,30 @@ export default function HadithPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-slate-50 dark:bg-slate-900/50">
+      <section className="py-16 bg-slate-900">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">
+            <h2 className="text-2xl font-bold text-white mb-6">
               Continue Your Research
             </h2>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/quran">
-                <Button variant="outline" className="gap-2">
+                <Button variant="outline" className="gap-2 border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white">
                   Examine the Quran
                 </Button>
               </Link>
               <Link href="/prophets/muhammad">
-                <Button className="gap-2 bg-emerald-600 hover:bg-emerald-700">
+                <Button className="gap-2 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500">
                   About Muhammad
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </Link>
               <Link href="/blog">
-                <Button variant="outline" className="gap-2">
+                <Button variant="outline" className="gap-2 border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white">
                   Read Articles
                 </Button>
               </Link>

@@ -353,9 +353,9 @@ const quickQuestions = [
 
 export default function BeliefsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
+    <div className="min-h-screen bg-slate-900">
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 sm:py-32">
+      <section className="relative overflow-hidden py-20 sm:py-32 bg-slate-900">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5" />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -364,10 +364,10 @@ export default function BeliefsPage() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
               The Six Articles of Faith in Islam
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-400">
               Every Muslim must believe these six doctrines. Here we examine them with Quranic sources, hadith references, and critical analysis comparing them to biblical truth.
             </p>
           </motion.div>
@@ -375,7 +375,7 @@ export default function BeliefsPage() {
       </section>
 
       {/* Navigation Tabs */}
-      <section className="py-8 bg-white dark:bg-slate-900 sticky top-0 z-40 border-b border-slate-200 dark:border-slate-800">
+      <section className="py-8 bg-slate-800 sticky top-0 z-40 border-b border-slate-700">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="overflow-x-auto">
             <div className="flex gap-2 min-w-max">
@@ -385,7 +385,7 @@ export default function BeliefsPage() {
                   <a
                     key={belief.id}
                     href={`#${belief.id}`}
-                    className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors whitespace-nowrap"
+                    className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-slate-300 hover:bg-slate-700 transition-colors whitespace-nowrap"
                   >
                     <Icon className="h-4 w-4" />
                     <span>{belief.title.split(' ')[belief.title.split(' ').length - 1]}</span>
@@ -401,7 +401,7 @@ export default function BeliefsPage() {
       {coreBeliefs.map((belief, index) => {
         const Icon = belief.icon
         return (
-          <section key={belief.id} id={belief.id} className={`py-16 ${index % 2 === 0 ? 'bg-slate-50 dark:bg-slate-900/50' : ''}`}>
+          <section key={belief.id} id={belief.id} className={`py-16 ${index % 2 === 0 ? 'bg-slate-900' : 'bg-slate-800'}`}>
             <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -411,18 +411,18 @@ export default function BeliefsPage() {
                 {/* Header */}
                 <div className="mb-8">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="p-3 bg-emerald-100 dark:bg-emerald-900/30 rounded-lg">
-                      <Icon className="h-6 w-6 text-emerald-600 dark:text-emerald-400" />
+                    <div className="p-3 bg-amber-500/10 rounded-lg border border-amber-500/30">
+                      <Icon className="h-6 w-6 text-amber-400" />
                     </div>
                     <div>
-                      <h2 className="text-3xl font-bold text-slate-900 dark:text-white">{belief.title}</h2>
+                      <h2 className="text-3xl font-bold text-white">{belief.title}</h2>
                       <div className="flex items-center gap-3 mt-1">
-                        <p className="text-xl font-arabic text-emerald-600 dark:text-emerald-400">{belief.arabic}</p>
-                        <span className="text-sm text-slate-500 dark:text-slate-400">({belief.transliteration})</span>
+                        <p className="text-xl font-arabic text-amber-400">{belief.arabic}</p>
+                        <span className="text-sm text-slate-400">({belief.transliteration})</span>
                       </div>
                     </div>
                   </div>
-                  <p className="text-lg text-slate-700 dark:text-slate-300">{belief.description}</p>
+                  <p className="text-lg text-slate-300">{belief.description}</p>
                 </div>
 
                 {/* Tabbed Content */}
@@ -436,34 +436,34 @@ export default function BeliefsPage() {
 
                   {/* Quran Tab */}
                   <TabsContent value="quran">
-                    <Card>
+                    <Card className="bg-slate-800/50 border-slate-700">
                       <CardHeader>
-                        <CardTitle className="flex items-center gap-2">
-                          <BookOpen className="h-5 w-5 text-emerald-600" />
+                        <CardTitle className="flex items-center gap-2 text-white">
+                          <BookOpen className="h-5 w-5 text-amber-500" />
                           Quranic References
                         </CardTitle>
-                        <CardDescription>
-                          Primary sources from the Quran about this belief. Visit our <Link href="/quran" className="text-emerald-600 hover:text-emerald-700 underline">Quran page</Link> for more verses.
+                        <CardDescription className="text-slate-400">
+                          Primary sources from the Quran about this belief. Visit our <Link href="/quran" className="text-amber-500 hover:text-amber-400 underline">Quran page</Link> for more verses.
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-6">
                         {belief.quranVerses.map((verse, idx) => (
                           <div key={idx} className="space-y-3">
-                            <div className="p-4 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg">
-                              <p className="text-xl font-arabic text-right mb-3 leading-loose" dir="rtl">
+                            <div className="p-4 bg-slate-900/50 rounded-lg border border-slate-700">
+                              <p className="text-xl font-arabic text-right mb-3 leading-loose text-white" dir="rtl">
                                 {verse.arabic}
                               </p>
-                              <p className="text-slate-700 dark:text-slate-300 italic border-l-4 border-emerald-500 pl-4">
+                              <p className="text-slate-300 italic border-l-4 border-amber-500 pl-4">
                                 "{verse.verse}"
                               </p>
                             </div>
                             <div className="flex items-center justify-between">
-                              <p className="font-semibold text-emerald-600 dark:text-emerald-400">{verse.reference}</p>
+                              <p className="font-semibold text-amber-400">{verse.reference}</p>
                               <a
                                 href={verse.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400"
+                                className="flex items-center gap-1 text-sm text-slate-400 hover:text-amber-400"
                               >
                                 Read on Quran.com <ExternalLink className="h-3 w-3" />
                               </a>
@@ -476,31 +476,31 @@ export default function BeliefsPage() {
 
                   {/* Hadith Tab */}
                   <TabsContent value="hadith">
-                    <Card>
+                    <Card className="bg-slate-800/50 border-slate-700">
                       <CardHeader>
-                        <CardTitle className="flex items-center gap-2">
-                          <Scroll className="h-5 w-5 text-amber-600" />
+                        <CardTitle className="flex items-center gap-2 text-white">
+                          <Scroll className="h-5 w-5 text-amber-500" />
                           Hadith References
                         </CardTitle>
-                        <CardDescription>
-                          Sayings and actions of Muhammad about this belief. Visit our <Link href="/hadith" className="text-emerald-600 hover:text-emerald-700 underline">Hadith page</Link> for more.
+                        <CardDescription className="text-slate-400">
+                          Sayings and actions of Muhammad about this belief. Visit our <Link href="/hadith" className="text-amber-500 hover:text-amber-400 underline">Hadith page</Link> for more.
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-6">
                         {belief.hadiths.map((hadith, idx) => (
                           <div key={idx} className="space-y-3">
-                            <div className="p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg border-l-4 border-amber-500">
-                              <p className="text-slate-700 dark:text-slate-300 italic">
+                            <div className="p-4 bg-slate-900/50 rounded-lg border-l-4 border-amber-500">
+                              <p className="text-slate-300 italic">
                                 {hadith.text}
                               </p>
                             </div>
                             <div className="flex items-center justify-between">
-                              <p className="font-semibold text-amber-600 dark:text-amber-400">{hadith.reference}</p>
+                              <p className="font-semibold text-amber-400">{hadith.reference}</p>
                               <a
                                 href={hadith.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400"
+                                className="flex items-center gap-1 text-sm text-slate-400 hover:text-amber-400"
                               >
                                 Read on Sunnah.com <ExternalLink className="h-3 w-3" />
                               </a>
@@ -513,22 +513,22 @@ export default function BeliefsPage() {
 
                   {/* Contradictions Tab */}
                   <TabsContent value="contradictions">
-                    <Card>
+                    <Card className="bg-slate-800/50 border-slate-700">
                       <CardHeader>
-                        <CardTitle className="flex items-center gap-2">
-                          <AlertTriangle className="h-5 w-5 text-red-600" />
+                        <CardTitle className="flex items-center gap-2 text-white">
+                          <AlertTriangle className="h-5 w-5 text-red-500" />
                           Critical Problems & Contradictions
                         </CardTitle>
-                        <CardDescription>
+                        <CardDescription className="text-slate-400">
                           Logical inconsistencies and theological problems with this belief
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
                         <ul className="space-y-4">
                           {belief.contradictions.map((contradiction, idx) => (
-                            <li key={idx} className="flex items-start gap-3 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
-                              <AlertTriangle className="h-5 w-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" />
-                              <p className="text-slate-700 dark:text-slate-300">{contradiction}</p>
+                            <li key={idx} className="flex items-start gap-3 p-4 bg-red-500/10 border border-red-500/30 rounded-lg">
+                              <AlertTriangle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
+                              <p className="text-slate-300">{contradiction}</p>
                             </li>
                           ))}
                         </ul>
@@ -538,35 +538,35 @@ export default function BeliefsPage() {
 
                   {/* Biblical Comparison Tab */}
                   <TabsContent value="biblical">
-                    <Card>
+                    <Card className="bg-slate-800/50 border-slate-700">
                       <CardHeader>
-                        <CardTitle className="flex items-center gap-2">
-                          <Book className="h-5 w-5 text-blue-600" />
+                        <CardTitle className="flex items-center gap-2 text-white">
+                          <Book className="h-5 w-5 text-amber-500" />
                           Biblical Perspective
                         </CardTitle>
-                        <CardDescription>
+                        <CardDescription className="text-slate-400">
                           How this Islamic belief compares to Christian teaching
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-6">
                         <div>
-                          <h4 className="font-semibold text-slate-900 dark:text-white mb-3">Key Differences:</h4>
+                          <h4 className="font-semibold text-white mb-3">Key Differences:</h4>
                           <ul className="space-y-3">
                             {belief.biblicalComparison.points.map((point, idx) => (
                               <li key={idx} className="flex items-start gap-3">
-                                <Shield className="h-5 w-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
-                                <p className="text-slate-700 dark:text-slate-300">{point}</p>
+                                <Shield className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
+                                <p className="text-slate-300">{point}</p>
                               </li>
                             ))}
                           </ul>
                         </div>
                         <div>
-                          <h4 className="font-semibold text-slate-900 dark:text-white mb-3">Biblical References:</h4>
+                          <h4 className="font-semibold text-white mb-3">Biblical References:</h4>
                           <div className="space-y-4">
                             {belief.biblicalComparison.verses.map((verse, idx) => (
-                              <div key={idx} className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border-l-4 border-blue-500">
-                                <p className="text-slate-700 dark:text-slate-300 italic mb-2">"{verse.text}"</p>
-                                <p className="font-semibold text-blue-600 dark:text-blue-400">{verse.reference}</p>
+                              <div key={idx} className="p-4 bg-slate-900/50 rounded-lg border-l-4 border-amber-500">
+                                <p className="text-slate-300 italic mb-2">"{verse.text}"</p>
+                                <p className="font-semibold text-amber-400">{verse.reference}</p>
                               </div>
                             ))}
                           </div>
@@ -582,7 +582,7 @@ export default function BeliefsPage() {
       })}
 
       {/* Quick Questions Section */}
-      <section className="py-16 bg-gradient-to-br from-emerald-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
+      <section className="py-16 bg-slate-900">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -590,11 +590,11 @@ export default function BeliefsPage() {
             viewport={{ once: true }}
           >
             <div className="text-center mb-12">
-              <MessageCircleQuestion className="h-12 w-12 text-emerald-600 dark:text-emerald-400 mx-auto mb-4" />
-              <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">
+              <MessageCircleQuestion className="h-12 w-12 text-amber-500 mx-auto mb-4" />
+              <h2 className="text-3xl font-bold text-white mb-4">
                 Quick Questions & Answers
               </h2>
-              <p className="text-slate-600 dark:text-slate-400">
+              <p className="text-slate-400">
                 Common questions about Islamic beliefs with direct answers
               </p>
             </div>
@@ -608,12 +608,12 @@ export default function BeliefsPage() {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.05 }}
                 >
-                  <Card>
+                  <Card className="bg-slate-800/50 border-slate-700">
                     <CardHeader>
-                      <CardTitle className="text-lg text-slate-900 dark:text-white">{qa.question}</CardTitle>
+                      <CardTitle className="text-lg text-white">{qa.question}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-slate-700 dark:text-slate-300" dangerouslySetInnerHTML={{ __html: qa.answer }} />
+                      <p className="text-slate-300" dangerouslySetInnerHTML={{ __html: qa.answer }} />
                     </CardContent>
                   </Card>
                 </motion.div>
@@ -624,27 +624,27 @@ export default function BeliefsPage() {
       </section>
 
       {/* Additional Resources */}
-      <section className="py-16 bg-slate-50 dark:bg-slate-900/50">
+      <section className="py-16 bg-slate-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-8 text-center">
+            <h2 className="text-2xl font-bold text-white mb-8 text-center">
               Continue Your Research
             </h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
               <Link href="/quran">
-                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
+                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full bg-slate-800/50 border-slate-700 hover:border-amber-500/30">
                   <CardHeader>
-                    <CardTitle className="flex items-center gap-2 text-lg">
-                      <BookOpen className="h-5 w-5 text-emerald-600" />
+                    <CardTitle className="flex items-center gap-2 text-lg text-white">
+                      <BookOpen className="h-5 w-5 text-amber-500" />
                       Examine the Quran
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">
+                    <p className="text-sm text-slate-400">
                       Read and analyze Quranic verses with critical commentary
                     </p>
                   </CardContent>
@@ -652,15 +652,15 @@ export default function BeliefsPage() {
               </Link>
 
               <Link href="/hadith">
-                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
+                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full bg-slate-800/50 border-slate-700 hover:border-amber-500/30">
                   <CardHeader>
-                    <CardTitle className="flex items-center gap-2 text-lg">
-                      <Scroll className="h-5 w-5 text-amber-600" />
+                    <CardTitle className="flex items-center gap-2 text-lg text-white">
+                      <Scroll className="h-5 w-5 text-amber-500" />
                       Hadith Collections
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">
+                    <p className="text-sm text-slate-400">
                       Explore Muhammad's sayings and actions from Sahih collections
                     </p>
                   </CardContent>
@@ -668,15 +668,15 @@ export default function BeliefsPage() {
               </Link>
 
               <Link href="/prophets">
-                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
+                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full bg-slate-800/50 border-slate-700 hover:border-amber-500/30">
                   <CardHeader>
-                    <CardTitle className="flex items-center gap-2 text-lg">
-                      <Users className="h-5 w-5 text-blue-600" />
+                    <CardTitle className="flex items-center gap-2 text-lg text-white">
+                      <Users className="h-5 w-5 text-amber-500" />
                       Islamic Prophets
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">
+                    <p className="text-sm text-slate-400">
                       Learn about prophets in Islam and historical accuracy
                     </p>
                   </CardContent>
@@ -684,15 +684,15 @@ export default function BeliefsPage() {
               </Link>
 
               <Link href="/blog">
-                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
+                <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full bg-slate-800/50 border-slate-700 hover:border-amber-500/30">
                   <CardHeader>
-                    <CardTitle className="flex items-center gap-2 text-lg">
-                      <Calendar className="h-5 w-5 text-purple-600" />
+                    <CardTitle className="flex items-center gap-2 text-lg text-white">
+                      <Calendar className="h-5 w-5 text-amber-500" />
                       Blog Articles
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">
+                    <p className="text-sm text-slate-400">
                       Read in-depth articles about Islamic theology and history
                     </p>
                   </CardContent>
@@ -704,28 +704,28 @@ export default function BeliefsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16">
+      <section className="py-16 bg-slate-900">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">
+            <h2 className="text-2xl font-bold text-white mb-6">
               Questions About What You've Read?
             </h2>
-            <p className="text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
+            <p className="text-slate-400 mb-8 max-w-2xl mx-auto">
               These beliefs raise serious theological questions. If you're a Muslim reading this, we encourage you to investigate these concerns. If you're researching Islam, understand that these are not peripheral issues but core doctrines.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/afterlife">
-                <Button className="gap-2 bg-emerald-600 hover:bg-emerald-700">
+                <Button className="gap-2 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500">
                   Islamic Afterlife
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </Link>
               <Link href="/salvation">
-                <Button variant="outline" className="gap-2">
+                <Button variant="outline" className="gap-2 border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white">
                   <Shield className="h-4 w-4" />
                   Salvation in Islam
                 </Button>

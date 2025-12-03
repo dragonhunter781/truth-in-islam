@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
+    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 sm:py-32">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5" />
@@ -18,10 +18,10 @@ export default function ContactPage() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
               Contact Us
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-400">
               Have questions, feedback, or need support? We're here to help.
             </p>
           </motion.div>
@@ -37,18 +37,18 @@ export default function ContactPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full">
+              <Card className="h-full rounded-xl border border-slate-700 bg-slate-800/50">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
-                    <Mail className="h-5 w-5 text-emerald-600" />
+                    <Mail className="h-5 w-5 text-amber-500" />
                     Email Us
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-slate-600 dark:text-slate-400 mb-4">
+                  <p className="text-slate-400 mb-4">
                     For general inquiries, feedback, or questions about our content.
                   </p>
-                  <a href="mailto:info@thetruthinislam.org" className="text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 font-medium">
+                  <a href="mailto:info@thetruthinislam.org" className="text-amber-400 hover:text-amber-300 font-medium">
                     info@thetruthinislam.org
                   </a>
                 </CardContent>
@@ -61,18 +61,18 @@ export default function ContactPage() {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              <Card className="h-full">
+              <Card className="h-full rounded-xl border border-slate-700 bg-slate-800/50">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
-                    <Shield className="h-5 w-5 text-emerald-600" />
+                    <Shield className="h-5 w-5 text-red-500" />
                     Confidential Support
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-slate-600 dark:text-slate-400 mb-4">
+                  <p className="text-slate-400 mb-4">
                     If you're questioning Islam and need someone to talk to confidentially, we're here.
                   </p>
-                  <a href="mailto:support@thetruthinislam.org" className="text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 font-medium">
+                  <a href="mailto:support@thetruthinislam.org" className="text-amber-400 hover:text-amber-300 font-medium">
                     support@thetruthinislam.org
                   </a>
                 </CardContent>
@@ -83,52 +83,52 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form */}
-      <section className="py-16 bg-slate-50 dark:bg-slate-900/50">
+      <section className="py-16 bg-slate-900">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <Card>
+            <Card className="rounded-xl border border-slate-700 bg-slate-800/50">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <MessageCircle className="h-5 w-5 text-emerald-600" />
+                <CardTitle className="flex items-center gap-2 text-white">
+                  <MessageCircle className="h-5 w-5 text-amber-500" />
                   Send a Message
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <form className="space-y-4">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
+                    <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-1">
                       Name (optional)
                     </label>
                     <input
                       type="text"
                       id="name"
-                      className="w-full px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      className="w-full px-4 py-2 rounded-lg border border-slate-700 bg-slate-800 text-white focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                       placeholder="Your name"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
+                    <label htmlFor="email" className="block text-sm font-medium text-slate-300 mb-1">
                       Email
                     </label>
                     <input
                       type="email"
                       id="email"
-                      className="w-full px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      className="w-full px-4 py-2 rounded-lg border border-slate-700 bg-slate-800 text-white focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                       placeholder="your@email.com"
                       required
                     />
                   </div>
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
+                    <label htmlFor="subject" className="block text-sm font-medium text-slate-300 mb-1">
                       Subject
                     </label>
                     <select
                       id="subject"
-                      className="w-full px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      className="w-full px-4 py-2 rounded-lg border border-slate-700 bg-slate-800 text-white focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                     >
                       <option>General Inquiry</option>
                       <option>Question About Content</option>
@@ -139,24 +139,24 @@ export default function ContactPage() {
                     </select>
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
+                    <label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-1">
                       Message
                     </label>
                     <textarea
                       id="message"
                       rows={5}
-                      className="w-full px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-none"
+                      className="w-full px-4 py-2 rounded-lg border border-slate-700 bg-slate-800 text-white focus:ring-2 focus:ring-amber-500 focus:border-transparent resize-none"
                       placeholder="How can we help you?"
                       required
                     ></textarea>
                   </div>
-                  <div className="p-4 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg">
-                    <p className="text-sm text-emerald-700 dark:text-emerald-300 flex items-start gap-2">
+                  <div className="p-4 bg-amber-500/10 border border-amber-500/30 rounded-lg">
+                    <p className="text-sm text-amber-400 flex items-start gap-2">
                       <Shield className="h-4 w-4 mt-0.5 flex-shrink-0" />
                       Your privacy is important to us. All communications are confidential and we will never share your information.
                     </p>
                   </div>
-                  <Button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-700">
+                  <Button type="submit" className="w-full bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white border-0 shadow-lg shadow-red-900/30">
                     Send Message
                   </Button>
                 </form>

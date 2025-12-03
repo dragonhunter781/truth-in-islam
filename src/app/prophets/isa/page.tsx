@@ -153,7 +153,7 @@ const islamicClaims = [
 
 export default function IsaPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
+    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 sm:py-32">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5" />
@@ -166,18 +166,18 @@ export default function IsaPage() {
           >
             <Link
               href="/prophets"
-              className="inline-flex items-center gap-2 text-sm text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 mb-6"
+              className="inline-flex items-center gap-2 text-sm text-amber-400 hover:text-amber-300 mb-6"
             >
               <ArrowLeft className="h-4 w-4" />
               Back to Prophets
             </Link>
-            <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
               Isa (Jesus) in Islam
             </h1>
-            <p className="mt-2 text-2xl font-arabic text-emerald-600 dark:text-emerald-400">
+            <p className="mt-2 text-2xl font-arabic text-amber-400">
               عيسى
             </p>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-400">
               How Islam reimagines Jesus - calling him Messiah while denying his central message, death, and resurrection.
             </p>
           </motion.div>
@@ -206,7 +206,7 @@ export default function IsaPage() {
               <TabsContent value="comparison">
                 <div className="space-y-8">
                   {/* The Contradiction */}
-                  <Card className="overflow-hidden border-amber-200 dark:border-amber-800">
+                  <Card className="overflow-hidden border-amber-500/30 border-amber-500/30">
                     <CardHeader className="bg-gradient-to-r from-amber-500 to-amber-600 text-white">
                       <CardTitle className="flex items-center gap-2">
                         <AlertTriangle className="h-5 w-5" />
@@ -214,10 +214,10 @@ export default function IsaPage() {
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="p-6">
-                      <p className="text-slate-700 dark:text-slate-300 mb-4">
+                      <p className="text-slate-300 mb-4">
                         Islam claims to honor Jesus while systematically denying everything he taught about himself:
                       </p>
-                      <ul className="space-y-3 text-slate-600 dark:text-slate-400">
+                      <ul className="space-y-3 text-slate-400">
                         <li className="flex items-start gap-2">
                           <span className="text-amber-500 font-bold">•</span>
                           <span><strong>Jesus claimed:</strong> <a href="https://www.biblegateway.com/passage/?search=John+10:30&version=NIV" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline">"I and the Father are one" (John 10:30)</a>. <strong>Islam says:</strong> Blasphemy.</span>
@@ -231,7 +231,7 @@ export default function IsaPage() {
                           <span><strong>Jesus predicted:</strong> <a href="https://www.biblegateway.com/passage/?search=Mark+8:31&version=NIV" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline">His death and resurrection (Mark 8:31)</a>. <strong>Islam says:</strong> Never happened.</span>
                         </li>
                       </ul>
-                      <p className="mt-4 text-amber-700 dark:text-amber-300 font-medium">
+                      <p className="mt-4 text-amber-300 dark:text-amber-300 font-medium">
                         You cannot honor someone by calling them a liar. Either Jesus was who he claimed to be, or he wasn't.
                       </p>
                     </CardContent>
@@ -254,25 +254,25 @@ export default function IsaPage() {
                   <CardContent>
                     <div className="space-y-6">
                       {quranReferences.map((ref, index) => (
-                        <div key={index} className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700">
+                        <div key={index} className="p-4 bg-slate-800/50 rounded-lg border border-slate-700">
                           <div className="flex items-start justify-between mb-3">
                             <div>
-                              <h4 className="font-semibold text-slate-900 dark:text-white mb-1">{ref.topic}</h4>
-                              <p className="text-sm text-emerald-600 dark:text-emerald-400">Quran {ref.verse}</p>
+                              <h4 className="font-semibold text-white mb-1">{ref.topic}</h4>
+                              <p className="text-sm text-amber-400">Quran {ref.verse}</p>
                             </div>
                             <a
                               href={ref.url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex items-center gap-1 text-sm text-emerald-600 hover:text-emerald-700 dark:text-emerald-400"
+                              className="flex items-center gap-1 text-sm text-amber-400 hover:text-amber-300"
                             >
                               Read <ExternalLink className="h-4 w-4" />
                             </a>
                           </div>
                           <div className="space-y-2">
-                            <p className="text-xl font-arabic text-slate-800 dark:text-slate-200 text-right">{ref.arabic}</p>
-                            <p className="text-sm italic text-slate-600 dark:text-slate-400">{ref.transliteration}</p>
-                            <p className="text-slate-700 dark:text-slate-300">{ref.translation}</p>
+                            <p className="text-xl font-arabic text-slate-200 text-right">{ref.arabic}</p>
+                            <p className="text-sm italic text-slate-400">{ref.transliteration}</p>
+                            <p className="text-slate-300">{ref.translation}</p>
                           </div>
                         </div>
                       ))}
@@ -296,22 +296,22 @@ export default function IsaPage() {
                   <CardContent>
                     <div className="space-y-6">
                       {bibleReferences.map((ref, index) => (
-                        <div key={index} className="p-4 bg-blue-50 dark:bg-blue-900/10 rounded-lg border border-blue-200 dark:border-blue-800">
+                        <div key={index} className="p-4 bg-slate-800/50 bg-slate-800/50 rounded-lg border border-slate-700 border-slate-700">
                           <div className="flex items-start justify-between mb-3">
                             <div>
-                              <h4 className="font-semibold text-slate-900 dark:text-white mb-1">{ref.topic}</h4>
-                              <p className="text-sm text-blue-600 dark:text-blue-400">{ref.verse}</p>
+                              <h4 className="font-semibold text-white mb-1">{ref.topic}</h4>
+                              <p className="text-sm text-amber-400 text-amber-400">{ref.verse}</p>
                             </div>
                             <a
                               href={ref.url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex items-center gap-1 text-sm text-blue-600 hover:text-blue-700 dark:text-blue-400"
+                              className="flex items-center gap-1 text-sm text-amber-400 hover:text-blue-700 text-amber-400"
                             >
                               Read <ExternalLink className="h-4 w-4" />
                             </a>
                           </div>
-                          <blockquote className="text-slate-700 dark:text-slate-300 italic border-l-4 border-blue-500 pl-4">
+                          <blockquote className="text-slate-300 italic border-l-4 border-blue-500 pl-4">
                             "{ref.text}"
                           </blockquote>
                         </div>
@@ -336,12 +336,12 @@ export default function IsaPage() {
                   <CardContent>
                     <div className="space-y-6">
                       {qaItems.map((qa, index) => (
-                        <div key={index} className="p-4 bg-purple-50 dark:bg-purple-900/10 rounded-lg border border-purple-200 dark:border-purple-800">
-                          <h4 className="font-semibold text-slate-900 dark:text-white mb-3 flex items-start gap-2">
-                            <span className="text-purple-600 dark:text-purple-400 flex-shrink-0">Q:</span>
+                        <div key={index} className="p-4 bg-slate-800/50 bg-slate-800/50 rounded-lg border border-slate-700 border-slate-700">
+                          <h4 className="font-semibold text-white mb-3 flex items-start gap-2">
+                            <span className="text-amber-400 text-amber-400 flex-shrink-0">Q:</span>
                             <span>{qa.question}</span>
                           </h4>
-                          <p className="text-slate-700 dark:text-slate-300 pl-6">{qa.answer}</p>
+                          <p className="text-slate-300 pl-6">{qa.answer}</p>
                         </div>
                       ))}
                     </div>
@@ -358,7 +358,7 @@ export default function IsaPage() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+            <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
               <BookOpen className="h-6 w-6 text-emerald-600" />
               Islamic vs. Biblical Claims About Jesus
             </h2>
@@ -366,18 +366,18 @@ export default function IsaPage() {
               {islamicClaims.map((item, index) => (
                 <Card key={index}>
                   <CardContent className="p-4">
-                    <h3 className="font-semibold text-slate-900 dark:text-white mb-3">{item.claim}</h3>
+                    <h3 className="font-semibold text-white mb-3">{item.claim}</h3>
                     <div className="grid gap-3 md:grid-cols-2 mb-3">
-                      <div className="p-3 bg-slate-50 dark:bg-slate-800 rounded-lg">
-                        <p className="text-xs font-medium text-slate-500 dark:text-slate-400 mb-1">ISLAMIC VIEW</p>
-                        <p className="text-sm text-slate-700 dark:text-slate-300">{item.islamic}</p>
+                      <div className="p-3 bg-slate-800/50 rounded-lg">
+                        <p className="text-xs font-medium text-slate-500  mb-1">ISLAMIC VIEW</p>
+                        <p className="text-sm text-slate-300">{item.islamic}</p>
                       </div>
-                      <div className="p-3 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg">
-                        <p className="text-xs font-medium text-emerald-600 dark:text-emerald-400 mb-1">BIBLICAL VIEW</p>
-                        <p className="text-sm text-emerald-700 dark:text-emerald-300">{item.biblical}</p>
+                      <div className="p-3 bg-slate-800/50 rounded-lg">
+                        <p className="text-xs font-medium text-amber-400 mb-1">BIBLICAL VIEW</p>
+                        <p className="text-sm text-amber-400">{item.biblical}</p>
                       </div>
                     </div>
-                    <p className="text-sm text-amber-600 dark:text-amber-400 flex items-start gap-2">
+                    <p className="text-sm text-amber-400 text-amber-400 flex items-start gap-2">
                       <AlertTriangle className="h-4 w-4 mt-0.5 flex-shrink-0" />
                       {item.issue}
                     </p>
@@ -394,20 +394,20 @@ export default function IsaPage() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+            <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
               <Cross className="h-6 w-6 text-red-600" />
               Denying the Crucifixion
             </h2>
             <Card>
               <CardContent className="p-6">
-                <blockquote className="text-lg italic text-slate-700 dark:text-slate-300 border-l-4 border-red-500 pl-4 mb-6">
+                <blockquote className="text-lg italic text-slate-300 border-l-4 border-red-500 pl-4 mb-6">
                   "And [for] their saying, 'Indeed, we have killed the Messiah, Jesus, the son of Mary, the messenger of Allah.' And they did not kill him, nor did they crucify him; but [another] was made to resemble him to them."
-                  <span className="block text-sm text-emerald-600 dark:text-emerald-400 mt-2">— Quran 4:157</span>
+                  <span className="block text-sm text-amber-400 mt-2">— Quran 4:157</span>
                 </blockquote>
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="text-slate-300 mb-4">
                   This single verse, written 600 years after the events, contradicts:
                 </p>
-                <ul className="space-y-2 text-slate-600 dark:text-slate-400">
+                <ul className="space-y-2 text-slate-400">
                   <li className="flex items-start gap-2">
                     <span className="text-red-500 font-bold">•</span>
                     <span>Four Gospel accounts written within decades of the events</span>
@@ -429,8 +429,8 @@ export default function IsaPage() {
                     <span>The testimony of Jesus' own disciples who died for this belief</span>
                   </li>
                 </ul>
-                <div className="mt-6 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800">
-                  <p className="text-red-800 dark:text-red-200 text-sm">
+                <div className="mt-6 p-4 bg-red-500/10 bg-red-500/10 rounded-lg border border-red-500/30 border-red-500/30">
+                  <p className="text-red-300 text-red-300 text-sm">
                     <strong>The substitution theory</strong> (that someone else was made to look like Jesus and crucified in his place) raises more questions: Did Allah deceive everyone? Did he allow an innocent person to be crucified? Why would God trick Jesus' followers into believing a lie for 600 years?
                   </p>
                 </div>
@@ -445,12 +445,12 @@ export default function IsaPage() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">
+            <h2 className="text-2xl font-bold text-white mb-6">
               What the Quran Says About Jesus
             </h2>
             <Card>
               <CardContent className="p-6">
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="text-slate-300 mb-4">
                   Interestingly, the Quran gives Jesus unique titles and attributes given to no other prophet:
                 </p>
                 <div className="grid gap-4 md:grid-cols-2">
@@ -464,14 +464,14 @@ export default function IsaPage() {
                     { title: "Raised the dead", verse: "3:49", note: "By Allah's permission" },
                     { title: "Will return", verse: "43:61", note: "Sign of the Hour" }
                   ].map((item, index) => (
-                    <div key={index} className="p-3 bg-slate-50 dark:bg-slate-800 rounded-lg">
-                      <p className="font-medium text-slate-900 dark:text-white">{item.title}</p>
-                      <p className="text-xs text-emerald-600 dark:text-emerald-400">Quran {item.verse}</p>
-                      <p className="text-xs text-slate-500 dark:text-slate-400">{item.note}</p>
+                    <div key={index} className="p-3 bg-slate-800/50 rounded-lg">
+                      <p className="font-medium text-white">{item.title}</p>
+                      <p className="text-xs text-amber-400">Quran {item.verse}</p>
+                      <p className="text-xs text-slate-500 ">{item.note}</p>
                     </div>
                   ))}
                 </div>
-                <div className="mt-6 p-4 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg">
+                <div className="mt-6 p-4 bg-slate-800/50 rounded-lg">
                   <p className="text-emerald-800 dark:text-emerald-200 text-sm">
                     <strong>The question:</strong> If Jesus was just a human prophet, why does the Quran give him titles like "Word of Allah" and "Spirit from Allah"? Why was he born of a virgin when no other prophet was? Why could he create life and raise the dead when Muhammad performed no such miracles?
                   </p>
@@ -487,15 +487,15 @@ export default function IsaPage() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">
+            <h2 className="text-2xl font-bold text-white mb-6">
               Jesus' Return in Islamic Tradition
             </h2>
             <Card>
               <CardContent className="p-6">
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="text-slate-300 mb-4">
                   Islamic tradition teaches that Jesus (Isa) will return before the Day of Judgment. But his mission is radically different from Christianity:
                 </p>
-                <ul className="space-y-3 text-slate-600 dark:text-slate-400">
+                <ul className="space-y-3 text-slate-400">
                   <li className="flex items-start gap-2">
                     <span className="text-amber-500 font-bold">•</span>
                     <span><strong>Break the cross:</strong> Destroy Christianity and its symbol</span>
@@ -521,8 +521,8 @@ export default function IsaPage() {
                     <span><strong>Marry and die:</strong> Finally die and be buried next to Muhammad</span>
                   </li>
                 </ul>
-                <div className="mt-6 p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-800">
-                  <p className="text-amber-800 dark:text-amber-200 text-sm">
+                <div className="mt-6 p-4 bg-amber-500/10 dark:bg-amber-900/20 rounded-lg border border-amber-500/30 border-amber-500/30">
+                  <p className="text-amber-300 text-amber-300 text-sm">
                     <strong>Consider:</strong> In Islam, Jesus returns not to save but to destroy Christianity. Not to reign as King of Kings but to serve as a Muslim subordinate to Muhammad's message. This is a complete inversion of biblical prophecy.
                   </p>
                 </div>
@@ -537,31 +537,31 @@ export default function IsaPage() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+            <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
               <Scale className="h-6 w-6 text-blue-600" />
               Questions to Consider
             </h2>
-            <Card className="bg-slate-50 dark:bg-slate-800/50">
+            <Card className="bg-slate-800/50/50">
               <CardContent className="p-6">
-                <ul className="space-y-4 text-slate-700 dark:text-slate-300">
+                <ul className="space-y-4 text-slate-300">
                   <li className="flex items-start gap-3">
-                    <span className="text-emerald-600 font-bold">1.</span>
+                    <span className="text-amber-500 font-bold">1.</span>
                     <span>How can one claim to honor Jesus while denying everything he said about himself?</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-emerald-600 font-bold">2.</span>
+                    <span className="text-amber-500 font-bold">2.</span>
                     <span>Why should a claim from 600 years later override multiple contemporary eyewitness accounts?</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-emerald-600 font-bold">3.</span>
+                    <span className="text-amber-500 font-bold">3.</span>
                     <span>If Jesus was just a prophet, why does even the Quran give him unique divine attributes?</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-emerald-600 font-bold">4.</span>
+                    <span className="text-amber-500 font-bold">4.</span>
                     <span>Would a truthful God allow billions to believe a "lie" about Jesus for 600 years before "correcting" it?</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-emerald-600 font-bold">5.</span>
+                    <span className="text-amber-500 font-bold">5.</span>
                     <span>Why would Jesus return to destroy the faith he died (or allegedly didn't die) to establish?</span>
                   </li>
                 </ul>
@@ -577,18 +577,18 @@ export default function IsaPage() {
             className="mb-12"
           >
             <Card className="overflow-hidden border-emerald-200 dark:border-emerald-800">
-              <CardHeader className="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white">
+              <CardHeader className="bg-gradient-to-r from-red-600 to-amber-600 text-white">
                 <CardTitle className="flex items-center gap-2">
                   <Heart className="h-5 w-5" />
                   Jesus' Own Words
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-6">
-                <blockquote className="text-lg italic text-slate-700 dark:text-slate-300 border-l-4 border-emerald-500 pl-4 mb-4">
+                <blockquote className="text-lg italic text-slate-300 border-l-4 border-emerald-500 pl-4 mb-4">
                   "Come to me, all you who are weary and burdened, and I will give you rest. Take my yoke upon you and learn from me, for I am gentle and humble in heart, and you will find rest for your souls."
-                  <span className="block text-sm text-emerald-600 dark:text-emerald-400 mt-2">— Matthew 11:28-29</span>
+                  <span className="block text-sm text-amber-400 mt-2">— Matthew 11:28-29</span>
                 </blockquote>
-                <p className="text-slate-700 dark:text-slate-300">
+                <p className="text-slate-300">
                   Jesus offers rest, not rituals. Relationship, not rules. Grace, not uncertainty. Consider investigating who Jesus claimed to be, not just what Islam claims about him.
                 </p>
               </CardContent>
@@ -596,15 +596,15 @@ export default function IsaPage() {
           </motion.div>
 
           {/* Navigation */}
-          <div className="flex justify-between items-center pt-8 border-t border-slate-200 dark:border-slate-800">
+          <div className="flex justify-between items-center pt-8 border-t border-slate-200 ">
             <Link href="/prophets/muhammad">
-              <Button variant="outline" className="gap-2">
+              <Button variant="outline" className="gap-2 border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white hover:border-slate-500">
                 <ArrowLeft className="h-4 w-4" />
                 Muhammad
               </Button>
             </Link>
             <Link href="/prophets/ibrahim">
-              <Button className="gap-2 bg-emerald-600 hover:bg-emerald-700">
+              <Button className="gap-2 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500">
                 Abraham in Islam
                 <ArrowRight className="h-4 w-4" />
               </Button>

@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
+    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 sm:py-32">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5" />
@@ -19,10 +19,10 @@ export default function AboutPage() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
               About The Truth in Islam
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-400">
               Dedicated to presenting what Islamic sources actually teach, so that seekers can make informed decisions based on facts.
             </p>
           </motion.div>
@@ -37,21 +37,21 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <Card className="overflow-hidden">
-              <CardHeader className="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white">
+            <Card className="overflow-hidden rounded-xl border border-slate-700 bg-slate-800/50">
+              <CardHeader className="bg-gradient-to-r from-red-600 to-amber-600 text-white">
                 <CardTitle className="flex items-center gap-2 text-xl">
                   <Target className="h-6 w-6" />
                   Our Mission
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-6">
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="text-slate-300 mb-4">
                   The Truth in Islam exists to present what Islam's foundational texts actually teach. Many people - both Muslims and non-Muslims - are unaware of what the Quran, Hadith, and classical Islamic scholarship actually say about key issues.
                 </p>
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="text-slate-300 mb-4">
                   We believe everyone deserves access to this information. Our approach is simple: present the original sources, provide context, and let readers draw their own conclusions.
                 </p>
-                <p className="text-slate-700 dark:text-slate-300">
+                <p className="text-slate-300">
                   We are particularly concerned for Muslims who may have never encountered this information, often because it is taught only in Arabic or kept within scholarly circles. Truth should not be hidden.
                 </p>
               </CardContent>
@@ -61,7 +61,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-16 bg-slate-50 dark:bg-slate-900/50">
+      <section className="py-16 bg-slate-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -69,7 +69,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
+            <h2 className="text-3xl font-bold text-white">
               Our Values
             </h2>
           </motion.div>
@@ -114,15 +114,15 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="h-full">
+                <Card className="h-full rounded-xl border border-slate-700 bg-slate-800/50">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="p-2 rounded-lg bg-emerald-100 dark:bg-emerald-900/30">
-                        <value.icon className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+                      <div className="p-2 rounded-lg bg-amber-500/10 border border-amber-500/30">
+                        <value.icon className="h-5 w-5 text-amber-400" />
                       </div>
-                      <h3 className="font-semibold text-slate-900 dark:text-white">{value.title}</h3>
+                      <h3 className="font-semibold text-white">{value.title}</h3>
                     </div>
-                    <p className="text-slate-600 dark:text-slate-400">{value.description}</p>
+                    <p className="text-slate-400">{value.description}</p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -132,14 +132,14 @@ export default function AboutPage() {
       </section>
 
       {/* Who We Are For */}
-      <section className="py-16">
+      <section className="py-16 bg-slate-800">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 text-center">
+            <h2 className="text-2xl font-bold text-white mb-6 text-center">
               Who This Site is For
             </h2>
             <div className="space-y-4">
@@ -165,10 +165,10 @@ export default function AboutPage() {
                   description: "All claims are sourced from primary Islamic texts. This site can serve as a reference point for further study."
                 }
               ].map((item, index) => (
-                <Card key={index}>
+                <Card key={index} className="rounded-xl border border-slate-700 bg-slate-800/50">
                   <CardContent className="p-4">
-                    <h3 className="font-semibold text-slate-900 dark:text-white mb-2">{item.audience}</h3>
-                    <p className="text-slate-600 dark:text-slate-400 text-sm">{item.description}</p>
+                    <h3 className="font-semibold text-white mb-2">{item.audience}</h3>
+                    <p className="text-slate-400 text-sm">{item.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -178,27 +178,27 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-slate-50 dark:bg-slate-900/50">
+      <section className="py-16 bg-slate-900">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
+            <h2 className="text-2xl font-bold text-white mb-4">
               Begin Your Research
             </h2>
-            <p className="text-slate-600 dark:text-slate-400 mb-6">
+            <p className="text-slate-400 mb-6">
               Start exploring what Islamic sources actually teach.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/islam">
-                <Button className="bg-emerald-600 hover:bg-emerald-700">
+                <Button className="bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white border-0 shadow-lg shadow-red-900/30">
                   Start Here
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button variant="outline">
+                <Button variant="outline" className="border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white hover:border-slate-500">
                   Contact Us
                 </Button>
               </Link>

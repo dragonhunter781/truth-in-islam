@@ -137,7 +137,7 @@ const qaItems = [
 
 export default function MuhammadPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
+    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 sm:py-32">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5" />
@@ -150,18 +150,18 @@ export default function MuhammadPage() {
           >
             <Link
               href="/prophets"
-              className="inline-flex items-center gap-2 text-sm text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 mb-6"
+              className="inline-flex items-center gap-2 text-sm text-amber-400 hover:text-amber-300 mb-6"
             >
               <ArrowLeft className="h-4 w-4" />
               Back to Prophets
             </Link>
-            <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
               Muhammad
             </h1>
-            <p className="mt-2 text-2xl font-arabic text-emerald-600 dark:text-emerald-400">
+            <p className="mt-2 text-2xl font-arabic text-amber-400">
               محمد
             </p>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-400">
               The founder of Islam - examining his life, actions, and character according to Islamic sources themselves.
             </p>
           </motion.div>
@@ -186,9 +186,9 @@ export default function MuhammadPage() {
               >
                 <Card>
                   <CardContent className="p-4 text-center">
-                    <p className="text-2xl font-bold text-emerald-600 dark:text-emerald-400">{fact.value}</p>
-                    <p className="font-semibold text-slate-900 dark:text-white">{fact.label}</p>
-                    <p className="text-xs text-slate-500 dark:text-slate-400">{fact.note}</p>
+                    <p className="text-2xl font-bold text-amber-400">{fact.value}</p>
+                    <p className="font-semibold text-white">{fact.label}</p>
+                    <p className="text-xs text-slate-500 ">{fact.note}</p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -220,7 +220,7 @@ export default function MuhammadPage() {
                 <div className="space-y-8">
                   {/* The Perfect Example Claim */}
                   <Card className="overflow-hidden">
-                    <CardHeader className="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white">
+                    <CardHeader className="bg-gradient-to-r from-red-600 to-amber-600 text-white">
                       <CardTitle className="flex items-center gap-2">
                         <Users className="h-5 w-5" />
                         The "Perfect Example"
@@ -230,13 +230,13 @@ export default function MuhammadPage() {
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="p-6">
-                      <p className="text-slate-700 dark:text-slate-300 mb-4">
+                      <p className="text-slate-300 mb-4">
                         The Quran commands Muslims to follow Muhammad as the perfect example (uswa hasana):
                       </p>
-                      <blockquote className="text-slate-600 dark:text-slate-400 italic border-l-4 border-emerald-500 pl-4 mb-4">
-                        "There has certainly been for you in the Messenger of Allah an excellent pattern for anyone whose hope is in Allah and the Last Day." — <a href="https://quran.com/33/21" target="_blank" rel="noopener noreferrer" className="text-emerald-600 dark:text-emerald-400 hover:underline inline-flex items-center gap-1">Quran 33:21 <ExternalLink className="h-3 w-3" /></a>
+                      <blockquote className="text-slate-400 italic border-l-4 border-emerald-500 pl-4 mb-4">
+                        "There has certainly been for you in the Messenger of Allah an excellent pattern for anyone whose hope is in Allah and the Last Day." — <a href="https://quran.com/33/21" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:underline inline-flex items-center gap-1">Quran 33:21 <ExternalLink className="h-3 w-3" /></a>
                       </blockquote>
-                      <p className="text-slate-700 dark:text-slate-300">
+                      <p className="text-slate-300">
                         This is why examining Muhammad's life is essential. If he is the model for all humanity, his actions deserve scrutiny according to the sources Muslims consider most authentic.
                       </p>
                     </CardContent>
@@ -259,25 +259,25 @@ export default function MuhammadPage() {
                   <CardContent>
                     <div className="space-y-6">
                       {quranReferences.map((ref, index) => (
-                        <div key={index} className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700">
+                        <div key={index} className="p-4 bg-slate-800/50 rounded-lg border border-slate-700">
                           <div className="flex items-start justify-between mb-3">
                             <div>
-                              <h4 className="font-semibold text-slate-900 dark:text-white mb-1">{ref.topic}</h4>
-                              <p className="text-sm text-emerald-600 dark:text-emerald-400">Quran {ref.verse}</p>
+                              <h4 className="font-semibold text-white mb-1">{ref.topic}</h4>
+                              <p className="text-sm text-amber-400">Quran {ref.verse}</p>
                             </div>
                             <a
                               href={ref.url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex items-center gap-1 text-sm text-emerald-600 hover:text-emerald-700 dark:text-emerald-400"
+                              className="flex items-center gap-1 text-sm text-amber-400 hover:text-amber-300"
                             >
                               Read on Quran.com <ExternalLink className="h-4 w-4" />
                             </a>
                           </div>
                           <div className="space-y-2">
-                            <p className="text-xl font-arabic text-slate-800 dark:text-slate-200 text-right">{ref.arabic}</p>
-                            <p className="text-sm italic text-slate-600 dark:text-slate-400">{ref.transliteration}</p>
-                            <p className="text-slate-700 dark:text-slate-300">{ref.translation}</p>
+                            <p className="text-xl font-arabic text-slate-200 text-right">{ref.arabic}</p>
+                            <p className="text-sm italic text-slate-400">{ref.transliteration}</p>
+                            <p className="text-slate-300">{ref.translation}</p>
                           </div>
                         </div>
                       ))}
@@ -301,22 +301,22 @@ export default function MuhammadPage() {
                   <CardContent>
                     <div className="space-y-6">
                       {hadithReferences.map((hadith, index) => (
-                        <div key={index} className="p-4 bg-amber-50 dark:bg-amber-900/10 rounded-lg border border-amber-200 dark:border-amber-800">
+                        <div key={index} className="p-4 bg-amber-500/10 bg-amber-500/10 rounded-lg border border-amber-500/30 border-amber-500/30">
                           <div className="flex items-start justify-between mb-3">
                             <div>
-                              <h4 className="font-semibold text-slate-900 dark:text-white mb-1">{hadith.topic}</h4>
-                              <p className="text-sm text-amber-600 dark:text-amber-400">{hadith.book} {hadith.number}</p>
+                              <h4 className="font-semibold text-white mb-1">{hadith.topic}</h4>
+                              <p className="text-sm text-amber-400 text-amber-400">{hadith.book} {hadith.number}</p>
                             </div>
                             <a
                               href={hadith.url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex items-center gap-1 text-sm text-amber-600 hover:text-amber-700 dark:text-amber-400"
+                              className="flex items-center gap-1 text-sm text-amber-400 hover:text-amber-300 text-amber-400"
                             >
                               Read on Sunnah.com <ExternalLink className="h-4 w-4" />
                             </a>
                           </div>
-                          <blockquote className="text-slate-700 dark:text-slate-300 italic border-l-4 border-amber-500 pl-4">
+                          <blockquote className="text-slate-300 italic border-l-4 border-amber-500 pl-4">
                             {hadith.text}
                           </blockquote>
                         </div>
@@ -341,12 +341,12 @@ export default function MuhammadPage() {
                   <CardContent>
                     <div className="space-y-6">
                       {qaItems.map((qa, index) => (
-                        <div key={index} className="p-4 bg-blue-50 dark:bg-blue-900/10 rounded-lg border border-blue-200 dark:border-blue-800">
-                          <h4 className="font-semibold text-slate-900 dark:text-white mb-3 flex items-start gap-2">
-                            <span className="text-blue-600 dark:text-blue-400 flex-shrink-0">Q:</span>
+                        <div key={index} className="p-4 bg-slate-800/50 bg-slate-800/50 rounded-lg border border-slate-700 border-slate-700">
+                          <h4 className="font-semibold text-white mb-3 flex items-start gap-2">
+                            <span className="text-amber-400 text-amber-400 flex-shrink-0">Q:</span>
                             <span>{qa.question}</span>
                           </h4>
-                          <p className="text-slate-700 dark:text-slate-300 pl-6">{qa.answer}</p>
+                          <p className="text-slate-300 pl-6">{qa.answer}</p>
                         </div>
                       ))}
                     </div>
@@ -363,37 +363,37 @@ export default function MuhammadPage() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+            <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
               <AlertTriangle className="h-6 w-6 text-amber-500" />
               Muhammad's Marriages
             </h2>
             <Card>
               <CardContent className="p-6">
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="text-slate-300 mb-4">
                   While the Quran limits Muslim men to four wives (4:3), Muhammad had special permission for unlimited wives (33:50). His marriages included:
                 </p>
                 <div className="overflow-x-auto">
                   <table className="w-full text-sm">
                     <thead>
-                      <tr className="border-b border-slate-200 dark:border-slate-700">
-                        <th className="text-left py-2 px-3 text-slate-900 dark:text-white">Wife</th>
-                        <th className="text-left py-2 px-3 text-slate-900 dark:text-white">Age/Details</th>
-                        <th className="text-left py-2 px-3 text-slate-900 dark:text-white">Note</th>
+                      <tr className="border-b border-slate-700">
+                        <th className="text-left py-2 px-3 text-white">Wife</th>
+                        <th className="text-left py-2 px-3 text-white">Age/Details</th>
+                        <th className="text-left py-2 px-3 text-white">Note</th>
                       </tr>
                     </thead>
                     <tbody>
                       {marriages.map((wife, index) => (
-                        <tr key={index} className="border-b border-slate-100 dark:border-slate-800">
-                          <td className="py-2 px-3 text-slate-700 dark:text-slate-300">{wife.name}</td>
-                          <td className="py-2 px-3 text-slate-600 dark:text-slate-400">{wife.age}</td>
-                          <td className="py-2 px-3 text-slate-500 dark:text-slate-500 text-xs">{wife.note}</td>
+                        <tr key={index} className="border-b border-slate-100 ">
+                          <td className="py-2 px-3 text-slate-300">{wife.name}</td>
+                          <td className="py-2 px-3 text-slate-400">{wife.age}</td>
+                          <td className="py-2 px-3 text-slate-500  text-xs">{wife.note}</td>
                         </tr>
                       ))}
                     </tbody>
                   </table>
                 </div>
-                <div className="mt-4 p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-800">
-                  <p className="text-amber-800 dark:text-amber-200 text-sm">
+                <div className="mt-4 p-4 bg-amber-500/10 dark:bg-amber-900/20 rounded-lg border border-amber-500/30 border-amber-500/30">
+                  <p className="text-amber-300 text-amber-300 text-sm">
                     <strong>Notable:</strong> Aisha's marriage at 6 and consummation at 9 is documented in multiple sahih hadiths (<a href="https://sunnah.com/bukhari:5134" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-900 dark:hover:text-amber-100">Bukhari 5:58:234</a>, <a href="https://sunnah.com/muslim:1422a" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-900 dark:hover:text-amber-100">Muslim 8:3310</a>). Zaynab bint Jahsh was the wife of Muhammad's adopted son Zayd, whom Allah commanded to divorce her so Muhammad could marry her (<a href="https://quran.com/33/37" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-900 dark:hover:text-amber-100">Quran 33:37</a>).
                   </p>
                 </div>
@@ -408,28 +408,28 @@ export default function MuhammadPage() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+            <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
               <Sword className="h-6 w-6 text-red-500" />
               Military Campaigns
             </h2>
             <Card>
               <CardContent className="p-6">
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
+                <p className="text-slate-300 mb-4">
                   Muhammad personally led or ordered approximately 86 military expeditions during his 10 years in Medina. Here are some notable ones:
                 </p>
                 <div className="space-y-3">
                   {militaryCampaigns.map((campaign, index) => (
-                    <div key={index} className="flex items-center gap-4 p-3 bg-slate-50 dark:bg-slate-800 rounded-lg">
-                      <span className="text-sm font-semibold text-slate-500 dark:text-slate-400 w-12">{campaign.year}</span>
+                    <div key={index} className="flex items-center gap-4 p-3 bg-slate-800/50 rounded-lg">
+                      <span className="text-sm font-semibold text-slate-500  w-12">{campaign.year}</span>
                       <div>
-                        <p className="font-medium text-slate-900 dark:text-white">{campaign.name}</p>
-                        <p className="text-xs text-slate-600 dark:text-slate-400">{campaign.note}</p>
+                        <p className="font-medium text-white">{campaign.name}</p>
+                        <p className="text-xs text-slate-400">{campaign.note}</p>
                       </div>
                     </div>
                   ))}
                 </div>
-                <div className="mt-4 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800">
-                  <p className="text-red-800 dark:text-red-200 text-sm">
+                <div className="mt-4 p-4 bg-red-500/10 bg-red-500/10 rounded-lg border border-red-500/30 border-red-500/30">
+                  <p className="text-red-300 text-red-300 text-sm">
                     <strong>Banu Qurayza:</strong> After the Battle of the Trench, Muhammad ordered the execution of 600-900 Jewish men and the enslavement of women and children. The men were beheaded in batches, with Muhammad personally observing. (<a href="https://sunnah.com/bukhari:3043" target="_blank" rel="noopener noreferrer" className="underline hover:text-red-900 dark:hover:text-red-100">Sahih Bukhari 5:59:369</a>, Ibn Ishaq's Sirat)
                   </p>
                 </div>
@@ -444,7 +444,7 @@ export default function MuhammadPage() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">
+            <h2 className="text-2xl font-bold text-white mb-6">
               Other Documented Actions
             </h2>
             <div className="space-y-4">
@@ -472,9 +472,9 @@ export default function MuhammadPage() {
               ].map((item, index) => (
                 <Card key={index}>
                   <CardContent className="p-4">
-                    <h3 className="font-semibold text-slate-900 dark:text-white mb-2">{item.title}</h3>
-                    <p className="text-slate-600 dark:text-slate-400 text-sm mb-2">{item.content}</p>
-                    <p className="text-xs text-emerald-600 dark:text-emerald-400">Source: {item.source}</p>
+                    <h3 className="font-semibold text-white mb-2">{item.title}</h3>
+                    <p className="text-slate-400 text-sm mb-2">{item.content}</p>
+                    <p className="text-xs text-amber-400">Source: {item.source}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -488,15 +488,15 @@ export default function MuhammadPage() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">
+            <h2 className="text-2xl font-bold text-white mb-6">
               Comparison: Muhammad vs. Jesus
             </h2>
             <Card>
               <CardContent className="p-6">
                 <div className="grid gap-4 md:grid-cols-2">
-                  <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
-                    <h4 className="font-semibold text-slate-900 dark:text-white mb-3">Muhammad</h4>
-                    <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+                  <div className="p-4 bg-slate-800/50 rounded-lg">
+                    <h4 className="font-semibold text-white mb-3">Muhammad</h4>
+                    <ul className="space-y-2 text-sm text-slate-400">
                       <li>• Multiple wives, including a child bride</li>
                       <li>• Led military conquests</li>
                       <li>• Ordered assassinations of critics</li>
@@ -505,9 +505,9 @@ export default function MuhammadPage() {
                       <li>• Died and remains dead</li>
                     </ul>
                   </div>
-                  <div className="p-4 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg">
-                    <h4 className="font-semibold text-emerald-900 dark:text-emerald-300 mb-3">Jesus</h4>
-                    <ul className="space-y-2 text-sm text-emerald-700 dark:text-emerald-400">
+                  <div className="p-4 bg-slate-800/50 rounded-lg">
+                    <h4 className="font-semibold text-amber-400 mb-3">Jesus</h4>
+                    <ul className="space-y-2 text-sm text-amber-400">
                       <li>• Never married, devoted to ministry</li>
                       <li>• Taught to love enemies</li>
                       <li>• Forgave those who crucified him</li>
@@ -528,27 +528,27 @@ export default function MuhammadPage() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+            <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
               <Scale className="h-6 w-6 text-blue-600" />
               Questions to Consider
             </h2>
-            <Card className="bg-slate-50 dark:bg-slate-800/50">
+            <Card className="bg-slate-800/50/50">
               <CardContent className="p-6">
-                <ul className="space-y-4 text-slate-700 dark:text-slate-300">
+                <ul className="space-y-4 text-slate-300">
                   <li className="flex items-start gap-3">
-                    <span className="text-emerald-600 font-bold">1.</span>
+                    <span className="text-amber-500 font-bold">1.</span>
                     <span>Is a man who married a 6-year-old and consummated when she was 9 the perfect moral example for all time?</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-emerald-600 font-bold">2.</span>
+                    <span className="text-amber-500 font-bold">2.</span>
                     <span>Why would Allah give Muhammad exemptions from rules that apply to all other Muslims?</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-emerald-600 font-bold">3.</span>
+                    <span className="text-amber-500 font-bold">3.</span>
                     <span>How can Islam be called a religion of peace when its founder led 86 military campaigns?</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-emerald-600 font-bold">4.</span>
+                    <span className="text-amber-500 font-bold">4.</span>
                     <span>If these accounts are false, why are they in Islam's most trusted sources? If true, how is this example to be followed today?</span>
                   </li>
                 </ul>
@@ -557,15 +557,15 @@ export default function MuhammadPage() {
           </motion.div>
 
           {/* Navigation */}
-          <div className="flex justify-between items-center pt-8 border-t border-slate-200 dark:border-slate-800">
+          <div className="flex justify-between items-center pt-8 border-t border-slate-200 ">
             <Link href="/prophets">
-              <Button variant="outline" className="gap-2">
+              <Button variant="outline" className="gap-2 border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white hover:border-slate-500">
                 <ArrowLeft className="h-4 w-4" />
                 All Prophets
               </Button>
             </Link>
             <Link href="/prophets/isa">
-              <Button className="gap-2 bg-emerald-600 hover:bg-emerald-700">
+              <Button className="gap-2 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500">
                 Jesus in Islam
                 <ArrowRight className="h-4 w-4" />
               </Button>

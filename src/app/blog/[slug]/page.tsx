@@ -24,11 +24,11 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
 
   if (!article) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Article Not Found</h1>
+          <h1 className="text-2xl font-bold text-white mb-4">Article Not Found</h1>
           <Link href="/blog">
-            <Button>Back to Articles</Button>
+            <Button className="bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white border-0">Back to Articles</Button>
           </Link>
         </div>
       </div>
@@ -36,7 +36,7 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
+    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
       {/* Header */}
       <section className="py-12 sm:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -47,25 +47,25 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
           >
             <Link
               href="/blog"
-              className="inline-flex items-center gap-2 text-sm text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 mb-6"
+              className="inline-flex items-center gap-2 text-sm text-amber-500 hover:text-amber-400 mb-6"
             >
               <ArrowLeft className="h-4 w-4" />
               Back to Articles
             </Link>
 
-            <span className="inline-block rounded-full bg-emerald-100 px-3 py-1 text-sm font-medium text-emerald-700 dark:bg-emerald-900/50 dark:text-emerald-300 mb-4">
+            <span className="inline-block rounded-full border border-amber-500/30 bg-amber-500/10 px-3 py-1 text-sm font-medium text-amber-400 mb-4">
               {article.category}
             </span>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
               {article.title}
             </h1>
 
-            <p className="mt-4 text-xl text-slate-600 dark:text-slate-400">
+            <p className="mt-4 text-xl text-slate-400">
               {article.excerpt}
             </p>
 
-            <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
+            <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-slate-500">
               <span className="flex items-center gap-1">
                 <Clock className="h-4 w-4" />
                 {article.readingTime} min read
@@ -74,7 +74,7 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
                 <Calendar className="h-4 w-4" />
                 {new Date(article.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
               </span>
-              <Button variant="ghost" size="sm" className="gap-1">
+              <Button variant="ghost" size="sm" className="gap-1 text-slate-400 hover:text-white hover:bg-slate-800">
                 <Share2 className="h-4 w-4" />
                 Share
               </Button>
@@ -91,11 +91,11 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <article className="prose prose-lg dark:prose-invert prose-emerald max-w-none prose-headings:text-slate-900 dark:prose-headings:text-white prose-h2:text-2xl prose-h2:font-bold prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-xl prose-h3:font-semibold prose-h3:mt-6 prose-h3:mb-3 prose-p:text-slate-700 dark:prose-p:text-slate-300 prose-p:my-4 prose-blockquote:border-l-4 prose-blockquote:border-emerald-500 prose-blockquote:pl-4 prose-blockquote:my-4 prose-blockquote:italic prose-blockquote:text-slate-600 dark:prose-blockquote:text-slate-400 prose-strong:font-semibold prose-strong:text-slate-900 dark:prose-strong:text-white prose-a:text-emerald-600 dark:prose-a:text-emerald-400 prose-a:no-underline hover:prose-a:underline prose-code:text-emerald-600 dark:prose-code:text-emerald-400 prose-code:bg-slate-100 dark:prose-code:bg-slate-800 prose-code:px-1 prose-code:py-0.5 prose-code:rounded">
+            <article className="prose prose-lg prose-invert max-w-none prose-headings:text-white prose-h2:text-2xl prose-h2:font-bold prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-xl prose-h3:font-semibold prose-h3:mt-6 prose-h3:mb-3 prose-p:text-slate-300 prose-p:my-4 prose-blockquote:border-l-4 prose-blockquote:border-amber-500 prose-blockquote:pl-4 prose-blockquote:my-4 prose-blockquote:italic prose-blockquote:text-slate-400 prose-strong:font-semibold prose-strong:text-white prose-a:text-amber-500 prose-a:no-underline hover:prose-a:underline hover:prose-a:text-amber-400 prose-code:text-amber-400 prose-code:bg-slate-800 prose-code:px-1 prose-code:py-0.5 prose-code:rounded">
               {article.content ? (
                 <div dangerouslySetInnerHTML={{ __html: article.content }} />
               ) : (
-                <div className="text-slate-600 dark:text-slate-400">
+                <div className="text-slate-400">
                   <p>Article content is being prepared. Please check back soon.</p>
                 </div>
               )}
@@ -103,17 +103,17 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
 
             {/* Sources */}
             {article.sources && article.sources.length > 0 && (
-              <Card className="mt-12 bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700">
+              <Card className="mt-12 bg-slate-800/50 border-slate-700">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-slate-900 dark:text-white">
-                    <BookOpen className="h-5 w-5 text-emerald-600" />
+                  <CardTitle className="flex items-center gap-2 text-white">
+                    <BookOpen className="h-5 w-5 text-amber-500" />
                     Sources
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2">
                     {article.sources.map((source, index) => (
-                      <li key={index} className="text-slate-600 dark:text-slate-400 text-sm">
+                      <li key={index} className="text-slate-400 text-sm">
                         • {source}
                       </li>
                     ))}
@@ -123,15 +123,15 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
             )}
 
             {/* Navigation */}
-            <div className="mt-12 flex justify-between items-center pt-8 border-t border-slate-200 dark:border-slate-800">
+            <div className="mt-12 flex justify-between items-center pt-8 border-t border-slate-700">
               <Link href="/blog">
-                <Button variant="outline" className="gap-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300">
+                <Button variant="outline" className="gap-2 border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white hover:border-slate-500">
                   <ArrowLeft className="h-4 w-4" />
                   All Articles
                 </Button>
               </Link>
               <Link href="/quran">
-                <Button className="gap-2 bg-emerald-600 hover:bg-emerald-700 text-white">
+                <Button className="gap-2 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white border-0">
                   Explore the Quran
                   <ArrowRight className="h-4 w-4" />
                 </Button>

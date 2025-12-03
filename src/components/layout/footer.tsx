@@ -42,21 +42,21 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-950">
+    <footer className="border-t border-slate-700 bg-slate-900">
       {/* Main Footer */}
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-5">
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-700 shadow-lg shadow-emerald-500/25">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-red-600 to-amber-600 shadow-lg shadow-red-500/25">
                 <span className="text-2xl font-bold text-white">T</span>
               </div>
-              <span className="text-xl font-bold text-slate-900 dark:text-white">
+              <span className="text-xl font-bold text-white">
                 The Truth in Islam
               </span>
             </Link>
-            <p className="mt-4 max-w-md text-slate-600 dark:text-slate-400">
+            <p className="mt-4 max-w-md text-slate-400">
               Examining what Islamic sources actually teach. Every claim sourced from the Quran, authentic hadith, and classical scholarship.
             </p>
 
@@ -68,7 +68,7 @@ export function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200 text-slate-600 transition-colors hover:bg-emerald-100 hover:text-emerald-600 dark:bg-slate-800 dark:text-slate-400 dark:hover:bg-emerald-900 dark:hover:text-emerald-400"
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 text-slate-400 transition-colors hover:bg-amber-500/20 hover:text-amber-400 border border-slate-700 hover:border-amber-500/30"
                 >
                   <social.icon className="h-5 w-5" />
                 </a>
@@ -78,7 +78,7 @@ export function Footer() {
 
           {/* Links Columns */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-900 dark:text-white">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
               Explore
             </h3>
             <ul className="mt-4 space-y-3">
@@ -86,7 +86,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-slate-600 transition-colors hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400"
+                    className="text-slate-400 transition-colors hover:text-amber-400"
                   >
                     {link.name}
                   </Link>
@@ -96,7 +96,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-900 dark:text-white">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
               Learn More
             </h3>
             <ul className="mt-4 space-y-3">
@@ -104,7 +104,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-slate-600 transition-colors hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400"
+                    className="text-slate-400 transition-colors hover:text-amber-400"
                   >
                     {link.name}
                   </Link>
@@ -114,7 +114,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-900 dark:text-white">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
               Resources
             </h3>
             <ul className="mt-4 space-y-3">
@@ -122,7 +122,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-slate-600 transition-colors hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400"
+                    className="text-slate-400 transition-colors hover:text-amber-400"
                   >
                     {link.name}
                   </Link>
@@ -134,12 +134,12 @@ export function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-slate-200 dark:border-slate-800">
+      <div className="border-t border-slate-800">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-6 sm:flex-row sm:px-6 lg:px-8">
-          <p className="text-sm text-slate-600 dark:text-slate-400">
+          <p className="text-sm text-slate-400">
             &copy; {new Date().getFullYear()} The Truth in Islam. All rights reserved.
           </p>
-          <div className="flex items-center gap-1 text-sm text-slate-600 dark:text-slate-400">
+          <div className="flex items-center gap-1 text-sm text-slate-400">
             Made with <Heart className="h-4 w-4 text-red-500" /> for seekers of truth
           </div>
           <div className="flex gap-6 text-sm">
@@ -147,7 +147,7 @@ export function Footer() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-slate-600 transition-colors hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400"
+                className="text-slate-400 transition-colors hover:text-amber-400"
               >
                 {link.name}
               </Link>
