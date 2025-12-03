@@ -296,6 +296,32 @@ export default function HajjPage() {
           </div>
         </div>
       </section>
+
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: "Hajj: Pilgrimage to Mecca Examined",
+            description: "An examination of Hajj - the pilgrimage to Mecca, its pre-Islamic pagan origins, rituals, and the troubling history of the Kaaba.",
+            author: {
+              "@type": "Organization",
+              name: "Truth in Islam",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Truth in Islam",
+              url: "https://truthinislam.com",
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": "https://truthinislam.com/pillars/hajj",
+            },
+          }),
+        }}
+      />
     </div>
   )
 }

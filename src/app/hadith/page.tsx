@@ -409,6 +409,34 @@ export default function HadithPage() {
 
   return (
     <div className="min-h-screen bg-slate-900">
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "The Hadith Examined - Sayings and Actions of Muhammad",
+            "description": "The sayings and actions of Muhammad that shape Islamic law and practice. These authenticated traditions reveal aspects of Islam that are rarely discussed.",
+            "author": {
+              "@type": "Organization",
+              "name": "Truth in Islam"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Truth in Islam"
+            },
+            "url": "https://truthinislam.com/hadith",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://truthinislam.com/hadith"
+            },
+            "articleSection": "Islamic Texts",
+            "keywords": ["Hadith", "Sahih Bukhari", "Sahih Muslim", "Muhammad", "Islamic tradition", "Sunnah"]
+          })
+        }}
+      />
+
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 sm:py-32 bg-slate-900">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5" />

@@ -471,6 +471,32 @@ export default function ShahadaPage() {
           </div>
         </div>
       </section>
+
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: "Shahada: The Islamic Declaration of Faith Examined",
+            description: "A critical examination of the Shahada - the Islamic declaration of faith, its binding nature, implications, and what it truly commits one to in Islamic doctrine.",
+            author: {
+              "@type": "Organization",
+              name: "Truth in Islam",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Truth in Islam",
+              url: "https://truthinislam.com",
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": "https://truthinislam.com/pillars/shahada",
+            },
+          }),
+        }}
+      />
     </div>
   )
 }

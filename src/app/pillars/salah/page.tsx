@@ -470,6 +470,32 @@ export default function SalahPage() {
           </div>
         </div>
       </section>
+
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: "Salah: The Five Daily Prayers in Islam Examined",
+            description: "An examination of Salah - the five daily Islamic prayers, their mandatory rituals, pre-Islamic origins, and consequences for non-compliance.",
+            author: {
+              "@type": "Organization",
+              name: "Truth in Islam",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Truth in Islam",
+              url: "https://truthinislam.com",
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": "https://truthinislam.com/pillars/salah",
+            },
+          }),
+        }}
+      />
     </div>
   )
 }

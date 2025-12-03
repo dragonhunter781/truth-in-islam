@@ -65,6 +65,34 @@ const jahannamDescriptions = [
 export default function AfterlifePage() {
   return (
     <div className="min-h-screen bg-slate-900">
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "The Islamic Afterlife - Jannah and Jahannam",
+            "description": "Examining what the Quran and Hadith teach about Jannah (Paradise) and Jahannam (Hell) - the rewards and punishments that await.",
+            "author": {
+              "@type": "Organization",
+              "name": "Truth in Islam"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Truth in Islam"
+            },
+            "url": "https://truthinislam.com/afterlife",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://truthinislam.com/afterlife"
+            },
+            "articleSection": "Islamic Beliefs",
+            "keywords": ["Jannah", "Jahannam", "Islamic afterlife", "Paradise in Islam", "Hell in Islam", "Islamic eschatology"]
+          })
+        }}
+      />
+
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 sm:py-32 bg-slate-900">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5" />

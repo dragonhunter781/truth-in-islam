@@ -7,6 +7,20 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Privacy Policy - Truth in Islam",
+            "description": "Your privacy is critically important to us, especially given the sensitive nature of this content. Learn how we protect your data.",
+            "url": "https://truthinislam.com/privacy"
+          })
+        }}
+      />
+
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">

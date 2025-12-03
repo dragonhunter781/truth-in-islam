@@ -87,6 +87,35 @@ const qaItems = [
 export default function IbrahimPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": ["Article", "Person"],
+            "headline": "Abraham (Ibrahim) in Islam: A Critical Examination",
+            "description": "Islam claims Abraham was a Muslim who built the Kaaba - examining this claim against historical evidence and the Bible.",
+            "name": "Abraham",
+            "alternateName": ["Ibrahim", "إبراهيم"],
+            "author": {
+              "@type": "Organization",
+              "name": "Truth in Islam"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Truth in Islam",
+              "url": "https://truthinislam.com"
+            },
+            "mainEntityOfPage": "https://truthinislam.com/prophets/ibrahim",
+            "about": {
+              "@type": "Person",
+              "name": "Abraham",
+              "alternateName": "Ibrahim",
+              "description": "Abraham as portrayed in Islamic tradition, contrasted with biblical accounts"
+            }
+          })
+        }}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 sm:py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

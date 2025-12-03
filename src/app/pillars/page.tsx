@@ -276,26 +276,28 @@ export default function PillarsPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Article",
-            headline: "The Five Pillars of Islam Explained",
+            "@type": "CollectionPage",
+            name: "The Five Pillars of Islam Explained",
             description: "Learn about the Five Pillars of Islam: Shahada (Faith), Salah (Prayer), Zakat (Charity), Sawm (Fasting), and Hajj (Pilgrimage).",
-            author: {
-              "@type": "Organization",
-              name: "The Truth in Islam",
+            url: `${siteConfig.url}/pillars`,
+            mainEntity: {
+              "@type": "ItemList",
+              itemListElement: pillarDetails.map((pillar, index) => ({
+                "@type": "ListItem",
+                position: index + 1,
+                item: {
+                  "@type": "Article",
+                  name: `${pillar.name} (${pillar.arabicName})`,
+                  description: pillar.description,
+                  url: `${siteConfig.url}/pillars/${pillar.slug}`,
+                },
+              })),
             },
             publisher: {
               "@type": "Organization",
-              name: "The Truth in Islam",
+              name: "Truth in Islam",
+              url: siteConfig.url,
             },
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id": `${siteConfig.url}/pillars`,
-            },
-            about: pillarDetails.map(pillar => ({
-              "@type": "Thing",
-              name: `${pillar.name} (${pillar.arabicName})`,
-              description: pillar.description,
-            })),
           }),
         }}
       />

@@ -7,6 +7,7 @@ import { ArrowLeft, Clock, Calendar, Share2, BookOpen, ArrowRight } from "lucide
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { getArticleBySlug } from "@/lib/data/articles"
+import { siteConfig } from "@/lib/config"
 
 // Import article content dynamically
 const getArticleContent = async (slug: string) => {
@@ -35,8 +36,47 @@ export default function BlogArticlePage({ params }: { params: Promise<{ slug: st
     )
   }
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": article.title,
+    "description": article.excerpt,
+    "datePublished": article.publishedAt,
+    "dateModified": article.publishedAt,
+    "author": {
+      "@type": "Organization",
+      "name": "The Truth in Islam",
+      "url": siteConfig.url
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Truth in Islam",
+      "url": siteConfig.url,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${siteConfig.url}/logo.png`
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `${siteConfig.url}/blog/${article.slug}`
+    },
+    "articleSection": article.category,
+    "wordCount": article.content ? article.content.split(/\s+/).length : 0,
+    "timeRequired": `PT${article.readingTime}M`,
+    ...(article.sources && article.sources.length > 0 && {
+      "citation": article.sources
+    })
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema)
+        }}
+      />
       {/* Header */}
       <section className="py-12 sm:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">

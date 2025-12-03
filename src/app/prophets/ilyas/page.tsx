@@ -85,6 +85,35 @@ const qaItems = [
 export default function IlyasPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": ["Article", "Person"],
+            "headline": "Elijah (Ilyas) in Islam: A Critical Examination",
+            "description": "The prophet Elijah in Islam - a powerful figure barely mentioned in the Quran, yet whose biblical ministry of confronting false worship has profound implications.",
+            "name": "Elijah",
+            "alternateName": ["Ilyas", "إلياس"],
+            "author": {
+              "@type": "Organization",
+              "name": "Truth in Islam"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Truth in Islam",
+              "url": "https://truthinislam.com"
+            },
+            "mainEntityOfPage": "https://truthinislam.com/prophets/ilyas",
+            "about": {
+              "@type": "Person",
+              "name": "Elijah",
+              "alternateName": "Ilyas",
+              "description": "Elijah as portrayed in Islamic tradition, contrasted with biblical accounts"
+            }
+          })
+        }}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 sm:py-32">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5" />

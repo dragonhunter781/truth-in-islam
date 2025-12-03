@@ -154,6 +154,35 @@ const islamicClaims = [
 export default function IsaPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": ["Article", "Person"],
+            "headline": "Jesus (Isa) in Islam: A Critical Examination",
+            "description": "How Islam reimagines Jesus - calling him Messiah while denying his central message, death, and resurrection.",
+            "name": "Jesus",
+            "alternateName": ["Isa", "عيسى", "Jesus Christ"],
+            "author": {
+              "@type": "Organization",
+              "name": "Truth in Islam"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Truth in Islam",
+              "url": "https://truthinislam.com"
+            },
+            "mainEntityOfPage": "https://truthinislam.com/prophets/isa",
+            "about": {
+              "@type": "Person",
+              "name": "Jesus",
+              "alternateName": "Isa",
+              "description": "Jesus as portrayed in Islamic tradition, contrasted with biblical accounts"
+            }
+          })
+        }}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 sm:py-32">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5" />

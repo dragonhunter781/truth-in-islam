@@ -7,6 +7,7 @@ import { Search, Clock, ArrowRight, BookOpen, Filter } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { articles, categories, getFeaturedArticles } from "@/lib/data/articles"
+import { siteConfig } from "@/lib/config"
 
 function formatDate(dateString: string) {
   return new Date(dateString).toLocaleDateString('en-US', {
@@ -30,8 +31,27 @@ export default function BlogPage() {
     return matchesCategory && matchesSearch && !article.featured
   })
 
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Articles - The Truth in Islam",
+    "description": `Browse ${articles.length} articles examining Islamic teachings, history, and practices from the Quran, authentic hadith, and classical scholarship.`,
+    "url": `${siteConfig.url}/blog`,
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "The Truth in Islam",
+      "url": siteConfig.url
+    }
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(blogSchema)
+        }}
+      />
       {/* Hero */}
       <section className="py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

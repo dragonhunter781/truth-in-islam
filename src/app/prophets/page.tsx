@@ -53,6 +53,58 @@ const featuredProphets = [
 export default function ProphetsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "headline": "Prophets in Islam: A Critical Examination",
+            "description": "Islam claims to honor all biblical prophets while fundamentally changing their messages. Explore how Islamic tradition reimagines these figures.",
+            "about": {
+              "@type": "Thing",
+              "name": "Prophets in Islam"
+            },
+            "author": {
+              "@type": "Organization",
+              "name": "Truth in Islam"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Truth in Islam",
+              "url": "https://truthinislam.com"
+            },
+            "mainEntityOfPage": "https://truthinislam.com/prophets",
+            "hasPart": [
+              {
+                "@type": "Article",
+                "headline": "Muhammad in Islam",
+                "url": "https://truthinislam.com/prophets/muhammad"
+              },
+              {
+                "@type": "Article",
+                "headline": "Jesus (Isa) in Islam",
+                "url": "https://truthinislam.com/prophets/isa"
+              },
+              {
+                "@type": "Article",
+                "headline": "Abraham (Ibrahim) in Islam",
+                "url": "https://truthinislam.com/prophets/ibrahim"
+              },
+              {
+                "@type": "Article",
+                "headline": "Moses (Musa) in Islam",
+                "url": "https://truthinislam.com/prophets/musa"
+              },
+              {
+                "@type": "Article",
+                "headline": "Elijah (Ilyas) in Islam",
+                "url": "https://truthinislam.com/prophets/ilyas"
+              }
+            ]
+          })
+        }}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 sm:py-32">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5" />

@@ -254,6 +254,32 @@ export default function ZakatPage() {
           </div>
         </div>
       </section>
+
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: "Zakat: Islamic Obligatory Charity Examined",
+            description: "An examination of Zakat - obligatory charity in Islam, where the money goes, who benefits, and the prescribed categories of recipients.",
+            author: {
+              "@type": "Organization",
+              name: "Truth in Islam",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Truth in Islam",
+              url: "https://truthinislam.com",
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": "https://truthinislam.com/pillars/zakat",
+            },
+          }),
+        }}
+      />
     </div>
   )
 }

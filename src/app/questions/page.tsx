@@ -147,6 +147,24 @@ export default function QuestionsPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Questions & Discussions",
+            "description": "A safe space for honest questions about Islam. Ask anonymously, discuss openly, and seek the truth together.",
+            "url": "https://truthinislam.com/questions",
+            "mainEntity": {
+              "@type": "QAPage",
+              "name": "Questions About Islam"
+            }
+          })
+        }}
+      />
+
       {/* Hero */}
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

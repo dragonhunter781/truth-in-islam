@@ -9,6 +9,24 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": "About Truth in Islam",
+            "description": "Learn about our mission to critically examine Islamic teachings and present what Islamic sources actually teach.",
+            "url": "https://truthinislam.com/about",
+            "mainEntity": {
+              "@type": "Organization",
+              "name": "Truth in Islam",
+              "description": "Dedicated to presenting what Islamic sources actually teach, so that seekers can make informed decisions based on facts."
+            }
+          })
+        }}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 sm:py-32">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5" />

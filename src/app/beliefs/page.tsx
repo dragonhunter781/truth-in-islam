@@ -354,6 +354,34 @@ const quickQuestions = [
 export default function BeliefsPage() {
   return (
     <div className="min-h-screen bg-slate-900">
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "The Six Articles of Faith in Islam",
+            "description": "Every Muslim must believe these six doctrines. Examine them with Quranic sources, hadith references, and critical analysis comparing them to biblical truth.",
+            "author": {
+              "@type": "Organization",
+              "name": "Truth in Islam"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Truth in Islam"
+            },
+            "url": "https://truthinislam.com/beliefs",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://truthinislam.com/beliefs"
+            },
+            "articleSection": "Islamic Beliefs",
+            "keywords": ["Islam beliefs", "Six articles of faith", "Islamic doctrine", "Tawhid", "Islamic theology"]
+          })
+        }}
+      />
+
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 sm:py-32 bg-slate-900">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5" />

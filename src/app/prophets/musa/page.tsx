@@ -126,6 +126,35 @@ const qaItems = [
 export default function MusaPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": ["Article", "Person"],
+            "headline": "Moses (Musa) in Islam: A Critical Examination",
+            "description": "The most mentioned prophet in the Quran - yet Islam fundamentally changes his message and mission.",
+            "name": "Moses",
+            "alternateName": ["Musa", "موسى"],
+            "author": {
+              "@type": "Organization",
+              "name": "Truth in Islam"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Truth in Islam",
+              "url": "https://truthinislam.com"
+            },
+            "mainEntityOfPage": "https://truthinislam.com/prophets/musa",
+            "about": {
+              "@type": "Person",
+              "name": "Moses",
+              "alternateName": "Musa",
+              "description": "Moses as portrayed in Islamic tradition, contrasted with biblical accounts"
+            }
+          })
+        }}
+      />
       <section className="relative overflow-hidden py-20 sm:py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">

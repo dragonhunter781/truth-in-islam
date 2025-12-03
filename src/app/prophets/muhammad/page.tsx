@@ -138,6 +138,34 @@ const qaItems = [
 export default function MuhammadPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": ["Article", "Person"],
+            "headline": "Muhammad in Islam: A Critical Examination",
+            "description": "The founder of Islam - examining his life, actions, and character according to Islamic sources themselves.",
+            "name": "Muhammad",
+            "alternateName": ["محمد", "Prophet Muhammad"],
+            "author": {
+              "@type": "Organization",
+              "name": "Truth in Islam"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Truth in Islam",
+              "url": "https://truthinislam.com"
+            },
+            "mainEntityOfPage": "https://truthinislam.com/prophets/muhammad",
+            "about": {
+              "@type": "Person",
+              "name": "Muhammad",
+              "description": "The founder of Islam, considered by Muslims as the final prophet"
+            }
+          })
+        }}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 sm:py-32">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5" />

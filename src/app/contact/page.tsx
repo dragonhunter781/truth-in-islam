@@ -8,6 +8,31 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800">
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact Truth in Islam",
+            "description": "Have questions, feedback, or need support? Contact us for general inquiries or confidential support.",
+            "url": "https://truthinislam.com/contact",
+            "mainEntity": {
+              "@type": "Organization",
+              "name": "Truth in Islam",
+              "email": "info@thetruthinislam.org",
+              "contactPoint": [
+                {
+                  "@type": "ContactPoint",
+                  "contactType": "Customer Support",
+                  "email": "support@thetruthinislam.org"
+                }
+              ]
+            }
+          })
+        }}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 sm:py-32">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5" />

@@ -256,6 +256,32 @@ export default function SawmPage() {
           </div>
         </div>
       </section>
+
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: "Sawm: Fasting During Ramadan Examined",
+            description: "An examination of Sawm - fasting during Ramadan in Islam, the rules, exceptions, penalties, and the realities of this mandatory practice.",
+            author: {
+              "@type": "Organization",
+              name: "Truth in Islam",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Truth in Islam",
+              url: "https://truthinislam.com",
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": "https://truthinislam.com/pillars/sawm",
+            },
+          }),
+        }}
+      />
     </div>
   )
 }
