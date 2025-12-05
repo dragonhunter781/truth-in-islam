@@ -3,7 +3,7 @@ import { NavItem, Pillar, Prophet, SiteConfig } from '@/types'
 export const siteConfig: SiteConfig = {
   name: 'The Truth in Islam',
   description: 'Examine what Islamic sources really teach. Explore Quranic verses, authentic Hadiths, and scholarly interpretations that reveal the complete picture of Islamic doctrine.',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://thetruthinislam.org',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://truth-in-islam.vercel.app',
   ogImage: '/og-image.jpg',
   links: {
     twitter: 'https://twitter.com/thetruthinislam',

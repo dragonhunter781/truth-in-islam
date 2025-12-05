@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { articles } from '@/lib/data/articles'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://truthinislam.com'
+  const baseUrl = 'https://truth-in-islam.vercel.app'
   const currentDate = new Date().toISOString()
 
   // Homepage

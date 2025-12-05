@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://truthinislam.com/sitemap.xml',
+    sitemap: 'https://truth-in-islam.vercel.app/sitemap.xml',
   }
 }
